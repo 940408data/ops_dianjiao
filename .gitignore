@@ -1,0 +1,10 @@
+# 书影 PDF（大文件，不入库；OCR 文本 .md 已提取，可复跑）
+*.pdf
+# 打包/二进制归档
+*.zip
+# Python 缓存
+__pycache__/
+*.pyc
+*.pyo
+# 临时与系统
+.DS_Store

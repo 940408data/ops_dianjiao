@@ -1,0 +1,3000 @@
+{
+  "run_id": "20260815T082750",
+  "count": 58,
+  "items": [
+    {
+      "div_id": "D0003",
+      "dtype": "形近疑誤",
+      "base_text": "巳",
+      "ref_text": "已",
+      "context": "心之虛靈知覺一而【底本：巳 / 今本：已】矣而以爲有人心道",
+      "chosen": "已",
+      "amend_base_text": false,
+      "suspended": true,
+      "confidence": 0.8029,
+      "margin": 0.6059,
+      "scores": {
+        "兩存": 0.0938,
+        "已": 0.3822
+      },
+      "apparatus_note": "「巳」，今本作「已」。戴震案：以文義訓詁繩之，作「已」乃通；作「巳」則於義有窒。諸說未一，姑兩存之，俟考。",
+      "risk": "底本該處 OCR 置信度僅 0.63，須覆核書影",
+      "opinions": [
+        {
+          "persona": "liuxiang",
+          "name": "劉向",
+          "method": "對校法",
+          "choice": "兩存",
+          "confidence": 0.5,
+          "evidence_grade": "無證",
+          "argument": "「巳」「已」形近，此當覆核書影字口，非版本之爭，非吾所能斷。",
+          "amend_base_text": false
+        },
+        {
+          "persona": "xiejin",
+          "name": "解縉",
+          "method": "他校法",
+          "choice": "兩存",
+          "confidence": 0.35,
+          "evidence_grade": "無證",
+          "argument": "他書無引此句者，未得確證，不敢懸揣。",
+          "amend_base_text": false
+        },
+        {
+          "persona": "daizhen",
+          "name": "戴震",
+          "method": "本校法・理校法（音韻訓詁）",
+          "choice": "已",
+          "confidence": 0.78,
+          "evidence_grade": "旁證",
+          "argument": "以文義訓詁繩之，作「已」乃通；作「巳」則於義有窒。",
+          "amend_base_text": true
+        }
+      ],
+      "decided_by": "council",
+      "human_note": ""
+    },
+    {
+      "div_id": "D0006",
+      "dtype": "形近疑誤",
+      "base_text": "傳",
+      "ref_text": "傅",
+      "context": "文武之爲君臯陶伊【底本：傳 / 今本：傅】周召之爲臣旣皆以",
+      "chosen": "兩存",
+      "amend_base_text": false,
+      "suspended": true,
+      "confidence": 1.0,
+      "margin": 1.0,
+      "scores": {
+        "兩存": 0.2337
+      },
+      "apparatus_note": "「傳」，今本作「傅」。戴震案：二字形近而皆可成文，非訓詁所能決。當覆核書影字口，不可以意定之。諸說未一，姑兩存之，俟考。",
+      "risk": "三家主兩存；底本該處 OCR 置信度僅 0.68，須覆核書影",
+      "opinions": [
+        {
+          "persona": "liuxiang",
+          "name": "劉向",
+          "method": "對校法",
+          "choice": "兩存",
+          "confidence": 0.5,
+          "evidence_grade": "無證",
+          "argument": "「傳」「傅」形近，此當覆核書影字口，非版本之爭，非吾所能斷。",
+          "amend_base_text": false
+        },
+        {
+          "persona": "xiejin",
+          "name": "解縉",
+          "method": "他校法",
+          "choice": "兩存",
+          "confidence": 0.35,
+          "evidence_grade": "無證",
+          "argument": "他書無引此句者，未得確證，不敢懸揣。",
+          "amend_base_text": false
+        },
+        {
+          "persona": "daizhen",
+          "name": "戴震",
+          "method": "本校法・理校法（音韻訓詁）",
+          "choice": "兩存",
+          "confidence": 0.5,
+          "evidence_grade": "推測",
+          "argument": "二字形近而皆可成文，非訓詁所能決。當覆核書影字口，不可以意定之。",
+          "amend_base_text": false
+        }
+      ],
+      "decided_by": "council",
+      "human_note": ""
+    },
+    {
+      "div_id": "D0015",
+      "dtype": "形近疑誤",
+      "base_text": "曰",
+      "ref_text": "日",
+      "context": "字之間而異端之說【底本：曰 / 今本：日】新月盛以至於老佛",
+      "chosen": "兩存",
+      "amend_base_text": false,
+      "suspended": true,
+      "confidence": 1.0,
+      "margin": 1.0,
+      "scores": {
+        "兩存": 0.2337
+      },
+      "apparatus_note": "「曰」，今本作「日」。戴震案：二字形近而皆可成文，非訓詁所能決。當覆核書影字口，不可以意定之。諸說未一，姑兩存之，俟考。",
+      "risk": "三家主兩存；底本該處 OCR 置信度僅 0.60，須覆核書影",
+      "opinions": [
+        {
+          "persona": "liuxiang",
+          "name": "劉向",
+          "method": "對校法",
+          "choice": "兩存",
+          "confidence": 0.5,
+          "evidence_grade": "無證",
+          "argument": "「曰」「日」形近，此當覆核書影字口，非版本之爭，非吾所能斷。",
+          "amend_base_text": false
+        },
+        {
+          "persona": "xiejin",
+          "name": "解縉",
+          "method": "他校法",
+          "choice": "兩存",
+          "confidence": 0.35,
+          "evidence_grade": "無證",
+          "argument": "他書無引此句者，未得確證，不敢懸揣。",
+          "amend_base_text": false
+        },
+        {
+          "persona": "daizhen",
+          "name": "戴震",
+          "method": "本校法・理校法（音韻訓詁）",
+          "choice": "兩存",
+          "confidence": 0.5,
+          "evidence_grade": "推測",
+          "argument": "二字形近而皆可成文，非訓詁所能決。當覆核書影字口，不可以意定之。",
+          "amend_base_text": false
+        }
+      ],
+      "decided_by": "council",
+      "human_note": ""
+    },
+    {
+      "div_id": "D0024",
+      "dtype": "實質異文",
+      "base_text": "晉府中庸傳",
+      "ref_text": "行遠升高司禮監本作升高行遠",
+      "context": "月戊申新安朱熹序【底本：晉府中庸傳 / 今本：行遠升高司禮監本作升高行遠】中庸朱熹章句中者",
+      "chosen": "晉府中庸傳",
+      "amend_base_text": false,
+      "suspended": true,
+      "confidence": 0.6824,
+      "margin": 0.3648,
+      "scores": {
+        "晉府中庸傳": 0.4448,
+        "兩存": 0.207
+      },
+      "apparatus_note": "「晉府中庸傳」，今本作「行遠升高司禮監本作升高行遠」。劉向案：底本作「晉府中庸傳」。不改一字，存異而已。諸說未一，姑兩存之，俟考。",
+      "risk": "底本該處 OCR 置信度僅 0.69，須覆核書影",
+      "opinions": [
+        {
+          "persona": "liuxiang",
+          "name": "劉向",
+          "method": "對校法",
+          "choice": "晉府中庸傳",
+          "confidence": 0.65,
+          "evidence_grade": "旁證",
+          "argument": "底本作「晉府中庸傳」。不改一字，存異而已。",
+          "amend_base_text": false
+        },
+        {
+          "persona": "xiejin",
+          "name": "解縉",
+          "method": "他校法",
+          "choice": "兩存",
+          "confidence": 0.3,
+          "evidence_grade": "無證",
+          "argument": "遍檢類書注疏，未見徵引此句者。未得確證，闕疑可也。",
+          "amend_base_text": false
+        },
+        {
+          "persona": "daizhen",
+          "name": "戴震",
+          "method": "本校法・理校法（音韻訓詁）",
+          "choice": "兩存",
+          "confidence": 0.45,
+          "evidence_grade": "推測",
+          "argument": "無左證而以意改者，雖通不可從。當存異待考。",
+          "amend_base_text": false
+        }
+      ],
+      "decided_by": "council",
+      "human_note": ""
+    },
+    {
+      "div_id": "D0030",
+      "dtype": "形近疑誤",
+      "base_text": "曰",
+      "ref_text": "日",
+      "context": "循其性之自然則其【底本：曰 / 今本：日】用事物之閒莫不各",
+      "chosen": "兩存",
+      "amend_base_text": false,
+      "suspended": true,
+      "confidence": 1.0,
+      "margin": 1.0,
+      "scores": {
+        "兩存": 0.2337
+      },
+      "apparatus_note": "「曰」，今本作「日」。戴震案：二字形近而皆可成文，非訓詁所能決。當覆核書影字口，不可以意定之。諸說未一，姑兩存之，俟考。",
+      "risk": "三家主兩存；底本該處 OCR 置信度僅 0.65，須覆核書影",
+      "opinions": [
+        {
+          "persona": "liuxiang",
+          "name": "劉向",
+          "method": "對校法",
+          "choice": "兩存",
+          "confidence": 0.5,
+          "evidence_grade": "無證",
+          "argument": "「曰」「日」形近，此當覆核書影字口，非版本之爭，非吾所能斷。",
+          "amend_base_text": false
+        },
+        {
+          "persona": "xiejin",
+          "name": "解縉",
+          "method": "他校法",
+          "choice": "兩存",
+          "confidence": 0.35,
+          "evidence_grade": "無證",
+          "argument": "他書無引此句者，未得確證，不敢懸揣。",
+          "amend_base_text": false
+        },
+        {
+          "persona": "daizhen",
+          "name": "戴震",
+          "method": "本校法・理校法（音韻訓詁）",
+          "choice": "兩存",
+          "confidence": 0.5,
+          "evidence_grade": "推測",
+          "argument": "二字形近而皆可成文，非訓詁所能決。當覆核書影字口，不可以意定之。",
+          "amend_base_text": false
+        }
+      ],
+      "decided_by": "council",
+      "human_note": ""
+    },
+    {
+      "div_id": "D0032",
+      "dtype": "形近疑誤",
+      "base_text": "巳",
+      "ref_text": "已",
+      "context": "知所用力而自不能【底本：巳 / 今本：已】矣故子思於此首發",
+      "chosen": "已",
+      "amend_base_text": false,
+      "suspended": true,
+      "confidence": 0.8029,
+      "margin": 0.6059,
+      "scores": {
+        "兩存": 0.0938,
+        "已": 0.3822
+      },
+      "apparatus_note": "「巳」，今本作「已」。戴震案：以文義訓詁繩之，作「已」乃通；作「巳」則於義有窒。諸說未一，姑兩存之，俟考。",
+      "risk": "底本該處 OCR 置信度僅 0.65，須覆核書影",
+      "opinions": [
+        {
+          "persona": "liuxiang",
+          "name": "劉向",
+          "method": "對校法",
+          "choice": "兩存",
+          "confidence": 0.5,
+          "evidence_grade": "無證",
+          "argument": "「巳」「已」形近，此當覆核書影字口，非版本之爭，非吾所能斷。",
+          "amend_base_text": false
+        },
+        {
+          "persona": "xiejin",
+          "name": "解縉",
+          "method": "他校法",
+          "choice": "兩存",
+          "confidence": 0.35,
+          "evidence_grade": "無證",
+          "argument": "他書無引此句者，未得確證，不敢懸揣。",
+          "amend_base_text": false
+        },
+        {
+          "persona": "daizhen",
+          "name": "戴震",
+          "method": "本校法・理校法（音韻訓詁）",
+          "choice": "已",
+          "confidence": 0.78,
+          "evidence_grade": "旁證",
+          "argument": "以文義訓詁繩之，作「已」乃通；作「巳」則於義有窒。",
+          "amend_base_text": true
+        }
+      ],
+      "decided_by": "council",
+      "human_note": ""
+    },
+    {
+      "div_id": "D0037",
+      "dtype": "形近疑誤",
+      "base_text": "曰",
+      "ref_text": "日",
+      "context": "所不聞離去聲道者【底本：曰 / 今本：日】用事物當行之理皆",
+      "chosen": "兩存",
+      "amend_base_text": false,
+      "suspended": true,
+      "confidence": 1.0,
+      "margin": 1.0,
+      "scores": {
+        "兩存": 0.2337
+      },
+      "apparatus_note": "「曰」，今本作「日」。戴震案：二字形近而皆可成文，非訓詁所能決。當覆核書影字口，不可以意定之。諸說未一，姑兩存之，俟考。",
+      "risk": "三家主兩存；底本該處 OCR 置信度僅 0.61，須覆核書影",
+      "opinions": [
+        {
+          "persona": "liuxiang",
+          "name": "劉向",
+          "method": "對校法",
+          "choice": "兩存",
+          "confidence": 0.5,
+          "evidence_grade": "無證",
+          "argument": "「曰」「日」形近，此當覆核書影字口，非版本之爭，非吾所能斷。",
+          "amend_base_text": false
+        },
+        {
+          "persona": "xiejin",
+          "name": "解縉",
+          "method": "他校法",
+          "choice": "兩存",
+          "confidence": 0.35,
+          "evidence_grade": "無證",
+          "argument": "他書無引此句者，未得確證，不敢懸揣。",
+          "amend_base_text": false
+        },
+        {
+          "persona": "daizhen",
+          "name": "戴震",
+          "method": "本校法・理校法（音韻訓詁）",
+          "choice": "兩存",
+          "confidence": 0.5,
+          "evidence_grade": "推測",
+          "argument": "二字形近而皆可成文，非訓詁所能決。當覆核書影字口，不可以意定之。",
+          "amend_base_text": false
+        }
+      ],
+      "decided_by": "council",
+      "human_note": ""
+    },
+    {
+      "div_id": "D0039",
+      "dtype": "形近疑誤",
+      "base_text": "巳",
+      "ref_text": "已",
+      "context": "事跡雖未形而幾則【底本：巳 / 今本：已】動人雖不知而己獨",
+      "chosen": "已",
+      "amend_base_text": false,
+      "suspended": true,
+      "confidence": 0.8029,
+      "margin": 0.6059,
+      "scores": {
+        "兩存": 0.0938,
+        "已": 0.3822
+      },
+      "apparatus_note": "「巳」，今本作「已」。戴震案：以文義訓詁繩之，作「已」乃通；作「巳」則於義有窒。諸說未一，姑兩存之，俟考。",
+      "risk": "底本該處 OCR 置信度僅 0.66，須覆核書影",
+      "opinions": [
+        {
+          "persona": "liuxiang",
+          "name": "劉向",
+          "method": "對校法",
+          "choice": "兩存",
+          "confidence": 0.5,
+          "evidence_grade": "無證",
+          "argument": "「巳」「已」形近，此當覆核書影字口，非版本之爭，非吾所能斷。",
+          "amend_base_text": false
+        },
+        {
+          "persona": "xiejin",
+          "name": "解縉",
+          "method": "他校法",
+          "choice": "兩存",
+          "confidence": 0.35,
+          "evidence_grade": "無證",
+          "argument": "他書無引此句者，未得確證，不敢懸揣。",
+          "amend_base_text": false
+        },
+        {
+          "persona": "daizhen",
+          "name": "戴震",
+          "method": "本校法・理校法（音韻訓詁）",
+          "choice": "已",
+          "confidence": 0.78,
+          "evidence_grade": "旁證",
+          "argument": "以文義訓詁繩之，作「已」乃通；作「巳」則於義有窒。",
+          "amend_base_text": true
+        }
+      ],
+      "decided_by": "council",
+      "human_note": ""
+    },
+    {
+      "div_id": "D0045",
+      "dtype": "形近疑誤",
+      "base_text": "已",
+      "ref_text": "己",
+      "context": "不可易其實體備於【底本：已 / 今本：己】而不可離次言存養",
+      "chosen": "兩存",
+      "amend_base_text": false,
+      "suspended": true,
+      "confidence": 1.0,
+      "margin": 1.0,
+      "scores": {
+        "兩存": 0.2337
+      },
+      "apparatus_note": "「已」，今本作「己」。戴震案：二字形近而皆可成文，非訓詁所能決。當覆核書影字口，不可以意定之。諸說未一，姑兩存之，俟考。",
+      "risk": "三家主兩存；底本該處 OCR 置信度僅 0.64，須覆核書影",
+      "opinions": [
+        {
+          "persona": "liuxiang",
+          "name": "劉向",
+          "method": "對校法",
+          "choice": "兩存",
+          "confidence": 0.5,
+          "evidence_grade": "無證",
+          "argument": "「已」「己」形近，此當覆核書影字口，非版本之爭，非吾所能斷。",
+          "amend_base_text": false
+        },
+        {
+          "persona": "xiejin",
+          "name": "解縉",
+          "method": "他校法",
+          "choice": "兩存",
+          "confidence": 0.35,
+          "evidence_grade": "無證",
+          "argument": "他書無引此句者，未得確證，不敢懸揣。",
+          "amend_base_text": false
+        },
+        {
+          "persona": "daizhen",
+          "name": "戴震",
+          "method": "本校法・理校法（音韻訓詁）",
+          "choice": "兩存",
+          "confidence": 0.5,
+          "evidence_grade": "推測",
+          "argument": "二字形近而皆可成文，非訓詁所能決。當覆核書影字口，不可以意定之。",
+          "amend_base_text": false
+        }
+      ],
+      "decided_by": "council",
+      "human_note": ""
+    },
+    {
+      "div_id": "D0049",
+      "dtype": "衍文重出",
+      "base_text": "子曰中庸其至矣乎民鮮能乆矣",
+      "ref_text": "",
+      "context": "之中實兼中和之義【底本：子曰中庸其至矣乎民鮮能乆矣 / 今本：〇】鮮上聲下同過則失",
+      "chosen": "",
+      "amend_base_text": false,
+      "suspended": true,
+      "confidence": 0.97,
+      "margin": 0.9399,
+      "scores": {
+        "": 1.163,
+        "兩存": 0.036
+      },
+      "apparatus_note": "底本「子曰中庸其至矣乎民鮮能乆矣」重出，今本不重。劉向案：底本「子曰中庸其至矣乎民鮮能乆矣」重出。刻本每以重文號「々」示疊字，傳錄者誤展，遂成衍文，當刪。諸說未一，姑兩存之，俟考。",
+      "risk": "底本該處 OCR 置信度僅 0.65，須覆核書影",
+      "opinions": [
+        {
+          "persona": "liuxiang",
+          "name": "劉向",
+          "method": "對校法",
+          "choice": "",
+          "confidence": 0.82,
+          "evidence_grade": "確證",
+          "argument": "底本「子曰中庸其至矣乎民鮮能乆矣」重出。刻本每以重文號「々」示疊字，傳錄者誤展，遂成衍文，當刪。",
+          "amend_base_text": true
+        },
+        {
+          "persona": "xiejin",
+          "name": "解縉",
+          "method": "他校法",
+          "choice": "兩存",
+          "confidence": 0.3,
+          "evidence_grade": "無證",
+          "argument": "遍檢類書注疏，未見徵引此句者。未得確證，闕疑可也。",
+          "amend_base_text": false
+        },
+        {
+          "persona": "daizhen",
+          "name": "戴震",
+          "method": "本校法・理校法（音韻訓詁）",
+          "choice": "",
+          "confidence": 0.7,
+          "evidence_grade": "旁證",
+          "argument": "重出之字於文義無所繫屬，衍無疑也。",
+          "amend_base_text": true
+        }
+      ],
+      "decided_by": "council",
+      "human_note": ""
+    },
+    {
+      "div_id": "D0051",
+      "dtype": "形近疑誤",
+      "base_text": "巳",
+      "ref_text": "已",
+      "context": "不興行故鮮能之今【底本：巳 / 今本：已】乆耳論語無能字右",
+      "chosen": "已",
+      "amend_base_text": false,
+      "suspended": true,
+      "confidence": 0.8029,
+      "margin": 0.6059,
+      "scores": {
+        "兩存": 0.0938,
+        "已": 0.3822
+      },
+      "apparatus_note": "「巳」，今本作「已」。戴震案：以文義訓詁繩之，作「已」乃通；作「巳」則於義有窒。諸說未一，姑兩存之，俟考。",
+      "risk": "底本該處 OCR 置信度僅 0.64，須覆核書影",
+      "opinions": [
+        {
+          "persona": "liuxiang",
+          "name": "劉向",
+          "method": "對校法",
+          "choice": "兩存",
+          "confidence": 0.5,
+          "evidence_grade": "無證",
+          "argument": "「巳」「已」形近，此當覆核書影字口，非版本之爭，非吾所能斷。",
+          "amend_base_text": false
+        },
+        {
+          "persona": "xiejin",
+          "name": "解縉",
+          "method": "他校法",
+          "choice": "兩存",
+          "confidence": 0.35,
+          "evidence_grade": "無證",
+          "argument": "他書無引此句者，未得確證，不敢懸揣。",
+          "amend_base_text": false
+        },
+        {
+          "persona": "daizhen",
+          "name": "戴震",
+          "method": "本校法・理校法（音韻訓詁）",
+          "choice": "已",
+          "confidence": 0.78,
+          "evidence_grade": "旁證",
+          "argument": "以文義訓詁繩之，作「已」乃通；作「巳」則於義有窒。",
+          "amend_base_text": true
+        }
+      ],
+      "decided_by": "council",
+      "human_note": ""
+    },
+    {
+      "div_id": "D0055",
+      "dtype": "形近疑誤",
+      "base_text": "巳",
+      "ref_text": "已",
+      "context": "者天理之當然中而【底本：巳 / 今本：已】矣知愚賢不肖之過",
+      "chosen": "已",
+      "amend_base_text": false,
+      "suspended": true,
+      "confidence": 0.8029,
+      "margin": 0.6059,
+      "scores": {
+        "兩存": 0.0938,
+        "已": 0.3822
+      },
+      "apparatus_note": "「巳」，今本作「已」。戴震案：以文義訓詁繩之，作「已」乃通；作「巳」則於義有窒。諸說未一，姑兩存之，俟考。",
+      "risk": "底本該處 OCR 置信度僅 0.60，須覆核書影",
+      "opinions": [
+        {
+          "persona": "liuxiang",
+          "name": "劉向",
+          "method": "對校法",
+          "choice": "兩存",
+          "confidence": 0.5,
+          "evidence_grade": "無證",
+          "argument": "「巳」「已」形近，此當覆核書影字口，非版本之爭，非吾所能斷。",
+          "amend_base_text": false
+        },
+        {
+          "persona": "xiejin",
+          "name": "解縉",
+          "method": "他校法",
+          "choice": "兩存",
+          "confidence": 0.35,
+          "evidence_grade": "無證",
+          "argument": "他書無引此句者，未得確證，不敢懸揣。",
+          "amend_base_text": false
+        },
+        {
+          "persona": "daizhen",
+          "name": "戴震",
+          "method": "本校法・理校法（音韻訓詁）",
+          "choice": "已",
+          "confidence": 0.78,
+          "evidence_grade": "旁證",
+          "argument": "以文義訓詁繩之，作「已」乃通；作「巳」則於義有窒。",
+          "amend_base_text": true
+        }
+      ],
+      "decided_by": "council",
+      "human_note": ""
+    },
+    {
+      "div_id": "D0099",
+      "dtype": "形近疑誤",
+      "base_text": "巳",
+      "ref_text": "已",
+      "context": "行半塗而廢吾弗能【底本：巳 / 今本：已】矣遵道而行則能擇",
+      "chosen": "已",
+      "amend_base_text": false,
+      "suspended": true,
+      "confidence": 0.8029,
+      "margin": 0.6059,
+      "scores": {
+        "兩存": 0.0938,
+        "已": 0.3822
+      },
+      "apparatus_note": "「巳」，今本作「已」。戴震案：以文義訓詁繩之，作「已」乃通；作「巳」則於義有窒。諸說未一，姑兩存之，俟考。",
+      "risk": "底本該處 OCR 置信度僅 0.69，須覆核書影",
+      "opinions": [
+        {
+          "persona": "liuxiang",
+          "name": "劉向",
+          "method": "對校法",
+          "choice": "兩存",
+          "confidence": 0.5,
+          "evidence_grade": "無證",
+          "argument": "「巳」「已」形近，此當覆核書影字口，非版本之爭，非吾所能斷。",
+          "amend_base_text": false
+        },
+        {
+          "persona": "xiejin",
+          "name": "解縉",
+          "method": "他校法",
+          "choice": "兩存",
+          "confidence": 0.35,
+          "evidence_grade": "無證",
+          "argument": "他書無引此句者，未得確證，不敢懸揣。",
+          "amend_base_text": false
+        },
+        {
+          "persona": "daizhen",
+          "name": "戴震",
+          "method": "本校法・理校法（音韻訓詁）",
+          "choice": "已",
+          "confidence": 0.78,
+          "evidence_grade": "旁證",
+          "argument": "以文義訓詁繩之，作「已」乃通；作「巳」則於義有窒。",
+          "amend_base_text": true
+        }
+      ],
+      "decided_by": "council",
+      "human_note": ""
+    },
+    {
+      "div_id": "D0104",
+      "dtype": "形近疑誤",
+      "base_text": "巳",
+      "ref_text": "已",
+      "context": "逮當強而不強者也【底本：巳 / 今本：已】止也聖人於此非勉",
+      "chosen": "已",
+      "amend_base_text": false,
+      "suspended": true,
+      "confidence": 0.8029,
+      "margin": 0.6059,
+      "scores": {
+        "兩存": 0.0938,
+        "已": 0.3822
+      },
+      "apparatus_note": "「巳」，今本作「已」。戴震案：以文義訓詁繩之，作「已」乃通；作「巳」則於義有窒。諸說未一，姑兩存之，俟考。",
+      "risk": "底本該處 OCR 置信度僅 0.65，須覆核書影",
+      "opinions": [
+        {
+          "persona": "liuxiang",
+          "name": "劉向",
+          "method": "對校法",
+          "choice": "兩存",
+          "confidence": 0.5,
+          "evidence_grade": "無證",
+          "argument": "「巳」「已」形近，此當覆核書影字口，非版本之爭，非吾所能斷。",
+          "amend_base_text": false
+        },
+        {
+          "persona": "xiejin",
+          "name": "解縉",
+          "method": "他校法",
+          "choice": "兩存",
+          "confidence": 0.35,
+          "evidence_grade": "無證",
+          "argument": "他書無引此句者，未得確證，不敢懸揣。",
+          "amend_base_text": false
+        },
+        {
+          "persona": "daizhen",
+          "name": "戴震",
+          "method": "本校法・理校法（音韻訓詁）",
+          "choice": "已",
+          "confidence": 0.78,
+          "evidence_grade": "旁證",
+          "argument": "以文義訓詁繩之，作「已」乃通；作「巳」則於義有窒。",
+          "amend_base_text": true
+        }
+      ],
+      "decided_by": "council",
+      "human_note": ""
+    },
+    {
+      "div_id": "D0107",
+      "dtype": "形近疑誤",
+      "base_text": "巳",
+      "ref_text": "已",
+      "context": "行恠則依乎中庸而【底本：巳 / 今本：已】不能半塗而廢是以",
+      "chosen": "已",
+      "amend_base_text": false,
+      "suspended": true,
+      "confidence": 0.8029,
+      "margin": 0.6059,
+      "scores": {
+        "兩存": 0.0938,
+        "已": 0.3822
+      },
+      "apparatus_note": "「巳」，今本作「已」。戴震案：以文義訓詁繩之，作「已」乃通；作「巳」則於義有窒。諸說未一，姑兩存之，俟考。",
+      "risk": "底本該處 OCR 置信度僅 0.65，須覆核書影",
+      "opinions": [
+        {
+          "persona": "liuxiang",
+          "name": "劉向",
+          "method": "對校法",
+          "choice": "兩存",
+          "confidence": 0.5,
+          "evidence_grade": "無證",
+          "argument": "「巳」「已」形近，此當覆核書影字口，非版本之爭，非吾所能斷。",
+          "amend_base_text": false
+        },
+        {
+          "persona": "xiejin",
+          "name": "解縉",
+          "method": "他校法",
+          "choice": "兩存",
+          "confidence": 0.35,
+          "evidence_grade": "無證",
+          "argument": "他書無引此句者，未得確證，不敢懸揣。",
+          "amend_base_text": false
+        },
+        {
+          "persona": "daizhen",
+          "name": "戴震",
+          "method": "本校法・理校法（音韻訓詁）",
+          "choice": "已",
+          "confidence": 0.78,
+          "evidence_grade": "旁證",
+          "argument": "以文義訓詁繩之，作「已」乃通；作「巳」則於義有窒。",
+          "amend_base_text": true
+        }
+      ],
+      "decided_by": "council",
+      "human_note": ""
+    },
+    {
+      "div_id": "D0110",
+      "dtype": "形近疑誤",
+      "base_text": "巳",
+      "ref_text": "已",
+      "context": "故曰唯聖者能之而【底本：巳 / 今本：已】右第十一章子思所",
+      "chosen": "已",
+      "amend_base_text": false,
+      "suspended": true,
+      "confidence": 0.8029,
+      "margin": 0.6059,
+      "scores": {
+        "兩存": 0.0938,
+        "已": 0.3822
+      },
+      "apparatus_note": "「巳」，今本作「已」。戴震案：以文義訓詁繩之，作「已」乃通；作「巳」則於義有窒。諸說未一，姑兩存之，俟考。",
+      "risk": "底本該處 OCR 置信度僅 0.69，須覆核書影",
+      "opinions": [
+        {
+          "persona": "liuxiang",
+          "name": "劉向",
+          "method": "對校法",
+          "choice": "兩存",
+          "confidence": 0.5,
+          "evidence_grade": "無證",
+          "argument": "「巳」「已」形近，此當覆核書影字口，非版本之爭，非吾所能斷。",
+          "amend_base_text": false
+        },
+        {
+          "persona": "xiejin",
+          "name": "解縉",
+          "method": "他校法",
+          "choice": "兩存",
+          "confidence": 0.35,
+          "evidence_grade": "無證",
+          "argument": "他書無引此句者，未得確證，不敢懸揣。",
+          "amend_base_text": false
+        },
+        {
+          "persona": "daizhen",
+          "name": "戴震",
+          "method": "本校法・理校法（音韻訓詁）",
+          "choice": "已",
+          "confidence": 0.78,
+          "evidence_grade": "旁證",
+          "argument": "以文義訓詁繩之，作「已」乃通；作「巳」則於義有窒。",
+          "amend_base_text": true
+        }
+      ],
+      "decided_by": "council",
+      "human_note": ""
+    },
+    {
+      "div_id": "D0116",
+      "dtype": "形近疑誤",
+      "base_text": "巳",
+      "ref_text": "已",
+      "context": "以爲道道者率性而【底本：巳 / 今本：已】固衆人之所能知能",
+      "chosen": "已",
+      "amend_base_text": false,
+      "suspended": true,
+      "confidence": 0.8029,
+      "margin": 0.6059,
+      "scores": {
+        "兩存": 0.0938,
+        "已": 0.3822
+      },
+      "apparatus_note": "「巳」，今本作「已」。戴震案：以文義訓詁繩之，作「已」乃通；作「巳」則於義有窒。諸說未一，姑兩存之，俟考。",
+      "risk": "底本該處 OCR 置信度僅 0.65，須覆核書影",
+      "opinions": [
+        {
+          "persona": "liuxiang",
+          "name": "劉向",
+          "method": "對校法",
+          "choice": "兩存",
+          "confidence": 0.5,
+          "evidence_grade": "無證",
+          "argument": "「巳」「已」形近，此當覆核書影字口，非版本之爭，非吾所能斷。",
+          "amend_base_text": false
+        },
+        {
+          "persona": "xiejin",
+          "name": "解縉",
+          "method": "他校法",
+          "choice": "兩存",
+          "confidence": 0.35,
+          "evidence_grade": "無證",
+          "argument": "他書無引此句者，未得確證，不敢懸揣。",
+          "amend_base_text": false
+        },
+        {
+          "persona": "daizhen",
+          "name": "戴震",
+          "method": "本校法・理校法（音韻訓詁）",
+          "choice": "已",
+          "confidence": 0.78,
+          "evidence_grade": "旁證",
+          "argument": "以文義訓詁繩之，作「已」乃通；作「巳」則於義有窒。",
+          "amend_base_text": true
+        }
+      ],
+      "decided_by": "council",
+      "human_note": ""
+    },
+    {
+      "div_id": "D0122",
+      "dtype": "形近疑誤",
+      "base_text": "已",
+      "ref_text": "己",
+      "context": "下在下位不援上正【底本：已 / 今本：己】而不求於人則無怨",
+      "chosen": "兩存",
+      "amend_base_text": false,
+      "suspended": true,
+      "confidence": 1.0,
+      "margin": 1.0,
+      "scores": {
+        "兩存": 0.2337
+      },
+      "apparatus_note": "「已」，今本作「己」。戴震案：二字形近而皆可成文，非訓詁所能決。當覆核書影字口，不可以意定之。諸說未一，姑兩存之，俟考。",
+      "risk": "三家主兩存；底本該處 OCR 置信度僅 0.61，須覆核書影",
+      "opinions": [
+        {
+          "persona": "liuxiang",
+          "name": "劉向",
+          "method": "對校法",
+          "choice": "兩存",
+          "confidence": 0.5,
+          "evidence_grade": "無證",
+          "argument": "「已」「己」形近，此當覆核書影字口，非版本之爭，非吾所能斷。",
+          "amend_base_text": false
+        },
+        {
+          "persona": "xiejin",
+          "name": "解縉",
+          "method": "他校法",
+          "choice": "兩存",
+          "confidence": 0.35,
+          "evidence_grade": "無證",
+          "argument": "他書無引此句者，未得確證，不敢懸揣。",
+          "amend_base_text": false
+        },
+        {
+          "persona": "daizhen",
+          "name": "戴震",
+          "method": "本校法・理校法（音韻訓詁）",
+          "choice": "兩存",
+          "confidence": 0.5,
+          "evidence_grade": "推測",
+          "argument": "二字形近而皆可成文，非訓詁所能決。當覆核書影字口，不可以意定之。",
+          "amend_base_text": false
+        }
+      ],
+      "decided_by": "council",
+      "human_note": ""
+    },
+    {
+      "div_id": "D0135",
+      "dtype": "形近疑誤",
+      "base_text": "巳",
+      "ref_text": "已",
+      "context": "者爲鬼其實一物而【底本：巳 / 今本：已】爲德猶言性情功效",
+      "chosen": "已",
+      "amend_base_text": false,
+      "suspended": true,
+      "confidence": 0.8029,
+      "margin": 0.6059,
+      "scores": {
+        "兩存": 0.0938,
+        "已": 0.3822
+      },
+      "apparatus_note": "「巳」，今本作「已」。戴震案：以文義訓詁繩之，作「已」乃通；作「巳」則於義有窒。諸說未一，姑兩存之，俟考。",
+      "risk": "底本該處 OCR 置信度僅 0.69，須覆核書影",
+      "opinions": [
+        {
+          "persona": "liuxiang",
+          "name": "劉向",
+          "method": "對校法",
+          "choice": "兩存",
+          "confidence": 0.5,
+          "evidence_grade": "無證",
+          "argument": "「巳」「已」形近，此當覆核書影字口，非版本之爭，非吾所能斷。",
+          "amend_base_text": false
+        },
+        {
+          "persona": "xiejin",
+          "name": "解縉",
+          "method": "他校法",
+          "choice": "兩存",
+          "confidence": 0.35,
+          "evidence_grade": "無證",
+          "argument": "他書無引此句者，未得確證，不敢懸揣。",
+          "amend_base_text": false
+        },
+        {
+          "persona": "daizhen",
+          "name": "戴震",
+          "method": "本校法・理校法（音韻訓詁）",
+          "choice": "已",
+          "confidence": 0.78,
+          "evidence_grade": "旁證",
+          "argument": "以文義訓詁繩之，作「已」乃通；作「巳」則於義有窒。",
+          "amend_base_text": true
+        }
+      ],
+      "decided_by": "council",
+      "human_note": ""
+    },
+    {
+      "div_id": "D0156",
+      "dtype": "形近疑誤",
+      "base_text": "已",
+      "ref_text": "己",
+      "context": "母之喪上下同之推【底本：已 / 今本：己】以及人也右第十八",
+      "chosen": "兩存",
+      "amend_base_text": false,
+      "suspended": true,
+      "confidence": 1.0,
+      "margin": 1.0,
+      "scores": {
+        "兩存": 0.2337
+      },
+      "apparatus_note": "「已」，今本作「己」。戴震案：二字形近而皆可成文，非訓詁所能決。當覆核書影字口，不可以意定之。諸說未一，姑兩存之，俟考。",
+      "risk": "三家主兩存；底本該處 OCR 置信度僅 0.68，須覆核書影",
+      "opinions": [
+        {
+          "persona": "liuxiang",
+          "name": "劉向",
+          "method": "對校法",
+          "choice": "兩存",
+          "confidence": 0.5,
+          "evidence_grade": "無證",
+          "argument": "「已」「己」形近，此當覆核書影字口，非版本之爭，非吾所能斷。",
+          "amend_base_text": false
+        },
+        {
+          "persona": "xiejin",
+          "name": "解縉",
+          "method": "他校法",
+          "choice": "兩存",
+          "confidence": 0.35,
+          "evidence_grade": "無證",
+          "argument": "他書無引此句者，未得確證，不敢懸揣。",
+          "amend_base_text": false
+        },
+        {
+          "persona": "daizhen",
+          "name": "戴震",
+          "method": "本校法・理校法（音韻訓詁）",
+          "choice": "兩存",
+          "confidence": 0.5,
+          "evidence_grade": "推測",
+          "argument": "二字形近而皆可成文，非訓詁所能決。當覆核書影字口，不可以意定之。",
+          "amend_base_text": false
+        }
+      ],
+      "decided_by": "council",
+      "human_note": ""
+    },
+    {
+      "div_id": "D0166",
+      "dtype": "形近疑誤",
+      "base_text": "巳",
+      "ref_text": "已",
+      "context": "禮則節文斯二者而【底本：巳 / 今本：已】在下位不獲乎上民",
+      "chosen": "已",
+      "amend_base_text": false,
+      "suspended": true,
+      "confidence": 0.8029,
+      "margin": 0.6059,
+      "scores": {
+        "兩存": 0.0938,
+        "已": 0.3822
+      },
+      "apparatus_note": "「巳」，今本作「已」。戴震案：以文義訓詁繩之，作「已」乃通；作「巳」則於義有窒。諸說未一，姑兩存之，俟考。",
+      "risk": "底本該處 OCR 置信度僅 0.63，須覆核書影",
+      "opinions": [
+        {
+          "persona": "liuxiang",
+          "name": "劉向",
+          "method": "對校法",
+          "choice": "兩存",
+          "confidence": 0.5,
+          "evidence_grade": "無證",
+          "argument": "「巳」「已」形近，此當覆核書影字口，非版本之爭，非吾所能斷。",
+          "amend_base_text": false
+        },
+        {
+          "persona": "xiejin",
+          "name": "解縉",
+          "method": "他校法",
+          "choice": "兩存",
+          "confidence": 0.35,
+          "evidence_grade": "無證",
+          "argument": "他書無引此句者，未得確證，不敢懸揣。",
+          "amend_base_text": false
+        },
+        {
+          "persona": "daizhen",
+          "name": "戴震",
+          "method": "本校法・理校法（音韻訓詁）",
+          "choice": "已",
+          "confidence": 0.78,
+          "evidence_grade": "旁證",
+          "argument": "以文義訓詁繩之，作「已」乃通；作「巳」則於義有窒。",
+          "amend_base_text": true
+        }
+      ],
+      "decided_by": "council",
+      "human_note": ""
+    },
+    {
+      "div_id": "D0167",
+      "dtype": "形近疑誤",
+      "base_text": "脩",
+      "ref_text": "修",
+      "context": "此故君子不可以不【底本：脩 / 今本：修】身思脩身不可以不",
+      "chosen": "兩存",
+      "amend_base_text": false,
+      "suspended": true,
+      "confidence": 1.0,
+      "margin": 1.0,
+      "scores": {
+        "兩存": 0.2337
+      },
+      "apparatus_note": "「脩」，今本作「修」。戴震案：二字形近而皆可成文，非訓詁所能決。當覆核書影字口，不可以意定之。諸說未一，姑兩存之，俟考。",
+      "risk": "三家主兩存；底本該處 OCR 置信度僅 0.66，須覆核書影",
+      "opinions": [
+        {
+          "persona": "liuxiang",
+          "name": "劉向",
+          "method": "對校法",
+          "choice": "兩存",
+          "confidence": 0.5,
+          "evidence_grade": "無證",
+          "argument": "「脩」「修」形近，此當覆核書影字口，非版本之爭，非吾所能斷。",
+          "amend_base_text": false
+        },
+        {
+          "persona": "xiejin",
+          "name": "解縉",
+          "method": "他校法",
+          "choice": "兩存",
+          "confidence": 0.35,
+          "evidence_grade": "無證",
+          "argument": "他書無引此句者，未得確證，不敢懸揣。",
+          "amend_base_text": false
+        },
+        {
+          "persona": "daizhen",
+          "name": "戴震",
+          "method": "本校法・理校法（音韻訓詁）",
+          "choice": "兩存",
+          "confidence": 0.5,
+          "evidence_grade": "推測",
+          "argument": "二字形近而皆可成文，非訓詁所能決。當覆核書影字口，不可以意定之。",
+          "amend_base_text": false
+        }
+      ],
+      "decided_by": "council",
+      "human_note": ""
+    },
+    {
+      "div_id": "D0168",
+      "dtype": "形近疑誤",
+      "base_text": "脩",
+      "ref_text": "修",
+      "context": "子不可以不脩身思【底本：脩 / 今本：修】身不可以不事親思",
+      "chosen": "兩存",
+      "amend_base_text": false,
+      "suspended": true,
+      "confidence": 1.0,
+      "margin": 1.0,
+      "scores": {
+        "兩存": 0.2337
+      },
+      "apparatus_note": "「脩」，今本作「修」。戴震案：二字形近而皆可成文，非訓詁所能決。當覆核書影字口，不可以意定之。諸說未一，姑兩存之，俟考。",
+      "risk": "三家主兩存；底本該處 OCR 置信度僅 0.67，須覆核書影",
+      "opinions": [
+        {
+          "persona": "liuxiang",
+          "name": "劉向",
+          "method": "對校法",
+          "choice": "兩存",
+          "confidence": 0.5,
+          "evidence_grade": "無證",
+          "argument": "「脩」「修」形近，此當覆核書影字口，非版本之爭，非吾所能斷。",
+          "amend_base_text": false
+        },
+        {
+          "persona": "xiejin",
+          "name": "解縉",
+          "method": "他校法",
+          "choice": "兩存",
+          "confidence": 0.35,
+          "evidence_grade": "無證",
+          "argument": "他書無引此句者，未得確證，不敢懸揣。",
+          "amend_base_text": false
+        },
+        {
+          "persona": "daizhen",
+          "name": "戴震",
+          "method": "本校法・理校法（音韻訓詁）",
+          "choice": "兩存",
+          "confidence": 0.5,
+          "evidence_grade": "推測",
+          "argument": "二字形近而皆可成文，非訓詁所能決。當覆核書影字口，不可以意定之。",
+          "amend_base_text": false
+        }
+      ],
+      "decided_by": "council",
+      "human_note": ""
+    },
+    {
+      "div_id": "D0174",
+      "dtype": "形近疑誤",
+      "base_text": "巳",
+      "ref_text": "已",
+      "context": "得之理也一則誠而【底本：巳 / 今本：已】矣逹道雖人所共由",
+      "chosen": "已",
+      "amend_base_text": false,
+      "suspended": true,
+      "confidence": 0.8029,
+      "margin": 0.6059,
+      "scores": {
+        "兩存": 0.0938,
+        "已": 0.3822
+      },
+      "apparatus_note": "「巳」，今本作「已」。戴震案：以文義訓詁繩之，作「已」乃通；作「巳」則於義有窒。諸說未一，姑兩存之，俟考。",
+      "risk": "底本該處 OCR 置信度僅 0.59，須覆核書影",
+      "opinions": [
+        {
+          "persona": "liuxiang",
+          "name": "劉向",
+          "method": "對校法",
+          "choice": "兩存",
+          "confidence": 0.5,
+          "evidence_grade": "無證",
+          "argument": "「巳」「已」形近，此當覆核書影字口，非版本之爭，非吾所能斷。",
+          "amend_base_text": false
+        },
+        {
+          "persona": "xiejin",
+          "name": "解縉",
+          "method": "他校法",
+          "choice": "兩存",
+          "confidence": 0.35,
+          "evidence_grade": "無證",
+          "argument": "他書無引此句者，未得確證，不敢懸揣。",
+          "amend_base_text": false
+        },
+        {
+          "persona": "daizhen",
+          "name": "戴震",
+          "method": "本校法・理校法（音韻訓詁）",
+          "choice": "已",
+          "confidence": 0.78,
+          "evidence_grade": "旁證",
+          "argument": "以文義訓詁繩之，作「已」乃通；作「巳」則於義有窒。",
+          "amend_base_text": true
+        }
+      ],
+      "decided_by": "council",
+      "human_note": ""
+    },
+    {
+      "div_id": "D0189",
+      "dtype": "衍文重出",
+      "base_text": "日食日中為月之行",
+      "ref_text": "",
+      "context": "不辭故好學非知然【底本：日食日中為月之行 / 今本：〇】足以破愚力行非仁",
+      "chosen": "",
+      "amend_base_text": false,
+      "suspended": true,
+      "confidence": 0.97,
+      "margin": 0.9399,
+      "scores": {
+        "": 1.163,
+        "兩存": 0.036
+      },
+      "apparatus_note": "底本「日食日中為月之行」重出，今本不重。劉向案：底本「日食日中為月之行」重出。刻本每以重文號「々」示疊字，傳錄者誤展，遂成衍文，當刪。諸說未一，姑兩存之，俟考。",
+      "risk": "底本該處 OCR 置信度僅 0.61，須覆核書影",
+      "opinions": [
+        {
+          "persona": "liuxiang",
+          "name": "劉向",
+          "method": "對校法",
+          "choice": "",
+          "confidence": 0.82,
+          "evidence_grade": "確證",
+          "argument": "底本「日食日中為月之行」重出。刻本每以重文號「々」示疊字，傳錄者誤展，遂成衍文，當刪。",
+          "amend_base_text": true
+        },
+        {
+          "persona": "xiejin",
+          "name": "解縉",
+          "method": "他校法",
+          "choice": "兩存",
+          "confidence": 0.3,
+          "evidence_grade": "無證",
+          "argument": "遍檢類書注疏，未見徵引此句者。未得確證，闕疑可也。",
+          "amend_base_text": false
+        },
+        {
+          "persona": "daizhen",
+          "name": "戴震",
+          "method": "本校法・理校法（音韻訓詁）",
+          "choice": "",
+          "confidence": 0.7,
+          "evidence_grade": "旁證",
+          "argument": "重出之字於文義無所繫屬，衍無疑也。",
+          "amend_base_text": true
+        }
+      ],
+      "decided_by": "council",
+      "human_note": ""
+    },
+    {
+      "div_id": "D0191",
+      "dtype": "形近疑誤",
+      "base_text": "已",
+      "ref_text": "己",
+      "context": "指三近而言人者對【底本：已 / 今本：己】之稱天下國家則盡",
+      "chosen": "兩存",
+      "amend_base_text": false,
+      "suspended": true,
+      "confidence": 1.0,
+      "margin": 1.0,
+      "scores": {
+        "兩存": 0.2337
+      },
+      "apparatus_note": "「已」，今本作「己」。戴震案：二字形近而皆可成文，非訓詁所能決。當覆核書影字口，不可以意定之。諸說未一，姑兩存之，俟考。",
+      "risk": "三家主兩存；底本該處 OCR 置信度僅 0.68，須覆核書影",
+      "opinions": [
+        {
+          "persona": "liuxiang",
+          "name": "劉向",
+          "method": "對校法",
+          "choice": "兩存",
+          "confidence": 0.5,
+          "evidence_grade": "無證",
+          "argument": "「已」「己」形近，此當覆核書影字口，非版本之爭，非吾所能斷。",
+          "amend_base_text": false
+        },
+        {
+          "persona": "xiejin",
+          "name": "解縉",
+          "method": "他校法",
+          "choice": "兩存",
+          "confidence": 0.35,
+          "evidence_grade": "無證",
+          "argument": "他書無引此句者，未得確證，不敢懸揣。",
+          "amend_base_text": false
+        },
+        {
+          "persona": "daizhen",
+          "name": "戴震",
+          "method": "本校法・理校法（音韻訓詁）",
+          "choice": "兩存",
+          "confidence": 0.5,
+          "evidence_grade": "推測",
+          "argument": "二字形近而皆可成文，非訓詁所能決。當覆核書影字口，不可以意定之。",
+          "amend_base_text": false
+        }
+      ],
+      "decided_by": "council",
+      "human_note": ""
+    },
+    {
+      "div_id": "D0200",
+      "dtype": "形近疑誤",
+      "base_text": "曰",
+      "ref_text": "日",
+      "context": "薄歛所以勸百姓也【底本：曰 / 今本：日】省月試旣稟稱事所",
+      "chosen": "兩存",
+      "amend_base_text": false,
+      "suspended": true,
+      "confidence": 1.0,
+      "margin": 1.0,
+      "scores": {
+        "兩存": 0.2337
+      },
+      "apparatus_note": "「曰」，今本作「日」。戴震案：二字形近而皆可成文，非訓詁所能決。當覆核書影字口，不可以意定之。諸說未一，姑兩存之，俟考。",
+      "risk": "三家主兩存；底本該處 OCR 置信度僅 0.60，須覆核書影",
+      "opinions": [
+        {
+          "persona": "liuxiang",
+          "name": "劉向",
+          "method": "對校法",
+          "choice": "兩存",
+          "confidence": 0.5,
+          "evidence_grade": "無證",
+          "argument": "「曰」「日」形近，此當覆核書影字口，非版本之爭，非吾所能斷。",
+          "amend_base_text": false
+        },
+        {
+          "persona": "xiejin",
+          "name": "解縉",
+          "method": "他校法",
+          "choice": "兩存",
+          "confidence": 0.35,
+          "evidence_grade": "無證",
+          "argument": "他書無引此句者，未得確證，不敢懸揣。",
+          "amend_base_text": false
+        },
+        {
+          "persona": "daizhen",
+          "name": "戴震",
+          "method": "本校法・理校法（音韻訓詁）",
+          "choice": "兩存",
+          "confidence": 0.5,
+          "evidence_grade": "推測",
+          "argument": "二字形近而皆可成文，非訓詁所能決。當覆核書影字口，不可以意定之。",
+          "amend_base_text": false
+        }
+      ],
+      "decided_by": "council",
+      "human_note": ""
+    },
+    {
+      "div_id": "D0226",
+      "dtype": "實質異文",
+      "base_text": "傳",
+      "ref_text": "博",
+      "context": "執利行以下之事也【底本：傳 / 今本：博】學之審問之愼思之",
+      "chosen": "傳",
+      "amend_base_text": false,
+      "suspended": true,
+      "confidence": 0.6824,
+      "margin": 0.3648,
+      "scores": {
+        "傳": 0.4448,
+        "兩存": 0.207
+      },
+      "apparatus_note": "「傳」，今本作「博」。劉向案：底本作「傳」。不改一字，存異而已。諸說未一，姑兩存之，俟考。",
+      "risk": "底本該處 OCR 置信度僅 0.65，須覆核書影",
+      "opinions": [
+        {
+          "persona": "liuxiang",
+          "name": "劉向",
+          "method": "對校法",
+          "choice": "傳",
+          "confidence": 0.65,
+          "evidence_grade": "旁證",
+          "argument": "底本作「傳」。不改一字，存異而已。",
+          "amend_base_text": false
+        },
+        {
+          "persona": "xiejin",
+          "name": "解縉",
+          "method": "他校法",
+          "choice": "兩存",
+          "confidence": 0.3,
+          "evidence_grade": "無證",
+          "argument": "遍檢類書注疏，未見徵引此句者。未得確證，闕疑可也。",
+          "amend_base_text": false
+        },
+        {
+          "persona": "daizhen",
+          "name": "戴震",
+          "method": "本校法・理校法（音韻訓詁）",
+          "choice": "兩存",
+          "confidence": 0.45,
+          "evidence_grade": "推測",
+          "argument": "無左證而以意改者，雖通不可從。當存異待考。",
+          "amend_base_text": false
+        }
+      ],
+      "decided_by": "council",
+      "human_note": ""
+    },
+    {
+      "div_id": "D0228",
+      "dtype": "形近疑誤",
+      "base_text": "巳",
+      "ref_text": "已",
+      "context": "之君子之學不爲則【底本：巳 / 今本：已】爲則必要其成故常",
+      "chosen": "已",
+      "amend_base_text": false,
+      "suspended": true,
+      "confidence": 0.8029,
+      "margin": 0.6059,
+      "scores": {
+        "兩存": 0.0938,
+        "已": 0.3822
+      },
+      "apparatus_note": "「巳」，今本作「已」。戴震案：以文義訓詁繩之，作「已」乃通；作「巳」則於義有窒。諸說未一，姑兩存之，俟考。",
+      "risk": "底本該處 OCR 置信度僅 0.63，須覆核書影",
+      "opinions": [
+        {
+          "persona": "liuxiang",
+          "name": "劉向",
+          "method": "對校法",
+          "choice": "兩存",
+          "confidence": 0.5,
+          "evidence_grade": "無證",
+          "argument": "「巳」「已」形近，此當覆核書影字口，非版本之爭，非吾所能斷。",
+          "amend_base_text": false
+        },
+        {
+          "persona": "xiejin",
+          "name": "解縉",
+          "method": "他校法",
+          "choice": "兩存",
+          "confidence": 0.35,
+          "evidence_grade": "無證",
+          "argument": "他書無引此句者，未得確證，不敢懸揣。",
+          "amend_base_text": false
+        },
+        {
+          "persona": "daizhen",
+          "name": "戴震",
+          "method": "本校法・理校法（音韻訓詁）",
+          "choice": "已",
+          "confidence": 0.78,
+          "evidence_grade": "旁證",
+          "argument": "以文義訓詁繩之，作「已」乃通；作「巳」則於義有窒。",
+          "amend_base_text": true
+        }
+      ],
+      "decided_by": "council",
+      "human_note": ""
+    },
+    {
+      "div_id": "D0232",
+      "dtype": "形近疑誤",
+      "base_text": "巳",
+      "ref_text": "已",
+      "context": "者爲能變化氣質而【底本：巳 / 今本：已】德勝氣質則愚者可",
+      "chosen": "已",
+      "amend_base_text": false,
+      "suspended": true,
+      "confidence": 0.8029,
+      "margin": 0.6059,
+      "scores": {
+        "兩存": 0.0938,
+        "已": 0.3822
+      },
+      "apparatus_note": "「巳」，今本作「已」。戴震案：以文義訓詁繩之，作「已」乃通；作「巳」則於義有窒。諸說未一，姑兩存之，俟考。",
+      "risk": "底本該處 OCR 置信度僅 0.66，須覆核書影",
+      "opinions": [
+        {
+          "persona": "liuxiang",
+          "name": "劉向",
+          "method": "對校法",
+          "choice": "兩存",
+          "confidence": 0.5,
+          "evidence_grade": "無證",
+          "argument": "「巳」「已」形近，此當覆核書影字口，非版本之爭，非吾所能斷。",
+          "amend_base_text": false
+        },
+        {
+          "persona": "xiejin",
+          "name": "解縉",
+          "method": "他校法",
+          "choice": "兩存",
+          "confidence": 0.35,
+          "evidence_grade": "無證",
+          "argument": "他書無引此句者，未得確證，不敢懸揣。",
+          "amend_base_text": false
+        },
+        {
+          "persona": "daizhen",
+          "name": "戴震",
+          "method": "本校法・理校法（音韻訓詁）",
+          "choice": "已",
+          "confidence": 0.78,
+          "evidence_grade": "旁證",
+          "argument": "以文義訓詁繩之，作「已」乃通；作「巳」則於義有窒。",
+          "amend_base_text": true
+        }
+      ],
+      "decided_by": "council",
+      "human_note": ""
+    },
+    {
+      "div_id": "D0235",
+      "dtype": "形近疑誤",
+      "base_text": "巳",
+      "ref_text": "已",
+      "context": "不能明柔不能立而【底本：巳 / 今本：已】矣蓋均善而無惡者",
+      "chosen": "已",
+      "amend_base_text": false,
+      "suspended": true,
+      "confidence": 0.8029,
+      "margin": 0.6059,
+      "scores": {
+        "兩存": 0.0938,
+        "已": 0.3822
+      },
+      "apparatus_note": "「巳」，今本作「已」。戴震案：以文義訓詁繩之，作「已」乃通；作「巳」則於義有窒。諸說未一，姑兩存之，俟考。",
+      "risk": "底本該處 OCR 置信度僅 0.69，須覆核書影",
+      "opinions": [
+        {
+          "persona": "liuxiang",
+          "name": "劉向",
+          "method": "對校法",
+          "choice": "兩存",
+          "confidence": 0.5,
+          "evidence_grade": "無證",
+          "argument": "「巳」「已」形近，此當覆核書影字口，非版本之爭，非吾所能斷。",
+          "amend_base_text": false
+        },
+        {
+          "persona": "xiejin",
+          "name": "解縉",
+          "method": "他校法",
+          "choice": "兩存",
+          "confidence": 0.35,
+          "evidence_grade": "無證",
+          "argument": "他書無引此句者，未得確證，不敢懸揣。",
+          "amend_base_text": false
+        },
+        {
+          "persona": "daizhen",
+          "name": "戴震",
+          "method": "本校法・理校法（音韻訓詁）",
+          "choice": "已",
+          "confidence": 0.78,
+          "evidence_grade": "旁證",
+          "argument": "以文義訓詁繩之，作「已」乃通；作「巳」則於義有窒。",
+          "amend_base_text": true
+        }
+      ],
+      "decided_by": "council",
+      "human_note": ""
+    },
+    {
+      "div_id": "D0248",
+      "dtype": "形近疑誤",
+      "base_text": "巳",
+      "ref_text": "已",
+      "context": "著動變之功自不能【底本：巳 / 今本：已】積而至於能化則其",
+      "chosen": "已",
+      "amend_base_text": false,
+      "suspended": true,
+      "confidence": 0.8029,
+      "margin": 0.6059,
+      "scores": {
+        "兩存": 0.0938,
+        "已": 0.3822
+      },
+      "apparatus_note": "「巳」，今本作「已」。戴震案：以文義訓詁繩之，作「已」乃通；作「巳」則於義有窒。諸說未一，姑兩存之，俟考。",
+      "risk": "底本該處 OCR 置信度僅 0.65，須覆核書影",
+      "opinions": [
+        {
+          "persona": "liuxiang",
+          "name": "劉向",
+          "method": "對校法",
+          "choice": "兩存",
+          "confidence": 0.5,
+          "evidence_grade": "無證",
+          "argument": "「巳」「已」形近，此當覆核書影字口，非版本之爭，非吾所能斷。",
+          "amend_base_text": false
+        },
+        {
+          "persona": "xiejin",
+          "name": "解縉",
+          "method": "他校法",
+          "choice": "兩存",
+          "confidence": 0.35,
+          "evidence_grade": "無證",
+          "argument": "他書無引此句者，未得確證，不敢懸揣。",
+          "amend_base_text": false
+        },
+        {
+          "persona": "daizhen",
+          "name": "戴震",
+          "method": "本校法・理校法（音韻訓詁）",
+          "choice": "已",
+          "confidence": 0.78,
+          "evidence_grade": "旁證",
+          "argument": "以文義訓詁繩之，作「已」乃通；作「巳」則於義有窒。",
+          "amend_base_text": true
+        }
+      ],
+      "decided_by": "council",
+      "human_note": ""
+    },
+    {
+      "div_id": "D0258",
+      "dtype": "形近疑誤",
+      "base_text": "巳",
+      "ref_text": "已",
+      "context": "矣誠者非自成己而【底本：巳 / 今本：已】也所以成物也成己",
+      "chosen": "已",
+      "amend_base_text": false,
+      "suspended": true,
+      "confidence": 0.8029,
+      "margin": 0.6059,
+      "scores": {
+        "兩存": 0.0938,
+        "已": 0.3822
+      },
+      "apparatus_note": "「巳」，今本作「已」。戴震案：以文義訓詁繩之，作「已」乃通；作「巳」則於義有窒。諸說未一，姑兩存之，俟考。",
+      "risk": "底本該處 OCR 置信度僅 0.63，須覆核書影",
+      "opinions": [
+        {
+          "persona": "liuxiang",
+          "name": "劉向",
+          "method": "對校法",
+          "choice": "兩存",
+          "confidence": 0.5,
+          "evidence_grade": "無證",
+          "argument": "「巳」「已」形近，此當覆核書影字口，非版本之爭，非吾所能斷。",
+          "amend_base_text": false
+        },
+        {
+          "persona": "xiejin",
+          "name": "解縉",
+          "method": "他校法",
+          "choice": "兩存",
+          "confidence": 0.35,
+          "evidence_grade": "無證",
+          "argument": "他書無引此句者，未得確證，不敢懸揣。",
+          "amend_base_text": false
+        },
+        {
+          "persona": "daizhen",
+          "name": "戴震",
+          "method": "本校法・理校法（音韻訓詁）",
+          "choice": "已",
+          "confidence": 0.78,
+          "evidence_grade": "旁證",
+          "argument": "以文義訓詁繩之，作「已」乃通；作「巳」則於義有窒。",
+          "amend_base_text": true
+        }
+      ],
+      "decided_by": "council",
+      "human_note": ""
+    },
+    {
+      "div_id": "D0285",
+      "dtype": "形近疑誤",
+      "base_text": "巳",
+      "ref_text": "已",
+      "context": "言而盡不過曰誠而【底本：巳 / 今本：已】不貳所以誠也誠故",
+      "chosen": "已",
+      "amend_base_text": false,
+      "suspended": true,
+      "confidence": 0.8029,
+      "margin": 0.6059,
+      "scores": {
+        "兩存": 0.0938,
+        "已": 0.3822
+      },
+      "apparatus_note": "「巳」，今本作「已」。戴震案：以文義訓詁繩之，作「已」乃通；作「巳」則於義有窒。諸說未一，姑兩存之，俟考。",
+      "risk": "底本該處 OCR 置信度僅 0.59，須覆核書影",
+      "opinions": [
+        {
+          "persona": "liuxiang",
+          "name": "劉向",
+          "method": "對校法",
+          "choice": "兩存",
+          "confidence": 0.5,
+          "evidence_grade": "無證",
+          "argument": "「巳」「已」形近，此當覆核書影字口，非版本之爭，非吾所能斷。",
+          "amend_base_text": false
+        },
+        {
+          "persona": "xiejin",
+          "name": "解縉",
+          "method": "他校法",
+          "choice": "兩存",
+          "confidence": 0.35,
+          "evidence_grade": "無證",
+          "argument": "他書無引此句者，未得確證，不敢懸揣。",
+          "amend_base_text": false
+        },
+        {
+          "persona": "daizhen",
+          "name": "戴震",
+          "method": "本校法・理校法（音韻訓詁）",
+          "choice": "已",
+          "confidence": 0.78,
+          "evidence_grade": "旁證",
+          "argument": "以文義訓詁繩之，作「已」乃通；作「巳」則於義有窒。",
+          "amend_base_text": true
+        }
+      ],
+      "decided_by": "council",
+      "human_note": ""
+    },
+    {
+      "div_id": "D0290",
+      "dtype": "形近疑誤",
+      "base_text": "曰",
+      "ref_text": "日",
+      "context": "昭之多及其無窮也【底本：曰 / 今本：日】月星辰繫焉萬物覆",
+      "chosen": "兩存",
+      "amend_base_text": false,
+      "suspended": true,
+      "confidence": 1.0,
+      "margin": 1.0,
+      "scores": {
+        "兩存": 0.2337
+      },
+      "apparatus_note": "「曰」，今本作「日」。戴震案：二字形近而皆可成文，非訓詁所能決。當覆核書影字口，不可以意定之。諸說未一，姑兩存之，俟考。",
+      "risk": "三家主兩存；底本該處 OCR 置信度僅 0.60，須覆核書影",
+      "opinions": [
+        {
+          "persona": "liuxiang",
+          "name": "劉向",
+          "method": "對校法",
+          "choice": "兩存",
+          "confidence": 0.5,
+          "evidence_grade": "無證",
+          "argument": "「曰」「日」形近，此當覆核書影字口，非版本之爭，非吾所能斷。",
+          "amend_base_text": false
+        },
+        {
+          "persona": "xiejin",
+          "name": "解縉",
+          "method": "他校法",
+          "choice": "兩存",
+          "confidence": 0.35,
+          "evidence_grade": "無證",
+          "argument": "他書無引此句者，未得確證，不敢懸揣。",
+          "amend_base_text": false
+        },
+        {
+          "persona": "daizhen",
+          "name": "戴震",
+          "method": "本校法・理校法（音韻訓詁）",
+          "choice": "兩存",
+          "confidence": 0.5,
+          "evidence_grade": "推測",
+          "argument": "二字形近而皆可成文，非訓詁所能決。當覆核書影字口，不可以意定之。",
+          "amend_base_text": false
+        }
+      ],
+      "decided_by": "council",
+      "human_note": ""
+    },
+    {
+      "div_id": "D0294",
+      "dtype": "形近疑誤",
+      "base_text": "巳",
+      "ref_text": "已",
+      "context": "云維天之命於穆不【底本：巳 / 今本：已】蓋曰天之所以爲天",
+      "chosen": "已",
+      "amend_base_text": false,
+      "suspended": true,
+      "confidence": 0.8029,
+      "margin": 0.6059,
+      "scores": {
+        "兩存": 0.0938,
+        "已": 0.3822
+      },
+      "apparatus_note": "「巳」，今本作「已」。戴震案：以文義訓詁繩之，作「已」乃通；作「巳」則於義有窒。諸說未一，姑兩存之，俟考。",
+      "risk": "底本該處 OCR 置信度僅 0.67，須覆核書影",
+      "opinions": [
+        {
+          "persona": "liuxiang",
+          "name": "劉向",
+          "method": "對校法",
+          "choice": "兩存",
+          "confidence": 0.5,
+          "evidence_grade": "無證",
+          "argument": "「巳」「已」形近，此當覆核書影字口，非版本之爭，非吾所能斷。",
+          "amend_base_text": false
+        },
+        {
+          "persona": "xiejin",
+          "name": "解縉",
+          "method": "他校法",
+          "choice": "兩存",
+          "confidence": 0.35,
+          "evidence_grade": "無證",
+          "argument": "他書無引此句者，未得確證，不敢懸揣。",
+          "amend_base_text": false
+        },
+        {
+          "persona": "daizhen",
+          "name": "戴震",
+          "method": "本校法・理校法（音韻訓詁）",
+          "choice": "已",
+          "confidence": 0.78,
+          "evidence_grade": "旁證",
+          "argument": "以文義訓詁繩之，作「已」乃通；作「巳」則於義有窒。",
+          "amend_base_text": true
+        }
+      ],
+      "decided_by": "council",
+      "human_note": ""
+    },
+    {
+      "div_id": "D0295",
+      "dtype": "形近疑誤",
+      "base_text": "巳",
+      "ref_text": "已",
+      "context": "所以爲文也純亦不【底本：巳 / 今本：已】於音烏乎音呼○詩",
+      "chosen": "已",
+      "amend_base_text": false,
+      "suspended": true,
+      "confidence": 0.8029,
+      "margin": 0.6059,
+      "scores": {
+        "兩存": 0.0938,
+        "已": 0.3822
+      },
+      "apparatus_note": "「巳」，今本作「已」。戴震案：以文義訓詁繩之，作「已」乃通；作「巳」則於義有窒。諸說未一，姑兩存之，俟考。",
+      "risk": "底本該處 OCR 置信度僅 0.65，須覆核書影",
+      "opinions": [
+        {
+          "persona": "liuxiang",
+          "name": "劉向",
+          "method": "對校法",
+          "choice": "兩存",
+          "confidence": 0.5,
+          "evidence_grade": "無證",
+          "argument": "「巳」「已」形近，此當覆核書影字口，非版本之爭，非吾所能斷。",
+          "amend_base_text": false
+        },
+        {
+          "persona": "xiejin",
+          "name": "解縉",
+          "method": "他校法",
+          "choice": "兩存",
+          "confidence": 0.35,
+          "evidence_grade": "無證",
+          "argument": "他書無引此句者，未得確證，不敢懸揣。",
+          "amend_base_text": false
+        },
+        {
+          "persona": "daizhen",
+          "name": "戴震",
+          "method": "本校法・理校法（音韻訓詁）",
+          "choice": "已",
+          "confidence": 0.78,
+          "evidence_grade": "旁證",
+          "argument": "以文義訓詁繩之，作「已」乃通；作「巳」則於義有窒。",
+          "amend_base_text": true
+        }
+      ],
+      "decided_by": "council",
+      "human_note": ""
+    },
+    {
+      "div_id": "D0297",
+      "dtype": "形近疑誤",
+      "base_text": "巳",
+      "ref_text": "已",
+      "context": "之意程子曰天道不【底本：巳 / 今本：已】文王純於天道亦不",
+      "chosen": "已",
+      "amend_base_text": false,
+      "suspended": true,
+      "confidence": 0.8029,
+      "margin": 0.6059,
+      "scores": {
+        "兩存": 0.0938,
+        "已": 0.3822
+      },
+      "apparatus_note": "「巳」，今本作「已」。戴震案：以文義訓詁繩之，作「已」乃通；作「巳」則於義有窒。諸說未一，姑兩存之，俟考。",
+      "risk": "底本該處 OCR 置信度僅 0.69，須覆核書影",
+      "opinions": [
+        {
+          "persona": "liuxiang",
+          "name": "劉向",
+          "method": "對校法",
+          "choice": "兩存",
+          "confidence": 0.5,
+          "evidence_grade": "無證",
+          "argument": "「巳」「已」形近，此當覆核書影字口，非版本之爭，非吾所能斷。",
+          "amend_base_text": false
+        },
+        {
+          "persona": "xiejin",
+          "name": "解縉",
+          "method": "他校法",
+          "choice": "兩存",
+          "confidence": 0.35,
+          "evidence_grade": "無證",
+          "argument": "他書無引此句者，未得確證，不敢懸揣。",
+          "amend_base_text": false
+        },
+        {
+          "persona": "daizhen",
+          "name": "戴震",
+          "method": "本校法・理校法（音韻訓詁）",
+          "choice": "已",
+          "confidence": 0.78,
+          "evidence_grade": "旁證",
+          "argument": "以文義訓詁繩之，作「已」乃通；作「巳」則於義有窒。",
+          "amend_base_text": true
+        }
+      ],
+      "decided_by": "council",
+      "human_note": ""
+    },
+    {
+      "div_id": "D0298",
+      "dtype": "形近疑誤",
+      "base_text": "巳",
+      "ref_text": "已",
+      "context": "文王純於天道亦不【底本：巳 / 今本：已】純則無二無雜不巳",
+      "chosen": "已",
+      "amend_base_text": false,
+      "suspended": true,
+      "confidence": 0.8029,
+      "margin": 0.6059,
+      "scores": {
+        "兩存": 0.0938,
+        "已": 0.3822
+      },
+      "apparatus_note": "「巳」，今本作「已」。戴震案：以文義訓詁繩之，作「已」乃通；作「巳」則於義有窒。諸說未一，姑兩存之，俟考。",
+      "risk": "底本該處 OCR 置信度僅 0.65，須覆核書影",
+      "opinions": [
+        {
+          "persona": "liuxiang",
+          "name": "劉向",
+          "method": "對校法",
+          "choice": "兩存",
+          "confidence": 0.5,
+          "evidence_grade": "無證",
+          "argument": "「巳」「已」形近，此當覆核書影字口，非版本之爭，非吾所能斷。",
+          "amend_base_text": false
+        },
+        {
+          "persona": "xiejin",
+          "name": "解縉",
+          "method": "他校法",
+          "choice": "兩存",
+          "confidence": 0.35,
+          "evidence_grade": "無證",
+          "argument": "他書無引此句者，未得確證，不敢懸揣。",
+          "amend_base_text": false
+        },
+        {
+          "persona": "daizhen",
+          "name": "戴震",
+          "method": "本校法・理校法（音韻訓詁）",
+          "choice": "已",
+          "confidence": 0.78,
+          "evidence_grade": "旁證",
+          "argument": "以文義訓詁繩之，作「已」乃通；作「巳」則於義有窒。",
+          "amend_base_text": true
+        }
+      ],
+      "decided_by": "council",
+      "human_note": ""
+    },
+    {
+      "div_id": "D0299",
+      "dtype": "形近疑誤",
+      "base_text": "巳",
+      "ref_text": "已",
+      "context": "巳純則無二無雜不【底本：巳 / 今本：已】則無閒斷先後右第",
+      "chosen": "已",
+      "amend_base_text": false,
+      "suspended": true,
+      "confidence": 0.8029,
+      "margin": 0.6059,
+      "scores": {
+        "兩存": 0.0938,
+        "已": 0.3822
+      },
+      "apparatus_note": "「巳」，今本作「已」。戴震案：以文義訓詁繩之，作「已」乃通；作「巳」則於義有窒。諸說未一，姑兩存之，俟考。",
+      "risk": "底本該處 OCR 置信度僅 0.69，須覆核書影",
+      "opinions": [
+        {
+          "persona": "liuxiang",
+          "name": "劉向",
+          "method": "對校法",
+          "choice": "兩存",
+          "confidence": 0.5,
+          "evidence_grade": "無證",
+          "argument": "「巳」「已」形近，此當覆核書影字口，非版本之爭，非吾所能斷。",
+          "amend_base_text": false
+        },
+        {
+          "persona": "xiejin",
+          "name": "解縉",
+          "method": "他校法",
+          "choice": "兩存",
+          "confidence": 0.35,
+          "evidence_grade": "無證",
+          "argument": "他書無引此句者，未得確證，不敢懸揣。",
+          "amend_base_text": false
+        },
+        {
+          "persona": "daizhen",
+          "name": "戴震",
+          "method": "本校法・理校法（音韻訓詁）",
+          "choice": "已",
+          "confidence": 0.78,
+          "evidence_grade": "旁證",
+          "argument": "以文義訓詁繩之，作「已」乃通；作「巳」則於義有窒。",
+          "amend_base_text": true
+        }
+      ],
+      "decided_by": "council",
+      "human_note": ""
+    },
+    {
+      "div_id": "D0305",
+      "dtype": "形近疑誤",
+      "base_text": "脩",
+      "ref_text": "修",
+      "context": "乎道體之細也二者【底本：脩 / 今本：修】德凝道之大端也不",
+      "chosen": "兩存",
+      "amend_base_text": false,
+      "suspended": true,
+      "confidence": 1.0,
+      "margin": 1.0,
+      "scores": {
+        "兩存": 0.2337
+      },
+      "apparatus_note": "「脩」，今本作「修」。戴震案：二字形近而皆可成文，非訓詁所能決。當覆核書影字口，不可以意定之。諸說未一，姑兩存之，俟考。",
+      "risk": "三家主兩存；底本該處 OCR 置信度僅 0.65，須覆核書影",
+      "opinions": [
+        {
+          "persona": "liuxiang",
+          "name": "劉向",
+          "method": "對校法",
+          "choice": "兩存",
+          "confidence": 0.5,
+          "evidence_grade": "無證",
+          "argument": "「脩」「修」形近，此當覆核書影字口，非版本之爭，非吾所能斷。",
+          "amend_base_text": false
+        },
+        {
+          "persona": "xiejin",
+          "name": "解縉",
+          "method": "他校法",
+          "choice": "兩存",
+          "confidence": 0.35,
+          "evidence_grade": "無證",
+          "argument": "他書無引此句者，未得確證，不敢懸揣。",
+          "amend_base_text": false
+        },
+        {
+          "persona": "daizhen",
+          "name": "戴震",
+          "method": "本校法・理校法（音韻訓詁）",
+          "choice": "兩存",
+          "confidence": 0.5,
+          "evidence_grade": "推測",
+          "argument": "二字形近而皆可成文，非訓詁所能決。當覆核書影字口，不可以意定之。",
+          "amend_base_text": false
+        }
+      ],
+      "decided_by": "council",
+      "human_note": ""
+    },
+    {
+      "div_id": "D0306",
+      "dtype": "形近疑誤",
+      "base_text": "巳",
+      "ref_text": "已",
+      "context": "欲自累涵泳乎其所【底本：巳 / 今本：已】知敦篤乎其所巳能",
+      "chosen": "已",
+      "amend_base_text": false,
+      "suspended": true,
+      "confidence": 0.8029,
+      "margin": 0.6059,
+      "scores": {
+        "兩存": 0.0938,
+        "已": 0.3822
+      },
+      "apparatus_note": "「巳」，今本作「已」。戴震案：以文義訓詁繩之，作「已」乃通；作「巳」則於義有窒。諸說未一，姑兩存之，俟考。",
+      "risk": "底本該處 OCR 置信度僅 0.65，須覆核書影",
+      "opinions": [
+        {
+          "persona": "liuxiang",
+          "name": "劉向",
+          "method": "對校法",
+          "choice": "兩存",
+          "confidence": 0.5,
+          "evidence_grade": "無證",
+          "argument": "「巳」「已」形近，此當覆核書影字口，非版本之爭，非吾所能斷。",
+          "amend_base_text": false
+        },
+        {
+          "persona": "xiejin",
+          "name": "解縉",
+          "method": "他校法",
+          "choice": "兩存",
+          "confidence": 0.35,
+          "evidence_grade": "無證",
+          "argument": "他書無引此句者，未得確證，不敢懸揣。",
+          "amend_base_text": false
+        },
+        {
+          "persona": "daizhen",
+          "name": "戴震",
+          "method": "本校法・理校法（音韻訓詁）",
+          "choice": "已",
+          "confidence": 0.78,
+          "evidence_grade": "旁證",
+          "argument": "以文義訓詁繩之，作「已」乃通；作「巳」則於義有窒。",
+          "amend_base_text": true
+        }
+      ],
+      "decided_by": "council",
+      "human_note": ""
+    },
+    {
+      "div_id": "D0307",
+      "dtype": "形近疑誤",
+      "base_text": "巳",
+      "ref_text": "已",
+      "context": "所巳知敦篤乎其所【底本：巳 / 今本：已】能此皆存心之屬也",
+      "chosen": "已",
+      "amend_base_text": false,
+      "suspended": true,
+      "confidence": 0.8029,
+      "margin": 0.6059,
+      "scores": {
+        "兩存": 0.0938,
+        "已": 0.3822
+      },
+      "apparatus_note": "「巳」，今本作「已」。戴震案：以文義訓詁繩之，作「已」乃通；作「巳」則於義有窒。諸說未一，姑兩存之，俟考。",
+      "risk": "底本該處 OCR 置信度僅 0.65，須覆核書影",
+      "opinions": [
+        {
+          "persona": "liuxiang",
+          "name": "劉向",
+          "method": "對校法",
+          "choice": "兩存",
+          "confidence": 0.5,
+          "evidence_grade": "無證",
+          "argument": "「巳」「已」形近，此當覆核書影字口，非版本之爭，非吾所能斷。",
+          "amend_base_text": false
+        },
+        {
+          "persona": "xiejin",
+          "name": "解縉",
+          "method": "他校法",
+          "choice": "兩存",
+          "confidence": 0.35,
+          "evidence_grade": "無證",
+          "argument": "他書無引此句者，未得確證，不敢懸揣。",
+          "amend_base_text": false
+        },
+        {
+          "persona": "daizhen",
+          "name": "戴震",
+          "method": "本校法・理校法（音韻訓詁）",
+          "choice": "已",
+          "confidence": 0.78,
+          "evidence_grade": "旁證",
+          "argument": "以文義訓詁繩之，作「已」乃通；作「巳」則於義有窒。",
+          "amend_base_text": true
+        }
+      ],
+      "decided_by": "council",
+      "human_note": ""
+    },
+    {
+      "div_id": "D0309",
+      "dtype": "形近疑誤",
+      "base_text": "曰",
+      "ref_text": "日",
+      "context": "過不及之謬理義則【底本：曰 / 今本：日】知其所未知節文則",
+      "chosen": "兩存",
+      "amend_base_text": false,
+      "suspended": true,
+      "confidence": 1.0,
+      "margin": 1.0,
+      "scores": {
+        "兩存": 0.2337
+      },
+      "apparatus_note": "「曰」，今本作「日」。戴震案：二字形近而皆可成文，非訓詁所能決。當覆核書影字口，不可以意定之。諸說未一，姑兩存之，俟考。",
+      "risk": "三家主兩存；底本該處 OCR 置信度僅 0.59，須覆核書影",
+      "opinions": [
+        {
+          "persona": "liuxiang",
+          "name": "劉向",
+          "method": "對校法",
+          "choice": "兩存",
+          "confidence": 0.5,
+          "evidence_grade": "無證",
+          "argument": "「曰」「日」形近，此當覆核書影字口，非版本之爭，非吾所能斷。",
+          "amend_base_text": false
+        },
+        {
+          "persona": "xiejin",
+          "name": "解縉",
+          "method": "他校法",
+          "choice": "兩存",
+          "confidence": 0.35,
+          "evidence_grade": "無證",
+          "argument": "他書無引此句者，未得確證，不敢懸揣。",
+          "amend_base_text": false
+        },
+        {
+          "persona": "daizhen",
+          "name": "戴震",
+          "method": "本校法・理校法（音韻訓詁）",
+          "choice": "兩存",
+          "confidence": 0.5,
+          "evidence_grade": "推測",
+          "argument": "二字形近而皆可成文，非訓詁所能決。當覆核書影字口，不可以意定之。",
+          "amend_base_text": false
+        }
+      ],
+      "decided_by": "council",
+      "human_note": ""
+    },
+    {
+      "div_id": "D0310",
+      "dtype": "形近疑誤",
+      "base_text": "曰",
+      "ref_text": "日",
+      "context": "知其所未知節文則【底本：曰 / 今本：日】謹其所未謹此皆致",
+      "chosen": "兩存",
+      "amend_base_text": false,
+      "suspended": true,
+      "confidence": 1.0,
+      "margin": 1.0,
+      "scores": {
+        "兩存": 0.2337
+      },
+      "apparatus_note": "「曰」，今本作「日」。戴震案：二字形近而皆可成文，非訓詁所能決。當覆核書影字口，不可以意定之。諸說未一，姑兩存之，俟考。",
+      "risk": "三家主兩存；底本該處 OCR 置信度僅 0.60，須覆核書影",
+      "opinions": [
+        {
+          "persona": "liuxiang",
+          "name": "劉向",
+          "method": "對校法",
+          "choice": "兩存",
+          "confidence": 0.5,
+          "evidence_grade": "無證",
+          "argument": "「曰」「日」形近，此當覆核書影字口，非版本之爭，非吾所能斷。",
+          "amend_base_text": false
+        },
+        {
+          "persona": "xiejin",
+          "name": "解縉",
+          "method": "他校法",
+          "choice": "兩存",
+          "confidence": 0.35,
+          "evidence_grade": "無證",
+          "argument": "他書無引此句者，未得確證，不敢懸揣。",
+          "amend_base_text": false
+        },
+        {
+          "persona": "daizhen",
+          "name": "戴震",
+          "method": "本校法・理校法（音韻訓詁）",
+          "choice": "兩存",
+          "confidence": 0.5,
+          "evidence_grade": "推測",
+          "argument": "二字形近而皆可成文，非訓詁所能決。當覆核書影字口，不可以意定之。",
+          "amend_base_text": false
+        }
+      ],
+      "decided_by": "council",
+      "human_note": ""
+    },
+    {
+      "div_id": "D0321",
+      "dtype": "形近疑誤",
+      "base_text": "巳",
+      "ref_text": "已",
+      "context": "旣不得位則從周而【底本：巳 / 今本：已】右第二十八章承上",
+      "chosen": "已",
+      "amend_base_text": false,
+      "suspended": true,
+      "confidence": 0.8029,
+      "margin": 0.6059,
+      "scores": {
+        "兩存": 0.0938,
+        "已": 0.3822
+      },
+      "apparatus_note": "「巳」，今本作「已」。戴震案：以文義訓詁繩之，作「已」乃通；作「巳」則於義有窒。諸說未一，姑兩存之，俟考。",
+      "risk": "底本該處 OCR 置信度僅 0.60，須覆核書影",
+      "opinions": [
+        {
+          "persona": "liuxiang",
+          "name": "劉向",
+          "method": "對校法",
+          "choice": "兩存",
+          "confidence": 0.5,
+          "evidence_grade": "無證",
+          "argument": "「巳」「已」形近，此當覆核書影字口，非版本之爭，非吾所能斷。",
+          "amend_base_text": false
+        },
+        {
+          "persona": "xiejin",
+          "name": "解縉",
+          "method": "他校法",
+          "choice": "兩存",
+          "confidence": 0.35,
+          "evidence_grade": "無證",
+          "argument": "他書無引此句者，未得確證，不敢懸揣。",
+          "amend_base_text": false
+        },
+        {
+          "persona": "daizhen",
+          "name": "戴震",
+          "method": "本校法・理校法（音韻訓詁）",
+          "choice": "已",
+          "confidence": 0.78,
+          "evidence_grade": "旁證",
+          "argument": "以文義訓詁繩之，作「已」乃通；作「巳」則於義有窒。",
+          "amend_base_text": true
+        }
+      ],
+      "decided_by": "council",
+      "human_note": ""
+    },
+    {
+      "div_id": "D0326",
+      "dtype": "形近疑誤",
+      "base_text": "曰",
+      "ref_text": "日",
+      "context": "辟如四時之錯行如【底本：曰 / 今本：日】月之代明辟音譬幬",
+      "chosen": "兩存",
+      "amend_base_text": false,
+      "suspended": true,
+      "confidence": 1.0,
+      "margin": 1.0,
+      "scores": {
+        "兩存": 0.2337
+      },
+      "apparatus_note": "「曰」，今本作「日」。戴震案：二字形近而皆可成文，非訓詁所能決。當覆核書影字口，不可以意定之。諸說未一，姑兩存之，俟考。",
+      "risk": "三家主兩存；底本該處 OCR 置信度僅 0.61，須覆核書影",
+      "opinions": [
+        {
+          "persona": "liuxiang",
+          "name": "劉向",
+          "method": "對校法",
+          "choice": "兩存",
+          "confidence": 0.5,
+          "evidence_grade": "無證",
+          "argument": "「曰」「日」形近，此當覆核書影字口，非版本之爭，非吾所能斷。",
+          "amend_base_text": false
+        },
+        {
+          "persona": "xiejin",
+          "name": "解縉",
+          "method": "他校法",
+          "choice": "兩存",
+          "confidence": 0.35,
+          "evidence_grade": "無證",
+          "argument": "他書無引此句者，未得確證，不敢懸揣。",
+          "amend_base_text": false
+        },
+        {
+          "persona": "daizhen",
+          "name": "戴震",
+          "method": "本校法・理校法（音韻訓詁）",
+          "choice": "兩存",
+          "confidence": 0.5,
+          "evidence_grade": "推測",
+          "argument": "二字形近而皆可成文，非訓詁所能決。當覆核書影字口，不可以意定之。",
+          "amend_base_text": false
+        }
+      ],
+      "decided_by": "council",
+      "human_note": ""
+    },
+    {
+      "div_id": "D0329",
+      "dtype": "形近疑誤",
+      "base_text": "曰",
+      "ref_text": "日",
+      "context": "其閒而不相害四時【底本：曰 / 今本：日】月錯行代明而不相",
+      "chosen": "兩存",
+      "amend_base_text": false,
+      "suspended": true,
+      "confidence": 1.0,
+      "margin": 1.0,
+      "scores": {
+        "兩存": 0.2337
+      },
+      "apparatus_note": "「曰」，今本作「日」。戴震案：二字形近而皆可成文，非訓詁所能決。當覆核書影字口，不可以意定之。諸說未一，姑兩存之，俟考。",
+      "risk": "三家主兩存；底本該處 OCR 置信度僅 0.64，須覆核書影",
+      "opinions": [
+        {
+          "persona": "liuxiang",
+          "name": "劉向",
+          "method": "對校法",
+          "choice": "兩存",
+          "confidence": 0.5,
+          "evidence_grade": "無證",
+          "argument": "「曰」「日」形近，此當覆核書影字口，非版本之爭，非吾所能斷。",
+          "amend_base_text": false
+        },
+        {
+          "persona": "xiejin",
+          "name": "解縉",
+          "method": "他校法",
+          "choice": "兩存",
+          "confidence": 0.35,
+          "evidence_grade": "無證",
+          "argument": "他書無引此句者，未得確證，不敢懸揣。",
+          "amend_base_text": false
+        },
+        {
+          "persona": "daizhen",
+          "name": "戴震",
+          "method": "本校法・理校法（音韻訓詁）",
+          "choice": "兩存",
+          "confidence": 0.5,
+          "evidence_grade": "推測",
+          "argument": "二字形近而皆可成文，非訓詁所能決。當覆核書影字口，不可以意定之。",
+          "amend_base_text": false
+        }
+      ],
+      "decided_by": "council",
+      "human_note": ""
+    },
+    {
+      "div_id": "D0337",
+      "dtype": "形近疑誤",
+      "base_text": "曰",
+      "ref_text": "日",
+      "context": "天之所覆地之所載【底本：曰 / 今本：日】月所照霜露所隊凡",
+      "chosen": "兩存",
+      "amend_base_text": false,
+      "suspended": true,
+      "confidence": 1.0,
+      "margin": 1.0,
+      "scores": {
+        "兩存": 0.2337
+      },
+      "apparatus_note": "「曰」，今本作「日」。戴震案：二字形近而皆可成文，非訓詁所能決。當覆核書影字口，不可以意定之。諸說未一，姑兩存之，俟考。",
+      "risk": "三家主兩存；底本該處 OCR 置信度僅 0.64，須覆核書影",
+      "opinions": [
+        {
+          "persona": "liuxiang",
+          "name": "劉向",
+          "method": "對校法",
+          "choice": "兩存",
+          "confidence": 0.5,
+          "evidence_grade": "無證",
+          "argument": "「曰」「日」形近，此當覆核書影字口，非版本之爭，非吾所能斷。",
+          "amend_base_text": false
+        },
+        {
+          "persona": "xiejin",
+          "name": "解縉",
+          "method": "他校法",
+          "choice": "兩存",
+          "confidence": 0.35,
+          "evidence_grade": "無證",
+          "argument": "他書無引此句者，未得確證，不敢懸揣。",
+          "amend_base_text": false
+        },
+        {
+          "persona": "daizhen",
+          "name": "戴震",
+          "method": "本校法・理校法（音韻訓詁）",
+          "choice": "兩存",
+          "confidence": 0.5,
+          "evidence_grade": "推測",
+          "argument": "二字形近而皆可成文，非訓詁所能決。當覆核書影字口，不可以意定之。",
+          "amend_base_text": false
+        }
+      ],
+      "decided_by": "council",
+      "human_note": ""
+    },
+    {
+      "div_id": "D0345",
+      "dtype": "形近疑誤",
+      "base_text": "巳",
+      "ref_text": "已",
+      "context": "焉非但聞見之知而【底本：巳 / 今本：已】此皆至誠無妄自然",
+      "chosen": "已",
+      "amend_base_text": false,
+      "suspended": true,
+      "confidence": 0.8029,
+      "margin": 0.6059,
+      "scores": {
+        "兩存": 0.0938,
+        "已": 0.3822
+      },
+      "apparatus_note": "「巳」，今本作「已」。戴震案：以文義訓詁繩之，作「已」乃通；作「巳」則於義有窒。諸說未一，姑兩存之，俟考。",
+      "risk": "底本該處 OCR 置信度僅 0.67，須覆核書影",
+      "opinions": [
+        {
+          "persona": "liuxiang",
+          "name": "劉向",
+          "method": "對校法",
+          "choice": "兩存",
+          "confidence": 0.5,
+          "evidence_grade": "無證",
+          "argument": "「巳」「已」形近，此當覆核書影字口，非版本之爭，非吾所能斷。",
+          "amend_base_text": false
+        },
+        {
+          "persona": "xiejin",
+          "name": "解縉",
+          "method": "他校法",
+          "choice": "兩存",
+          "confidence": 0.35,
+          "evidence_grade": "無證",
+          "argument": "他書無引此句者，未得確證，不敢懸揣。",
+          "amend_base_text": false
+        },
+        {
+          "persona": "daizhen",
+          "name": "戴震",
+          "method": "本校法・理校法（音韻訓詁）",
+          "choice": "已",
+          "confidence": 0.78,
+          "evidence_grade": "旁證",
+          "argument": "以文義訓詁繩之，作「已」乃通；作「巳」則於義有窒。",
+          "amend_base_text": true
+        }
+      ],
+      "decided_by": "council",
+      "human_note": ""
+    },
+    {
+      "div_id": "D0348",
+      "dtype": "形近疑誤",
+      "base_text": "巳",
+      "ref_text": "已",
+      "context": "其天則非特如之而【底本：巳 / 今本：已】苟不固聰明聖知達",
+      "chosen": "已",
+      "amend_base_text": false,
+      "suspended": true,
+      "confidence": 0.8029,
+      "margin": 0.6059,
+      "scores": {
+        "兩存": 0.0938,
+        "已": 0.3822
+      },
+      "apparatus_note": "「巳」，今本作「已」。戴震案：以文義訓詁繩之，作「已」乃通；作「巳」則於義有窒。諸說未一，姑兩存之，俟考。",
+      "risk": "底本該處 OCR 置信度僅 0.66，須覆核書影",
+      "opinions": [
+        {
+          "persona": "liuxiang",
+          "name": "劉向",
+          "method": "對校法",
+          "choice": "兩存",
+          "confidence": 0.5,
+          "evidence_grade": "無證",
+          "argument": "「巳」「已」形近，此當覆核書影字口，非版本之爭，非吾所能斷。",
+          "amend_base_text": false
+        },
+        {
+          "persona": "xiejin",
+          "name": "解縉",
+          "method": "他校法",
+          "choice": "兩存",
+          "confidence": 0.35,
+          "evidence_grade": "無證",
+          "argument": "他書無引此句者，未得確證，不敢懸揣。",
+          "amend_base_text": false
+        },
+        {
+          "persona": "daizhen",
+          "name": "戴震",
+          "method": "本校法・理校法（音韻訓詁）",
+          "choice": "已",
+          "confidence": 0.78,
+          "evidence_grade": "旁證",
+          "argument": "以文義訓詁繩之，作「已」乃通；作「巳」則於義有窒。",
+          "amend_base_text": true
+        }
+      ],
+      "decided_by": "council",
+      "human_note": ""
+    },
+    {
+      "div_id": "D0350",
+      "dtype": "形近疑誤",
+      "base_text": "曰",
+      "ref_text": "日",
+      "context": "故君子之道闇然而【底本：曰 / 今本：日】章小人之道的然而",
+      "chosen": "兩存",
+      "amend_base_text": false,
+      "suspended": true,
+      "confidence": 1.0,
+      "margin": 1.0,
+      "scores": {
+        "兩存": 0.2337
+      },
+      "apparatus_note": "「曰」，今本作「日」。戴震案：二字形近而皆可成文，非訓詁所能決。當覆核書影字口，不可以意定之。諸說未一，姑兩存之，俟考。",
+      "risk": "三家主兩存；底本該處 OCR 置信度僅 0.65，須覆核書影",
+      "opinions": [
+        {
+          "persona": "liuxiang",
+          "name": "劉向",
+          "method": "對校法",
+          "choice": "兩存",
+          "confidence": 0.5,
+          "evidence_grade": "無證",
+          "argument": "「曰」「日」形近，此當覆核書影字口，非版本之爭，非吾所能斷。",
+          "amend_base_text": false
+        },
+        {
+          "persona": "xiejin",
+          "name": "解縉",
+          "method": "他校法",
+          "choice": "兩存",
+          "confidence": 0.35,
+          "evidence_grade": "無證",
+          "argument": "他書無引此句者，未得確證，不敢懸揣。",
+          "amend_base_text": false
+        },
+        {
+          "persona": "daizhen",
+          "name": "戴震",
+          "method": "本校法・理校法（音韻訓詁）",
+          "choice": "兩存",
+          "confidence": 0.5,
+          "evidence_grade": "推測",
+          "argument": "二字形近而皆可成文，非訓詁所能決。當覆核書影字口，不可以意定之。",
+          "amend_base_text": false
+        }
+      ],
+      "decided_by": "council",
+      "human_note": ""
+    },
+    {
+      "div_id": "D0351",
+      "dtype": "形近疑誤",
+      "base_text": "曰",
+      "ref_text": "日",
+      "context": "章小人之道的然而【底本：曰 / 今本：日】亡君子之道淡而不",
+      "chosen": "兩存",
+      "amend_base_text": false,
+      "suspended": true,
+      "confidence": 1.0,
+      "margin": 1.0,
+      "scores": {
+        "兩存": 0.2337
+      },
+      "apparatus_note": "「曰」，今本作「日」。戴震案：二字形近而皆可成文，非訓詁所能決。當覆核書影字口，不可以意定之。諸說未一，姑兩存之，俟考。",
+      "risk": "三家主兩存；底本該處 OCR 置信度僅 0.64，須覆核書影",
+      "opinions": [
+        {
+          "persona": "liuxiang",
+          "name": "劉向",
+          "method": "對校法",
+          "choice": "兩存",
+          "confidence": 0.5,
+          "evidence_grade": "無證",
+          "argument": "「曰」「日」形近，此當覆核書影字口，非版本之爭，非吾所能斷。",
+          "amend_base_text": false
+        },
+        {
+          "persona": "xiejin",
+          "name": "解縉",
+          "method": "他校法",
+          "choice": "兩存",
+          "confidence": 0.35,
+          "evidence_grade": "無證",
+          "argument": "他書無引此句者，未得確證，不敢懸揣。",
+          "amend_base_text": false
+        },
+        {
+          "persona": "daizhen",
+          "name": "戴震",
+          "method": "本校法・理校法（音韻訓詁）",
+          "choice": "兩存",
+          "confidence": 0.5,
+          "evidence_grade": "推測",
+          "argument": "二字形近而皆可成文，非訓詁所能決。當覆核書影字口，不可以意定之。",
+          "amend_base_text": false
+        }
+      ],
+      "decided_by": "council",
+      "human_note": ""
+    },
+    {
+      "div_id": "D0353",
+      "dtype": "形近疑誤",
+      "base_text": "曰",
+      "ref_text": "日",
+      "context": "絅故闇然衣錦故有【底本：曰 / 今本：日】章之實淡簡溫絅之",
+      "chosen": "兩存",
+      "amend_base_text": false,
+      "suspended": true,
+      "confidence": 1.0,
+      "margin": 1.0,
+      "scores": {
+        "兩存": 0.2337
+      },
+      "apparatus_note": "「曰」，今本作「日」。戴震案：二字形近而皆可成文，非訓詁所能決。當覆核書影字口，不可以意定之。諸說未一，姑兩存之，俟考。",
+      "risk": "三家主兩存；底本該處 OCR 置信度僅 0.63，須覆核書影",
+      "opinions": [
+        {
+          "persona": "liuxiang",
+          "name": "劉向",
+          "method": "對校法",
+          "choice": "兩存",
+          "confidence": 0.5,
+          "evidence_grade": "無證",
+          "argument": "「曰」「日」形近，此當覆核書影字口，非版本之爭，非吾所能斷。",
+          "amend_base_text": false
+        },
+        {
+          "persona": "xiejin",
+          "name": "解縉",
+          "method": "他校法",
+          "choice": "兩存",
+          "confidence": 0.35,
+          "evidence_grade": "無證",
+          "argument": "他書無引此句者，未得確證，不敢懸揣。",
+          "amend_base_text": false
+        },
+        {
+          "persona": "daizhen",
+          "name": "戴震",
+          "method": "本校法・理校法（音韻訓詁）",
+          "choice": "兩存",
+          "confidence": 0.5,
+          "evidence_grade": "推測",
+          "argument": "二字形近而皆可成文，非訓詁所能決。當覆核書影字口，不可以意定之。",
+          "amend_base_text": false
+        }
+      ],
+      "decided_by": "council",
+      "human_note": ""
+    },
+    {
+      "div_id": "D0354",
+      "dtype": "形近疑誤",
+      "base_text": "曰",
+      "ref_text": "日",
+      "context": "以繼之是以的然而【底本：曰 / 今本：日】亡也逺之近見於彼",
+      "chosen": "兩存",
+      "amend_base_text": false,
+      "suspended": true,
+      "confidence": 1.0,
+      "margin": 1.0,
+      "scores": {
+        "兩存": 0.2337
+      },
+      "apparatus_note": "「曰」，今本作「日」。戴震案：二字形近而皆可成文，非訓詁所能決。當覆核書影字口，不可以意定之。諸說未一，姑兩存之，俟考。",
+      "risk": "三家主兩存；底本該處 OCR 置信度僅 0.60，須覆核書影",
+      "opinions": [
+        {
+          "persona": "liuxiang",
+          "name": "劉向",
+          "method": "對校法",
+          "choice": "兩存",
+          "confidence": 0.5,
+          "evidence_grade": "無證",
+          "argument": "「曰」「日」形近，此當覆核書影字口，非版本之爭，非吾所能斷。",
+          "amend_base_text": false
+        },
+        {
+          "persona": "xiejin",
+          "name": "解縉",
+          "method": "他校法",
+          "choice": "兩存",
+          "confidence": 0.35,
+          "evidence_grade": "無證",
+          "argument": "他書無引此句者，未得確證，不敢懸揣。",
+          "amend_base_text": false
+        },
+        {
+          "persona": "daizhen",
+          "name": "戴震",
+          "method": "本校法・理校法（音韻訓詁）",
+          "choice": "兩存",
+          "confidence": 0.5,
+          "evidence_grade": "推測",
+          "argument": "二字形近而皆可成文，非訓詁所能決。當覆核書影字口，不可以意定之。",
+          "amend_base_text": false
+        }
+      ],
+      "decided_by": "council",
+      "human_note": ""
+    },
+    {
+      "div_id": "D0359",
+      "dtype": "形近疑誤",
+      "base_text": "巳",
+      "ref_text": "已",
+      "context": "務今但言不大之而【底本：巳 / 今本：已】則猶有聲色者存是",
+      "chosen": "已",
+      "amend_base_text": false,
+      "suspended": true,
+      "confidence": 0.8029,
+      "margin": 0.6059,
+      "scores": {
+        "兩存": 0.0938,
+        "已": 0.3822
+      },
+      "apparatus_note": "「巳」，今本作「已」。戴震案：以文義訓詁繩之，作「已」乃通；作「巳」則於義有窒。諸說未一，姑兩存之，俟考。",
+      "risk": "底本該處 OCR 置信度僅 0.70，須覆核書影",
+      "opinions": [
+        {
+          "persona": "liuxiang",
+          "name": "劉向",
+          "method": "對校法",
+          "choice": "兩存",
+          "confidence": 0.5,
+          "evidence_grade": "無證",
+          "argument": "「巳」「已」形近，此當覆核書影字口，非版本之爭，非吾所能斷。",
+          "amend_base_text": false
+        },
+        {
+          "persona": "xiejin",
+          "name": "解縉",
+          "method": "他校法",
+          "choice": "兩存",
+          "confidence": 0.35,
+          "evidence_grade": "無證",
+          "argument": "他書無引此句者，未得確證，不敢懸揣。",
+          "amend_base_text": false
+        },
+        {
+          "persona": "daizhen",
+          "name": "戴震",
+          "method": "本校法・理校法（音韻訓詁）",
+          "choice": "已",
+          "confidence": 0.78,
+          "evidence_grade": "旁證",
+          "argument": "以文義訓詁繩之，作「已」乃通；作「巳」則於義有窒。",
+          "amend_base_text": true
+        }
+      ],
+      "decided_by": "council",
+      "human_note": ""
+    },
+    {
+      "div_id": "D0361",
+      "dtype": "形近疑誤",
+      "base_text": "巳",
+      "ref_text": "已",
+      "context": "至於無聲無臭而後【底本：巳 / 今本：已】焉蓋舉一篇之要而",
+      "chosen": "已",
+      "amend_base_text": false,
+      "suspended": true,
+      "confidence": 0.8029,
+      "margin": 0.6059,
+      "scores": {
+        "兩存": 0.0938,
+        "已": 0.3822
+      },
+      "apparatus_note": "「巳」，今本作「已」。戴震案：以文義訓詁繩之，作「已」乃通；作「巳」則於義有窒。諸說未一，姑兩存之，俟考。",
+      "risk": "底本該處 OCR 置信度僅 0.65，須覆核書影",
+      "opinions": [
+        {
+          "persona": "liuxiang",
+          "name": "劉向",
+          "method": "對校法",
+          "choice": "兩存",
+          "confidence": 0.5,
+          "evidence_grade": "無證",
+          "argument": "「巳」「已」形近，此當覆核書影字口，非版本之爭，非吾所能斷。",
+          "amend_base_text": false
+        },
+        {
+          "persona": "xiejin",
+          "name": "解縉",
+          "method": "他校法",
+          "choice": "兩存",
+          "confidence": 0.35,
+          "evidence_grade": "無證",
+          "argument": "他書無引此句者，未得確證，不敢懸揣。",
+          "amend_base_text": false
+        },
+        {
+          "persona": "daizhen",
+          "name": "戴震",
+          "method": "本校法・理校法（音韻訓詁）",
+          "choice": "已",
+          "confidence": 0.78,
+          "evidence_grade": "旁證",
+          "argument": "以文義訓詁繩之，作「已」乃通；作「巳」則於義有窒。",
+          "amend_base_text": true
+        }
+      ],
+      "decided_by": "council",
+      "human_note": ""
+    },
+    {
+      "div_id": "D0364",
+      "dtype": "實質異文",
+      "base_text": "斁斁詩音亦集傳叶丁故反卷一",
+      "ref_text": "載",
+      "context": "章注文射音妬詩作【底本：斁斁詩音亦集傳叶丁故反卷一 / 今本：載】",
+      "chosen": "斁斁詩音亦集傳叶丁故反卷一",
+      "amend_base_text": false,
+      "suspended": true,
+      "confidence": 0.6824,
+      "margin": 0.3648,
+      "scores": {
+        "斁斁詩音亦集傳叶丁故反卷一": 0.4448,
+        "兩存": 0.207
+      },
+      "apparatus_note": "「斁斁詩音亦集傳叶丁故反卷一」，今本作「載」。劉向案：底本作「斁斁詩音亦集傳叶丁故反卷一」。不改一字，存異而已。諸說未一，姑兩存之，俟考。",
+      "risk": "底本該處 OCR 置信度僅 0.61，須覆核書影",
+      "opinions": [
+        {
+          "persona": "liuxiang",
+          "name": "劉向",
+          "method": "對校法",
+          "choice": "斁斁詩音亦集傳叶丁故反卷一",
+          "confidence": 0.65,
+          "evidence_grade": "旁證",
+          "argument": "底本作「斁斁詩音亦集傳叶丁故反卷一」。不改一字，存異而已。",
+          "amend_base_text": false
+        },
+        {
+          "persona": "xiejin",
+          "name": "解縉",
+          "method": "他校法",
+          "choice": "兩存",
+          "confidence": 0.3,
+          "evidence_grade": "無證",
+          "argument": "遍檢類書注疏，未見徵引此句者。未得確證，闕疑可也。",
+          "amend_base_text": false
+        },
+        {
+          "persona": "daizhen",
+          "name": "戴震",
+          "method": "本校法・理校法（音韻訓詁）",
+          "choice": "兩存",
+          "confidence": 0.45,
+          "evidence_grade": "推測",
+          "argument": "無左證而以意改者，雖通不可從。當存異待考。",
+          "amend_base_text": false
+        }
+      ],
+      "decided_by": "council",
+      "human_note": ""
+    }
+  ]
+}

@@ -1,0 +1,6 @@
+# 核心流水线零依赖，仅需 Python 3.10+
+# 以下为接入生产组件时按需安装：
+# paddleocr>=2.7          # 古籍 OCR（需配竖排检测与繁体字典）
+# opencc-python-reimplemented>=0.1.7   # 词组级简繁转换，替换内置字表
+# pillow>=10              # 视觉复核的原图裁切
+# pytest>=8               # 测试

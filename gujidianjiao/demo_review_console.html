@@ -1,0 +1,153 @@
+<!doctype html><html lang="zh-Hant"><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>論語‧學而 · 人工精校台</title>
+<style>
+:root{--ink:#17150f;--paper:#efe9dc;--card:#fdfbf5;--rule:#cdc2a8;
+ --red:#9c3b2e;--blue:#274b63;--green:#3f6b4a;--mut:#6f6555}
+*{box-sizing:border-box}
+body{margin:0;background:var(--paper);color:var(--ink);
+ font-family:"Noto Sans CJK SC",system-ui,sans-serif}
+header{position:sticky;top:0;z-index:9;background:var(--paper);
+ border-bottom:1px solid var(--rule);padding:14px 20px;display:flex;
+ gap:16px;align-items:center;flex-wrap:wrap}
+h1{font-size:15px;margin:0;letter-spacing:.24em;font-weight:700}
+.tabs{display:flex;gap:4px}
+.tab{border:1px solid var(--rule);background:transparent;padding:5px 12px;
+ font-size:12px;cursor:pointer;border-radius:2px;color:var(--mut)}
+.tab.on{background:var(--ink);color:var(--paper);border-color:var(--ink)}
+.spacer{flex:1}
+.stat{font-size:12px;color:var(--mut);letter-spacing:.05em}
+button.act{border:1px solid var(--ink);background:var(--ink);color:var(--paper);
+ padding:6px 14px;font-size:12px;cursor:pointer;border-radius:2px}
+main{max-width:920px;margin:0 auto;padding:24px 20px 120px}
+.case{background:var(--card);border:1px solid var(--rule);border-left:4px solid var(--red);
+ padding:18px 20px;margin-bottom:14px;border-radius:3px}
+.case.done{border-left-color:var(--green);opacity:.62}
+.case.cur{outline:2px solid var(--blue);outline-offset:2px}
+.meta{display:flex;gap:10px;font-size:11px;color:var(--mut);letter-spacing:.08em;
+ margin-bottom:10px;flex-wrap:wrap}
+.badge{border:1px solid var(--rule);padding:1px 7px;border-radius:99px}
+.ctx{font-family:"Noto Serif CJK SC",serif;font-size:19px;line-height:2.1;margin:6px 0 14px}
+.ctx b{color:var(--red);font-weight:700}
+.ops{border-top:1px dashed var(--rule);margin-top:10px;padding-top:10px}
+.op{font-size:13px;line-height:1.85;margin-bottom:5px;
+ font-family:"Noto Serif CJK SC",serif}
+.op .who{display:inline-block;min-width:74px;font-weight:700;color:var(--blue)}
+.op .g{font-size:11px;color:var(--mut);border:1px solid var(--rule);
+ padding:0 5px;border-radius:99px;margin:0 6px}
+.choices{display:flex;gap:8px;margin-top:14px;flex-wrap:wrap}
+.ch{border:1px solid var(--rule);background:#fff;padding:8px 14px;cursor:pointer;
+ font-size:14px;border-radius:2px;font-family:"Noto Serif CJK SC",serif}
+.ch:hover{border-color:var(--ink)}
+.ch.sel{background:var(--blue);color:#fff;border-color:var(--blue)}
+.ch kbd{font-size:10px;opacity:.6;margin-right:6px}
+textarea{width:100%;margin-top:10px;border:1px solid var(--rule);padding:8px;
+ font-size:13px;border-radius:2px;background:#fff;resize:vertical;min-height:44px;
+ font-family:"Noto Serif CJK SC",serif}
+.risk{font-size:12px;color:var(--red);margin-top:8px}
+.hint{font-size:11px;color:var(--mut);margin-top:20px;line-height:1.9}
+.empty{text-align:center;color:var(--mut);padding:60px 0;font-size:14px}
+</style>
+<header>
+ <h1>人 工 精 校 台</h1>
+ <div class="tabs">
+  <button class="tab on" data-f="pending">待覆核 <span id="n1"></span></button>
+  <button class="tab" data-f="done">已決 <span id="n2"></span></button>
+  <button class="tab" data-f="all">全部 <span id="n3"></span></button>
+ </div>
+ <div class="spacer"></div>
+ <div class="stat" id="prog"></div>
+ <button class="act" id="exp">導出 decisions.json</button>
+</header>
+<main id="list"></main>
+<script>
+const DATA = {"work": "論語‧學而", "run_id": "20260814T082659", "cases": [{"id": "D0002", "type": "脫文缺字", "left": "不亦說乎有朋自逺", "right": "來不亦樂樂乎人不", "base": "□", "ref": "方", "choices": ["□", "方"], "chosen": "方", "confidence": 1.0, "ocr_conf": 0.3214, "suspended": true, "risk": "底本該處 OCR 置信度僅 0.32，須覆核書影", "note": "底本無「方」字，今本有之。解縉案：《藝文類聚》卷二十一引《論語》引此文作「方」，唐初類書所引正作「有朋自遠方來」，可據補。諸說未一，姑兩存之，俟考。", "opinions": [{"name": "劉向", "method": "對校法", "choice": "方", "grade": "旁證", "confidence": 0.6, "argument": "底本此處版面漫漶，非本無其字。當據書影覆核，覈實乃可補。"}, {"name": "解縉", "method": "他校法", "choice": "方", "grade": "確證", "confidence": 0.85, "argument": "《藝文類聚》卷二十一引《論語》引此文作「方」，唐初類書所引正作「有朋自遠方來」，可據補。"}, {"name": "戴震", "method": "本校法・理校法（音韻訓詁）", "choice": "方", "grade": "旁證", "confidence": 0.72, "argument": "此句文例當有「方」字，無之則句法不完。以本書他處例之，可補。"}]}, {"id": "D0006", "type": "形近疑誤", "left": "與朋友交而不信乎", "right": "不習乎子曰道千乘", "base": "傅", "ref": "传", "choices": ["傅", "傳"], "chosen": "兩存", "confidence": 1.0, "ocr_conf": 0.6704, "suspended": true, "risk": "三家主兩存；底本該處 OCR 置信度僅 0.67，須覆核書影", "note": "「傅」，今本作「传」。戴震案：二字形近而皆可成文，非訓詁所能決。當覆核書影字口，不可以意定之。諸說未一，姑兩存之，俟考。", "opinions": [{"name": "劉向", "method": "對校法", "choice": "兩存", "grade": "無證", "confidence": 0.5, "argument": "「傅」「传」形近，此當覆核書影字口，非版本之爭，非吾所能斷。"}, {"name": "解縉", "method": "他校法", "choice": "兩存", "grade": "無證", "confidence": 0.35, "argument": "他書無引此句者，未得確證，不敢懸揣。"}, {"name": "戴震", "method": "本校法・理校法（音韻訓詁）", "choice": "兩存", "grade": "推測", "confidence": 0.5, "argument": "二字形近而皆可成文，非訓詁所能決。當覆核書影字口，不可以意定之。"}]}, {"id": "D0011", "type": "倒文", "left": "親仁行有餘力則以", "right": "", "base": "文學", "ref": "学文", "choices": ["文學", "學文"], "chosen": "學文", "confidence": 0.5996, "ocr_conf": 0.9626, "suspended": false, "risk": "改動底本正文", "note": "底本作「文學」，今本作「学文」，次第互異。解縉案：《後漢書》李賢注引《論語》引此文作「學文」，唐李賢注引作「則以學文」，與今本合。今據改作「學文」。", "opinions": [{"name": "劉向", "method": "對校法", "choice": "文學", "grade": "旁證", "confidence": 0.55, "argument": "二本次第互異。無他本可證之前，姑仍底本之舊，出校記可也。"}, {"name": "解縉", "method": "他校法", "choice": "學文", "grade": "確證", "confidence": 0.88, "argument": "《後漢書》李賢注引《論語》引此文作「學文」，唐李賢注引作「則以學文」，與今本合。"}, {"name": "戴震", "method": "本校法・理校法（音韻訓詁）", "choice": "学文", "grade": "推測", "confidence": 0.6, "argument": "以文義先後推之，今本次第較順。然無左證而以意乙正，不可從，姑志之。"}]}, {"id": "D0010", "type": "實質異文", "left": "弟子入則孝出則弟", "right": "而信汎愛衆而親仁", "base": "謹", "ref": "敬", "choices": ["謹", "敬"], "chosen": "謹", "confidence": 0.6824, "ocr_conf": 0.9728, "suspended": false, "risk": "僅出校記，不改正文", "note": "「謹」，今本作「敬」。劉向案：底本作「謹」。不改一字，存異而已。今仍底本之舊，不改。", "opinions": [{"name": "劉向", "method": "對校法", "choice": "謹", "grade": "旁證", "confidence": 0.65, "argument": "底本作「謹」。不改一字，存異而已。"}, {"name": "解縉", "method": "他校法", "choice": "兩存", "grade": "無證", "confidence": 0.3, "argument": "遍檢類書注疏，未見徵引此句者。未得確證，闕疑可也。"}, {"name": "戴震", "method": "本校法・理校法（音韻訓詁）", "choice": "兩存", "grade": "推測", "confidence": 0.45, "argument": "無左證而以意改者，雖通不可從。當存異待考。"}]}, {"id": "D0008", "type": "避諱改字", "left": "而信節用而愛人使", "right": "以時子曰弟子入則", "base": "人", "ref": "民", "choices": ["人", "民"], "chosen": "人", "confidence": 0.788, "ocr_conf": 0.9775, "suspended": false, "risk": "僅出校記，不改正文", "note": "「人」，今本作「民」，避諱改字。劉向案：底本作「人」，今本作「民」，此避諱改字之跡，正可據以定版本時代，當存底本之舊，不可回改。今仍底本之舊，不改。", "opinions": [{"name": "劉向", "method": "對校法", "choice": "人", "grade": "確證", "confidence": 0.92, "argument": "底本作「人」，今本作「民」，此避諱改字之跡，正可據以定版本時代，當存底本之舊，不可回改。"}, {"name": "解縉", "method": "他校法", "choice": "民", "grade": "旁證", "confidence": 0.78, "argument": "《經典釋文·論語音義》引此文作「民」，陸氏所據本作「民」，唐寫本避諱多改「人」。"}, {"name": "戴震", "method": "本校法・理校法（音韻訓詁）", "choice": "人", "grade": "旁證", "confidence": 0.75, "argument": "避諱改字，於訓詁無涉，然改字則害文義，仍當復其本字之舊。"}]}, {"id": "D0003", "type": "衍文重出", "left": "有朋自逺□來不亦", "right": "樂乎人不知而不慍", "base": "樂", "ref": "", "choices": ["樂", ""], "chosen": "", "confidence": 0.97, "ocr_conf": 0.9691, "suspended": false, "risk": "改動底本正文", "note": "底本「樂」重出，今本不重。劉向案：底本「樂」重出。刻本每以重文號「々」示疊字，傳錄者誤展，遂成衍文，當刪。今據刪。", "opinions": [{"name": "劉向", "method": "對校法", "choice": "", "grade": "確證", "confidence": 0.82, "argument": "底本「樂」重出。刻本每以重文號「々」示疊字，傳錄者誤展，遂成衍文，當刪。"}, {"name": "解縉", "method": "他校法", "choice": "兩存", "grade": "無證", "confidence": 0.3, "argument": "遍檢類書注疏，未見徵引此句者。未得確證，闕疑可也。"}, {"name": "戴震", "method": "本校法・理校法（音韻訓詁）", "choice": "", "grade": "旁證", "confidence": 0.7, "argument": "重出之字於文義無所繫屬，衍無疑也。"}]}, {"id": "D0001", "type": "通假古今字", "left": "曰學而時習之不亦", "right": "乎有朋自逺□來不", "base": "說", "ref": "悦", "choices": ["說", "悅"], "chosen": "說", "confidence": 0.9799, "ocr_conf": 0.9591, "suspended": false, "risk": "僅出校記，不改正文", "note": "「說」，今本作「悦」，二字通。戴震案：「說」為「悅」之古字，經傳通用，不煩改字。古書用借字者多，用本字者少。當存「說」而於校記著其讀，不當回改。今仍底本之舊，不改。", "opinions": [{"name": "劉向", "method": "對校法", "choice": "說", "grade": "確證", "confidence": 0.8, "argument": "底本作「說」，古本多如此；今本作「悦」，乃後人以今字易古字，非舊觀也。"}, {"name": "解縉", "method": "他校法", "choice": "兩存", "grade": "無證", "confidence": 0.3, "argument": "遍檢類書注疏，未見徵引此句者。未得確證，闕疑可也。"}, {"name": "戴震", "method": "本校法・理校法（音韻訓詁）", "choice": "說", "grade": "確證", "confidence": 0.95, "argument": "「說」為「悅」之古字，經傳通用，不煩改字。古書用借字者多，用本字者少。當存「說」而於校記著其讀，不當回改。"}]}, {"id": "D0004", "type": "通假古今字", "left": "有子曰其爲人也孝", "right": "而好犯上者鮮矣不", "base": "弟", "ref": "悌", "choices": ["弟", "悌"], "chosen": "弟", "confidence": 0.9799, "ocr_conf": 0.9779, "suspended": false, "risk": "僅出校記，不改正文", "note": "「弟」，今本作「悌」，二字通。戴震案：「弟」為「悌」之本字，先秦典籍多作「弟」。古書用借字者多，用本字者少。當存「弟」而於校記著其讀，不當回改。今仍底本之舊，不改。", "opinions": [{"name": "劉向", "method": "對校法", "choice": "弟", "grade": "確證", "confidence": 0.8, "argument": "底本作「弟」，古本多如此；今本作「悌」，乃後人以今字易古字，非舊觀也。"}, {"name": "解縉", "method": "他校法", "choice": "兩存", "grade": "無證", "confidence": 0.3, "argument": "遍檢類書注疏，未見徵引此句者。未得確證，闕疑可也。"}, {"name": "戴震", "method": "本校法・理校法（音韻訓詁）", "choice": "弟", "grade": "確證", "confidence": 0.95, "argument": "「弟」為「悌」之本字，先秦典籍多作「弟」。古書用借字者多，用本字者少。當存「弟」而於校記著其讀，不當回改。"}]}, {"id": "D0005", "type": "通假古今字", "left": "務本本立而道生孝", "right": "也者其爲仁之本與", "base": "弟", "ref": "悌", "choices": ["弟", "悌"], "chosen": "弟", "confidence": 0.9799, "ocr_conf": 0.9738, "suspended": false, "risk": "僅出校記，不改正文", "note": "「弟」，今本作「悌」，二字通。戴震案：「弟」為「悌」之本字，先秦典籍多作「弟」。古書用借字者多，用本字者少。當存「弟」而於校記著其讀，不當回改。今仍底本之舊，不改。", "opinions": [{"name": "劉向", "method": "對校法", "choice": "弟", "grade": "確證", "confidence": 0.8, "argument": "底本作「弟」，古本多如此；今本作「悌」，乃後人以今字易古字，非舊觀也。"}, {"name": "解縉", "method": "他校法", "choice": "兩存", "grade": "無證", "confidence": 0.3, "argument": "遍檢類書注疏，未見徵引此句者。未得確證，闕疑可也。"}, {"name": "戴震", "method": "本校法・理校法（音韻訓詁）", "choice": "弟", "grade": "確證", "confidence": 0.95, "argument": "「弟」為「悌」之本字，先秦典籍多作「弟」。古書用借字者多，用本字者少。當存「弟」而於校記著其讀，不當回改。"}]}, {"id": "D0007", "type": "通假古今字", "left": "信乎傅不習乎子曰", "right": "千乘之國敬事而信", "base": "道", "ref": "导", "choices": ["道", "導"], "chosen": "道", "confidence": 0.9799, "ocr_conf": 0.9575, "suspended": false, "risk": "僅出校記，不改正文", "note": "「道」，今本作「导」，二字通。戴震案：「道」訓「治」，亦通「導」，說見《集解》引包咸。古書用借字者多，用本字者少。當存「道」而於校記著其讀，不當回改。今仍底本之舊，不改。", "opinions": [{"name": "劉向", "method": "對校法", "choice": "道", "grade": "確證", "confidence": 0.8, "argument": "底本作「道」，古本多如此；今本作「导」，乃後人以今字易古字，非舊觀也。"}, {"name": "解縉", "method": "他校法", "choice": "兩存", "grade": "無證", "confidence": 0.3, "argument": "遍檢類書注疏，未見徵引此句者。未得確證，闕疑可也。"}, {"name": "戴震", "method": "本校法・理校法（音韻訓詁）", "choice": "道", "grade": "確證", "confidence": 0.95, "argument": "「道」訓「治」，亦通「導」，說見《集解》引包咸。古書用借字者多，用本字者少。當存「道」而於校記著其讀，不當回改。"}]}, {"id": "D0009", "type": "通假古今字", "left": "曰弟子入則孝出則", "right": "謹而信汎愛衆而親", "base": "弟", "ref": "悌", "choices": ["弟", "悌"], "chosen": "弟", "confidence": 0.9799, "ocr_conf": 0.9703, "suspended": false, "risk": "僅出校記，不改正文", "note": "「弟」，今本作「悌」，二字通。戴震案：「弟」為「悌」之本字，先秦典籍多作「弟」。古書用借字者多，用本字者少。當存「弟」而於校記著其讀，不當回改。今仍底本之舊，不改。", "opinions": [{"name": "劉向", "method": "對校法", "choice": "弟", "grade": "確證", "confidence": 0.8, "argument": "底本作「弟」，古本多如此；今本作「悌」，乃後人以今字易古字，非舊觀也。"}, {"name": "解縉", "method": "他校法", "choice": "兩存", "grade": "無證", "confidence": 0.3, "argument": "遍檢類書注疏，未見徵引此句者。未得確證，闕疑可也。"}, {"name": "戴震", "method": "本校法・理校法（音韻訓詁）", "choice": "弟", "grade": "確證", "confidence": 0.95, "argument": "「弟」為「悌」之本字，先秦典籍多作「弟」。古書用借字者多，用本字者少。當存「弟」而於校記著其讀，不當回改。"}]}]};
+const KEY = 'guji:' + DATA.work + ':' + DATA.run_id;
+let dec = JSON.parse(localStorage.getItem(KEY) || '{}');
+let filter = 'pending', cur = 0;
+
+const save = () => localStorage.setItem(KEY, JSON.stringify(dec));
+const esc = s => (s ?? '').replace(/[&<>]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;'}[c]));
+
+function visible(){
+  return DATA.cases.filter(c => filter === 'all' ? true
+    : filter === 'done' ? (dec[c.id] || !c.suspended)
+    : (c.suspended && !dec[c.id]));
+}
+
+function render(){
+  const list = document.getElementById('list');
+  const items = visible();
+  document.getElementById('n1').textContent = DATA.cases.filter(c=>c.suspended&&!dec[c.id]).length;
+  document.getElementById('n2').textContent = DATA.cases.filter(c=>dec[c.id]||!c.suspended).length;
+  document.getElementById('n3').textContent = DATA.cases.length;
+  const solved = Object.keys(dec).length;
+  const need = DATA.cases.filter(c=>c.suspended).length;
+  document.getElementById('prog').textContent =
+    `懸置 ${need} 條，已處理 ${solved} 條`;
+
+  if(!items.length){ list.innerHTML = '<div class="empty">此頁無條目。懸置條目已全部處理。</div>'; return; }
+  list.innerHTML = items.map((c,i) => {
+    const d = dec[c.id];
+    const chs = c.choices.map((x,k) =>
+      `<button class="ch ${d&&d.choice===x?'sel':''}" data-id="${c.id}" data-v="${esc(x)}">
+        <kbd>${k+1}</kbd>${esc(x)||'〇（刪）'}</button>`).join('');
+    const ops = c.opinions.map(o =>
+      `<div class="op"><span class="who">${esc(o.name)}</span>
+       <span class="g">${esc(o.method)}·${esc(o.grade)}·${o.confidence.toFixed(2)}</span>
+       主「${esc(o.choice)}」：${esc(o.argument)}</div>`).join('');
+    return `<div class="case ${d?'done':''} ${i===cur?'cur':''}" data-id="${c.id}">
+      <div class="meta"><span class="badge">${esc(c.id)}</span>
+        <span class="badge">${esc(c.type)}</span>
+        <span class="badge">合議一致度 ${c.confidence.toFixed(2)}</span>
+        <span class="badge">OCR ${c.ocr_conf.toFixed(2)}</span>
+        ${c.suspended?'<span class="badge" style="color:#9c3b2e">懸置</span>':''}</div>
+      <div class="ctx">…${esc(c.left)}<b>〔${esc(c.base)||'〇'}〕</b>${esc(c.right)}…
+        <br><span style="font-size:14px;color:#6f6555">今本此處作：〔${esc(c.ref)||'〇'}〕</span></div>
+      <div class="ops">${ops}</div>
+      <div class="risk">機器裁斷：${esc(c.chosen)}　｜　${esc(c.risk)}</div>
+      <div class="choices">${chs}
+        <button class="ch ${d&&d.choice==='兩存'?'sel':''}" data-id="${c.id}" data-v="兩存"><kbd>3</kbd>兩存</button>
+      </div>
+      <textarea placeholder="人工按語（將寫入校勘記）" data-note="${c.id}">${esc(d?d.note:'')}</textarea>
+    </div>`;
+  }).join('') + `<div class="hint">鍵盤：J／K 移動　1‑9 選讀法　3 兩存　E 導出<br>
+   決策存於本機 localStorage，導出 decisions.json 後回灌流水線即可重出定本。</div>`;
+}
+
+document.addEventListener('click', e => {
+  const t = e.target.closest('.ch');
+  if(t){ const id = t.dataset.id;
+    dec[id] = {choice: t.dataset.v, note: (dec[id]||{}).note || '', at: new Date().toISOString()};
+    save(); render(); return; }
+  const tab = e.target.closest('.tab');
+  if(tab){ filter = tab.dataset.f; cur = 0;
+    document.querySelectorAll('.tab').forEach(x=>x.classList.toggle('on', x===tab));
+    render(); }
+});
+document.addEventListener('input', e => {
+  const id = e.target.dataset.note;
+  if(id){ dec[id] = Object.assign({choice:'', note:''}, dec[id], {note:e.target.value}); save(); }
+});
+document.getElementById('exp').onclick = () => {
+  const out = {work: DATA.work, run_id: DATA.run_id,
+    exported_at: new Date().toISOString(), decisions: dec};
+  const a = document.createElement('a');
+  a.href = URL.createObjectURL(new Blob([JSON.stringify(out,null,2)],{type:'application/json'}));
+  a.download = 'decisions.json'; a.click();
+};
+document.addEventListener('keydown', e => {
+  if(e.target.tagName === 'TEXTAREA') return;
+  const items = visible();
+  if(e.key === 'j'){ cur = Math.min(cur+1, items.length-1); render(); }
+  if(e.key === 'k'){ cur = Math.max(cur-1, 0); render(); }
+  if(e.key === 'e'){ document.getElementById('exp').click(); }
+  if(/^[1-9]$/.test(e.key) && items[cur]){
+    const c = items[cur]; const opts = c.choices.concat(['兩存']);
+    const v = opts[+e.key-1]; if(v===undefined) return;
+    dec[c.id] = {choice:v, note:(dec[c.id]||{}).note||'', at:new Date().toISOString()};
+    save(); render();
+  }
+});
+render();
+</script></html>

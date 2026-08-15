@@ -1,0 +1,613 @@
+<!doctype html>
+<html lang="zh-Hans">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>AI 古籍校勘系统 · 方案与实现</title>
+<style>
+:root{
+  --ink:#16130F;        /* 墨 */
+  --paper:#DDD8CA;      /* 纸（灰米，非奶油） */
+  --card:#F2EEE3;       /* 版心 */
+  --zhu:#A32B21;        /* 朱砂——取自宋元朱墨套印本 */
+  --dian:#2A4159;       /* 靛——用于机器层与数据 */
+  --rule:#B0A68C;
+  --mut:#6A6252;
+}
+*{box-sizing:border-box}
+html{-webkit-print-color-adjust:exact;print-color-adjust:exact}
+body{margin:0;background:var(--paper);color:var(--ink);
+  font-family:"Noto Serif CJK SC","Source Han Serif SC",serif;
+  font-size:14.5px;line-height:1.95;}
+.sheet{max-width:940px;margin:0 auto;background:var(--card);
+  padding:0 0 80px;position:relative;
+  box-shadow:0 0 0 1px var(--rule);}
+/* 界栏：刻本版框的内侧双线 */
+.sheet::before{content:"";position:absolute;left:44px;top:0;bottom:0;width:0;
+  border-left:1px solid var(--rule);border-right:1px solid var(--rule);
+  margin-left:3px;opacity:.55}
+.inner{padding:0 56px 0 92px}
+
+/* ── 封面 ── */
+.cover{padding:88px 56px 56px 92px;border-bottom:2px solid var(--ink)}
+.eyebrow{font-family:ui-monospace,"DejaVu Sans Mono",monospace;font-size:11px;
+  letter-spacing:.34em;color:var(--zhu);margin-bottom:26px;text-transform:uppercase}
+h1{font-size:44px;line-height:1.25;margin:0 0 18px;letter-spacing:.06em;font-weight:700}
+h1 small{display:block;font-size:17px;font-weight:400;letter-spacing:.22em;
+  color:var(--mut);margin-top:14px}
+.lede{font-size:16px;max-width:62ch;color:#3A342A;margin:26px 0 0}
+.meta-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:0;margin-top:40px;
+  border-top:1px solid var(--rule)}
+.meta-grid div{padding:14px 16px 12px 0;border-right:1px solid var(--rule)}
+.meta-grid div:last-child{border-right:none}
+.meta-grid dt{font-size:10.5px;letter-spacing:.2em;color:var(--mut);
+  font-family:ui-monospace,monospace;margin-bottom:5px}
+.meta-grid dd{margin:0;font-size:14px;font-weight:600}
+
+/* ── 牌记式章号（刻本牌记） ── */
+h2{margin:56px 0 20px;font-size:22px;letter-spacing:.1em;position:relative;
+  padding-top:16px;border-top:1px solid var(--rule)}
+h2 .pai{position:absolute;left:-52px;top:12px;width:34px;min-height:52px;
+  background:var(--zhu);color:var(--card);display:flex;align-items:center;
+  justify-content:center;font-size:13px;letter-spacing:.04em;font-weight:600;
+  writing-mode:vertical-rl;text-orientation:upright;padding:6px 0;line-height:1.25}
+h3{font-size:16px;margin:30px 0 10px;letter-spacing:.05em;
+  padding-left:12px;border-left:3px solid var(--dian)}
+h4{font-size:14px;margin:20px 0 6px;color:var(--dian);letter-spacing:.04em}
+p{margin:0 0 12px}
+ul,ol{margin:0 0 14px;padding-left:22px}
+li{margin-bottom:5px}
+strong{font-weight:700}
+em{font-style:normal;color:var(--zhu);font-weight:600}
+code{font-family:ui-monospace,"DejaVu Sans Mono",monospace;font-size:12.5px;
+  background:#E5DFD0;padding:1px 5px;border-radius:2px}
+
+/* ── 表 ── */
+table{width:100%;border-collapse:collapse;margin:14px 0 20px;font-size:13px}
+th{text-align:left;font-size:11px;letter-spacing:.14em;color:var(--mut);
+  font-weight:600;border-bottom:1.5px solid var(--ink);padding:7px 10px 6px 0;
+  font-family:ui-monospace,monospace}
+td{padding:8px 10px 8px 0;border-bottom:1px solid var(--rule);vertical-align:top}
+td.k{font-weight:600;white-space:nowrap}
+tr.hi td{background:#EDE4D5}
+
+/* ── 公式 ── */
+.eq{margin:14px 0 18px;padding:14px 18px;background:#E7E1D2;
+  border-left:3px solid var(--dian);font-size:15px;text-align:center;
+  font-family:"Latin Modern Math","Cambria Math",Georgia,serif}
+.eq .where{display:block;text-align:left;font-size:12px;color:var(--mut);
+  margin-top:10px;font-family:inherit;line-height:1.8}
+var{font-style:italic;font-family:Georgia,serif}
+sub,sup{font-size:.7em}
+
+/* ── 流程图 ── */
+.flow{margin:22px 0 26px;border:1px solid var(--rule);background:#EAE4D5}
+.flow .row{display:grid;grid-template-columns:78px 1fr;border-bottom:1px solid var(--rule)}
+.flow .row:last-child{border-bottom:none}
+.flow .st{background:var(--ink);color:var(--card);display:grid;place-items:center;
+  font-family:ui-monospace,monospace;font-size:12px;letter-spacing:.08em}
+.flow .row.human .st{background:var(--zhu)}
+.flow .bd{padding:11px 16px}
+.flow .bd b{display:block;font-size:14px;margin-bottom:2px}
+.flow .bd span{font-size:12.5px;color:var(--mut)}
+.flow .io{float:right;font-family:ui-monospace,monospace;font-size:10.5px;
+  color:var(--dian);letter-spacing:.06em;max-width:42%;text-align:right}
+
+/* ── 提要框 ── */
+.callout{border:1px solid var(--zhu);background:#F7EFE6;padding:16px 20px;
+  margin:20px 0;font-size:13.5px}
+.callout b{color:var(--zhu)}
+.rule-card{border:1px solid var(--rule);background:#EAE4D5;padding:14px 18px;margin:12px 0}
+.rule-card .n{font-family:ui-monospace,monospace;font-size:11px;color:var(--zhu);
+  letter-spacing:.2em;display:block;margin-bottom:4px}
+
+/* ── 校书官卡 ── */
+.council{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin:18px 0 22px}
+.p-card{border:1px solid var(--rule);background:#EDE7D8;padding:14px 16px}
+.p-card .nm{font-size:19px;font-weight:700;letter-spacing:.12em}
+.p-card .mt{font-size:11px;color:var(--zhu);letter-spacing:.16em;
+  font-family:ui-monospace,monospace;margin:3px 0 9px}
+.p-card p{font-size:12.5px;line-height:1.8;margin:0 0 7px;color:#3A342A}
+.p-card .law{font-size:11.5px;color:var(--dian);border-top:1px dashed var(--rule);
+  padding-top:7px;margin-top:8px}
+.p-card.chair{grid-column:1/-1;background:#E6DECB;border-color:var(--ink)}
+
+/* ── 数据条 ── */
+.bars{margin:14px 0 20px}
+.bar{display:grid;grid-template-columns:120px 1fr 56px;align-items:center;
+  gap:10px;margin-bottom:6px;font-size:12.5px}
+.bar .t{height:15px;background:var(--dian)}
+.bar .t.z{background:var(--zhu)}
+.bar .v{font-family:ui-monospace,monospace;font-size:11.5px;color:var(--mut)}
+
+.foot{margin-top:56px;padding-top:16px;border-top:1px solid var(--rule);
+  font-size:11.5px;color:var(--mut)}
+@media print{
+  body{background:#fff}
+  .sheet{box-shadow:none;max-width:none}
+  h2{page-break-after:avoid}
+  table,.flow,.council,.eq,.callout{page-break-inside:avoid}
+  .p-card{page-break-inside:avoid}
+}
+@page{size:A4;margin:14mm 12mm}
+@media (max-width:760px){
+  .inner{padding:0 20px}.cover{padding:48px 20px}
+  .sheet::before{display:none}
+  h2 .pai{position:static;writing-mode:horizontal-tb;display:inline-grid;
+    width:auto;height:auto;padding:2px 8px;margin-right:8px}
+  .council,.meta-grid{grid-template-columns:1fr}
+}
+</style>
+</head>
+<body>
+<div class="sheet">
+
+<div class="cover">
+  <div class="eyebrow">校勘方案 · V0.3 · 2026</div>
+  <h1>AI 古籍校勘系统
+    <small>善本为底 · 智能体合议 · 人工终审 · 双本并出</small>
+  </h1>
+  <p class="lede">以公有领域善本为底本，用 OCR 与视觉模型完成初步录文，用四位「校书官」智能体
+  按对校、他校、本校、理校四法分工合议，用可解释的裁决规则决定改字或悬置，最后由人工只处理
+  机器不敢定的那一小部分。产出两个本子：可自由传播的<strong>善本点校本</strong>，
+  与仅供自用的<strong>现代参校本</strong>。</p>
+  <div class="meta-grid">
+    <div><dt>PIPELINE</dt><dd>七阶段</dd></div>
+    <div><dt>AGENTS</dt><dd>三议一裁</dd></div>
+    <div><dt>VARIANT TYPES</dt><dd>九类异文</dd></div>
+    <div><dt>OUTPUT</dt><dd>公开本／内部本</dd></div>
+  </div>
+</div>
+
+<div class="inner">
+
+<!-- ══════════ 一 ══════════ -->
+<h2><span class="pai">卷一</span>问题的本质</h2>
+
+<p>古籍校勘的难点，从来不是「把字认出来」。真正的难点有三个，任何一个做错，
+产出的本子就是废本甚至是有害的本子。</p>
+
+<h3>难点一：不是所有「不同」都是异文</h3>
+<p>底本作「逺」而今本作「远」，这不是异文，是字形；底本作「說」而今本作「悦」，
+这不是讹误，是通假；底本作「人」而今本作「民」，这不是版本优劣，是<em>避讳</em>——
+而且这个「人」字恰恰是判定底本时代的硬证据，一旦被「改正」，版本信息就永久损毁了。
+一个只会做字符串 diff 的系统，会把这三类混为一谈，产出一张几千条的噪音清单，
+比不校还糟。</p>
+
+<h3>难点二：AI 最容易犯的错，正是校勘学最忌讳的错</h3>
+<p>语言模型的本能是让文本「读起来通顺」。而清代校勘学最严厉的告诫恰恰是
+<em>「凡无左证而以意改者，虽通亦不可从」</em>。理校（凭文义推断）在四种校法中风险最高，
+段玉裁、王念孙都极为慎用，而这正是 LLM 不加约束时最擅长、也最容易滥用的一种。
+所以系统设计的核心不是「让模型更聪明」，而是<strong>限制模型在何种证据下才被允许动底本一个字</strong>。</p>
+
+<h3>难点三：底本可以公开，参校本不可以</h3>
+<p>公有领域善本的<em>文字</em>不受著作权保护，可以自由传播。但现代点校本的
+<em>标点、分段、校勘记</em>是整理者的独创性成果，受法律保护。
+若系统把现代本的标点直接搬到公开本上，产出的就是一个侵权文件——
+而且这种侵权极其隐蔽，因为正文一个字都没抄。</p>
+
+<div class="callout">
+<b>三条不可让步的约束。</b>整套系统的每个模块，都是为了守住这三条：<br>
+① <b>底本可通则不改。</b>没有确证或旁证而想动底本正文的，一律悬置，不允许「文义较顺」改字。<br>
+② <b>公开本的句读必须独立生成。</b>现代本的标点只作为提示参与比对，绝不直接落盘。<br>
+③ <b>宁可标记不确定，不可自作主张。</b>OCR 遇漫漶输出「□」而非猜字；合议无共识就「两存」。
+</div>
+
+<!-- ══════════ 二 ══════════ -->
+<h2><span class="pai">卷二</span>系统总览</h2>
+
+<div class="flow">
+  <div class="row"><div class="st">S0</div><div class="bd">
+    <span class="io">→ provenance.json</span>
+    <b>立项与权属核验</b><span>遴选公有领域善本为底本；标注每个见证本的权属；权属不合格即关闭公开本产出通道</span></div></div>
+  <div class="row"><div class="st">S1</div><div class="bd">
+    <span class="io">→ glyphs[char,conf,bbox]</span>
+    <b>双通道 OCR ＋ 视觉复核</b><span>两个引擎逐字比对；低置信字回原图裁切放大，交视觉模型复核；置信度按对数几率融合</span></div></div>
+  <div class="row"><div class="st">S2</div><div class="bd">
+    <span class="io">→ CNF ＋ index_map</span>
+    <b>字形规范化</b><span>简繁／异体投影到同一中间层并消解；通假、避讳、形近保留为异文候选</span></div></div>
+  <div class="row"><div class="st">S3</div><div class="bd">
+    <span class="io">→ divergences[]</span>
+    <b>对齐与异文检测</b><span>锚点切块 ＋ 古籍代价 Needleman–Wunsch；异文自动分为九类</span></div></div>
+  <div class="row"><div class="st">S4</div><div class="bd">
+    <span class="io">→ opinions[3×N]</span>
+    <b>校书官合议</b><span>刘向（对校）、解缙（他校）、戴震（本校理校）各依职权独立发议，互不相见</span></div></div>
+  <div class="row"><div class="st">S5</div><div class="bd">
+    <span class="io">→ verdicts[] ＋ pending[]</span>
+    <b>裁断与悬置</b><span>纪昀总纂终审；分型加权 ＋ 证据分级 ＋ 底本优先偏置；三条规则触发即悬置</span></div></div>
+  <div class="row"><div class="st">S6</div><div class="bd">
+    <span class="io">→ public/ ＋ internal/</span>
+    <b>双本产出</b><span>公开：善本点校本 ＋ 校勘记（独立句读）；内部：现代参校本（强制不可传播声明）</span></div></div>
+  <div class="row human"><div class="st">S7</div><div class="bd">
+    <span class="io">→ decisions.json → 定本</span>
+    <b>人工精校与回灌</b><span>单文件审校台，只呈现悬置条目；决策回灌流水线，重出定本</span></div></div>
+</div>
+
+<p>每一阶段都独立落盘，可单独重跑；离线组件是确定性的，因而<strong>同输入必得同输出</strong>，
+这是审计与回归测试的前提。</p>
+
+<!-- ══════════ 三 ══════════ -->
+<h2><span class="pai">卷三</span>S0　底本遴选与权属隔离</h2>
+
+<h3>底本的选择标准</h3>
+<p>底本不选「最好读的本子」，选<strong>最接近祖本、且可公开的本子</strong>。优先级：
+唐写本残卷 ＞ 宋元刻本 ＞ 明清精刻本 ＞ 影印本。同时必须核实两层权属：</p>
+
+<table>
+<tr><th>层次</th><th>对象</th><th>状态</th><th>系统处理</th></tr>
+<tr><td class="k">文字层</td><td>古籍原文</td><td>公有领域</td><td>可公开、可改编、可商用</td></tr>
+<tr><td class="k">影像层</td><td>馆藏扫描件</td><td>视机构条款而定</td><td><em>须逐馆确认</em>；部分馆对影像另设限制，系统只存哈希与引用，不再分发原图</td></tr>
+<tr class="hi"><td class="k">整理层</td><td>现代点校本的标点／分段／校记</td><td>受著作权保护</td><td>派生物只落 <code>internal/</code>，强制加不可传播声明</td></tr>
+</table>
+
+<div class="rule-card">
+<span class="n">权属熔断</span>
+配置中底本 <code>rights</code> 若非 <code>public-domain</code>，系统自动置
+<code>publish_public_edition = false</code>，本次运行不产出任何公开文件。
+这条是硬熔断，不依赖使用者自觉。
+</div>
+
+<h3>版权隔离的三重措施</h3>
+<ol>
+<li><strong>物理隔离。</strong>目录分为 <code>public/</code> 与 <code>internal/</code>，
+现代本的任何派生物不进入前者。</li>
+<li><strong>句读独立。</strong>公开本的标点由独立断句器生成，现代本标点只用于比对统计，
+不写入公开本（详见卷八）。</li>
+<li><strong>表达与事实分离。</strong>校勘记只记录「某本作某字」这一<em>事实</em>，
+不复制他人按语的<em>措辞</em>。按语由智能体依据证据重新撰写。</li>
+</ol>
+
+<!-- ══════════ 四 ══════════ -->
+<h2><span class="pai">卷四</span>S1　OCR 与视觉复核</h2>
+
+<p>古籍 OCR 与通用 OCR 的根本差别：<strong>错误不是随机的，是结构化的</strong>。
+知道错误的分布，才谈得上防御。</p>
+
+<table>
+<tr><th>错误源</th><th>典型表现</th><th>防御手段</th></tr>
+<tr><td class="k">形近混识</td><td>省／眚、己／已／巳、傳／傅</td><td>易混字组表 → 强制降置信 → 回原图复核</td></tr>
+<tr><td class="k">重文号</td><td>「々」被展开成具体字，或被吞掉</td><td>重文号单列符号集；展开痕迹归入「衍文重出」类</td></tr>
+<tr><td class="k">虫蛀漫漶</td><td>模型「脑补」出一个合理的字</td><td>硬规则：辨认不出必须输出 <code>□</code>，不许猜</td></tr>
+<tr><td class="k">夹注串行</td><td>双行小字注被读入正文</td><td>版面分析先分层，<code>layer</code> 标记 main／interlinear</td></tr>
+<tr><td class="k">避讳缺笔</td><td>缺末笔被识别为另一个字</td><td>视觉复核提示词显式要求区分「缺笔避讳」与「讹字」</td></tr>
+</table>
+
+<h3>置信度融合</h3>
+<p>OCR 通道甲、通道乙、视觉复核三方是相对独立的证据源，按对数几率相加合成后验：</p>
+<div class="eq">
+ℓ = Σ<sub>i</sub> ln[ <var>p</var><sub>i</sub> / (1 − <var>p</var><sub>i</sub>) ]　，　
+<var>p</var> = σ(ℓ) = 1 / (1 + e<sup>−ℓ</sup>)
+<span class="where">互相印证时置信度上升（0.80 ⊕ 0.80 → 0.94），互相矛盾时迅速塌陷
+（0.05 ⊕ 0.90 → 0.32）。后者正是「漫漶字被复核确认为漫漶」的情形，
+低置信会一路传导到裁决层，强制触发悬置。</span>
+</div>
+
+<p>每个字都保留 <code>bbox</code>。没有 bbox 就无法回原图定位，视觉复核和人工核验都成了空话——
+这是整个流水线里最容易被省略、也最不能省略的一项。</p>
+
+<!-- ══════════ 五 ══════════ -->
+<h2><span class="pai">卷五</span>S2　字形规范化（CNF 中间层）</h2>
+
+<p>把两侧文本投影到同一个「校勘中间层」，让不该算异文的差异在此消解，
+该算异文的差异在此保留。这一步做错，后面全是噪音。</p>
+
+<table>
+<tr><th>差异类型</th><th>示例</th><th>CNF 中</th><th>理由</th></tr>
+<tr><td class="k">简繁</td><td>学／學</td><td>消解</td><td>同一个字的不同书写系统</td></tr>
+<tr><td class="k">异体俗字</td><td>逺／遠、汎／泛</td><td>消解</td><td>刻工书写习惯，非文本差异</td></tr>
+<tr class="hi"><td class="k">通假古今字</td><td>說／悅、弟／悌</td><td>保留</td><td>反映用字时代，须出校记</td></tr>
+<tr class="hi"><td class="k">避讳改字</td><td>人／民、玄／元</td><td>保留</td><td>版本断代的关键证据</td></tr>
+<tr class="hi"><td class="k">形近讹误</td><td>省／眚</td><td>保留</td><td>可能是刻误，也可能是 OCR 误</td></tr>
+</table>
+
+<p>规范化必须<strong>可逆索引</strong>：CNF 的每个字符都记录其在原文中的下标，
+校勘结论最终要落回底本原字形。绝不能把底本「洗成」现代字——那样产出的
+就不是点校本，而是一个假的善本。</p>
+
+<!-- ══════════ 六 ══════════ -->
+<h2><span class="pai">卷六</span>S3　对齐与异文检测</h2>
+
+<h3>两级对齐</h3>
+<p><strong>一级：锚点对齐。</strong>以长公共子串为锚，把长文切成互相对应的段块。
+万字以上文本若做单次全局比对，远处的相同字会被错配，产出大量幻影异文。</p>
+<p><strong>二级：字符级对齐。</strong>段块内用带古籍代价函数的 Needleman–Wunsch。
+代价函数是这一层的灵魂——它把校勘学的先验知识编码进了距离度量：</p>
+
+<div class="eq">
+<var>d</var>(a,b) = 0　（CNF 相同：简繁、异体）<br>
+<var>d</var>(a,b) = 0.25　（通假或古今字）　　
+<var>d</var>(a,b) = 0.35　（避讳改字）<br>
+<var>d</var>(a,b) = 0.45　（形近易混，疑 OCR 误）　　
+<var>d</var>(a,b) = 1.00　（其他）<br>
+空位代价 <var>g</var> = 0.80
+<span class="where">因为 <var>d</var><sub>形近</sub> &lt; <var>g</var>，形近字会被判为「一处替换」而非
+「一脱一衍」，符合校勘直觉。反之当 2<var>g</var> &lt; 2<var>d</var> 时（如「文學 ↔ 學文」），
+算法会输出「删—同—补」的形态，这不是错误而是代价函数的必然结果，
+故设一道形态归并把它还原为一条<em>倒文</em>。</span>
+</div>
+
+<h3>九类异文</h3>
+<p>字形差异（自动消解，不入校记）、通假古今字、避讳改字、形近疑误、脱文缺字、
+衍文重出、倒文、句读、实质异文。分类结果决定了后续<strong>由谁主审、权重多少</strong>——
+这是分型加权的输入。</p>
+
+<h3>切条规则</h3>
+<p>相邻差异先合并成跨度，再按下列规则拆条，因为校勘记以字为单位：</p>
+<ul>
+<li>等长且互为易位 → 整跨度作一条<em>倒文</em></li>
+<li>等长非易位 → 逐字拆条（「弟謹 ↔ 悌敬」须拆成通假、实质异文两条）</li>
+<li>不等长 → 整跨度作一条（脱／衍／实质异文）</li>
+</ul>
+
+<!-- ══════════ 七 ══════════ -->
+<h2><span class="pai">卷七</span>S4　校书官合议庭</h2>
+
+<p>设计的要点不是「让模型扮演古人说话」，而是把陈垣《校勘学释例》的<strong>校法四则</strong>
+拆成互相制衡的角色，<strong>每个角色只被允许使用自己那一路证据</strong>。</p>
+
+<div class="callout">
+<b>为什么要限权？</b>如果让一个模型同时掌握四种校法，它会自然滑向理校——
+因为「文义顺畅」是语言模型最容易计算的信号，而版本实证、他书引文是它最难核实的。
+不限权的结果必然是<em>理校泛滥</em>。角色隔离 ＋ 分型权重，是对这一风险的工程化约束。
+</div>
+
+<div class="council">
+  <div class="p-card">
+    <div class="nm">劉向</div><div class="mt">對校法 · 西漢 · 領校中秘書</div>
+    <p>只比版本异同，只据版本形态立论：行款、字数、避讳、刻工、篇第、重文号。</p>
+    <p class="law"><b>铁律</b>：不改一字。不得以「文义较顺」为据主张改字。
+    晚出之本经人整理，往往反失其真。</p>
+  </div>
+  <div class="p-card">
+    <div class="nm">解縉</div><div class="mt">他校法 · 明 · 永樂大典總裁</div>
+    <p>只用本书以外的证据：类书所引、古注所引、碑版石经、写本残卷。</p>
+    <p class="law"><b>铁律</b>：引证必须指名出处，不能确指即须声明「未得确证」。
+    <em>伪造书证是校勘之罪，甚于不校。</em></p>
+  </div>
+  <div class="p-card">
+    <div class="nm">戴震</div><div class="mt">本校法・理校法 · 清 · 皖派樸學</div>
+    <p>用本书内部文例与小学训诂立论；通假须合乎古音声纽韵部，不得仅因今音相近。</p>
+    <p class="law"><b>铁律</b>：主张改字时必须同时申明「若不改，于文义有何窒碍」。
+    二字皆可通则存异不改。</p>
+  </div>
+  <div class="p-card chair">
+    <div class="nm">紀昀</div><div class="mt">總纂・裁斷 · 清 · 四庫全書總纂官</div>
+    <p>不亲校一字，只做终审，且<strong>不得引入三家未提出的新证据</strong>。
+    裁断准则按证据等级：底本可通 ＞ 版本实证 ＞ 他书确证 ＞ 本书文例 ＞ 音韵通转 ＞ 文义顺适。</p>
+    <p class="law"><b>铁律</b>：三家分歧而无一方有硬证据者，必须判为「两存」。
+    <em>悬置不是失职，妄断才是。</em></p>
+  </div>
+</div>
+
+<p>三家<strong>互不相见</strong>地独立发议——这是刻意的。若让他们看到彼此的意见，
+模型会迅速趋同（附和效应），合议就退化成一个人的意见被复述三遍，加权投票也就失去意义。</p>
+
+<h3>分型权重</h3>
+<p>每个角色在不同异文类型上的话语权不同，因为四种校法本就各有所长：</p>
+<table>
+<tr><th>异文类型</th><th>劉向 對校</th><th>解縉 他校</th><th>戴震 本校理校</th></tr>
+<tr><td class="k">避讳改字</td><td><em>1.00</em></td><td>0.70</td><td>0.60</td></tr>
+<tr><td class="k">脱文／衍文</td><td><em>1.00</em></td><td>0.90／0.80</td><td>0.70</td></tr>
+<tr><td class="k">实质异文</td><td>0.85</td><td><em>1.00</em></td><td>0.90</td></tr>
+<tr><td class="k">通假古今字</td><td>0.60</td><td>0.75</td><td><em>1.00</em></td></tr>
+<tr><td class="k">句读</td><td>0.30</td><td>0.60</td><td><em>0.95</em></td></tr>
+<tr><td class="k">形近疑误</td><td>0.90</td><td>0.50</td><td>0.70</td></tr>
+</table>
+
+<!-- ══════════ 八 ══════════ -->
+<h2><span class="pai">卷八</span>S5　裁断与悬置</h2>
+
+<p>聚合不是简单多数。校勘学里证据是分等级的：一条唐写本的实证，胜过三条「文义较顺」的推测。
+故采用<strong>双因子加权</strong>：</p>
+
+<div class="eq">
+<var>S</var>(h) = Σ<sub>k</sub> <var>w</var><sub>k</sub>(t) · <var>g</var><sub>k</sub> · <var>c</var><sub>k,h</sub>
+　，　
+<var>P</var>(h) = <var>S</var>(h) / Σ<sub>h′</sub> <var>S</var>(h′)
+<span class="where">
+<var>w</var><sub>k</sub>(t)：角色 k 在异文类型 t 上的话语权（见上表）<br>
+<var>g</var><sub>k</sub>：本次发言的证据等级系数——确证 1.00｜旁证 0.70｜推测 0.40｜无证 0.15<br>
+<var>c</var><sub>k,h</sub>：角色 k 对读法 h 的置信度
+</span>
+</div>
+
+<h4>底本优先偏置</h4>
+<p>若 h 即底本原文，得分再乘以 (1 + β)，β = 0.15。这一项把清儒
+<strong>「底本可通则不改」</strong>的成规直接写进了目标函数——不是靠提示词劝说模型克制，
+而是让保守选项在数学上就占优。</p>
+
+<h4>三条悬置规则</h4>
+<div class="rule-card"><span class="n">规则一 · 票数不足</span>
+<var>P</var><sub>(1)</sub> &lt; τ　（τ = 0.55）——首选读法未获过半支持。</div>
+<div class="rule-card"><span class="n">规则二 · 差距过小</span>
+<var>P</var><sub>(1)</sub> − <var>P</var><sub>(2)</sub> &lt; δ　（δ = 0.18）——首选与次选难分伯仲。</div>
+<div class="rule-card"><span class="n">规则三 · 无证改字（最要紧）</span>
+拟改动底本正文，而三家最高证据等级仅止于「推测」——<strong>没有硬证据就要动底本的，一律悬置</strong>。
+此外，底本该处 OCR 置信度低于 0.75 的，无论合议多么一致，也一律悬置回原图核验。</div>
+
+<p>悬置项<strong>绝不改动正文</strong>，只在校勘记中「两存之，俟考」。
+系统的成功指标不是「自动决议率越高越好」，而是<em>该悬置的都悬置了</em>。</p>
+
+<!-- ══════════ 九 ══════════ -->
+<h2><span class="pai">卷九</span>S6　双本产出与独立句读</h2>
+
+<h3>公开本的句读为什么必须独立生成</h3>
+<p>底本文字是公有领域，但现代点校本的标点是整理者的独创性成果。直接把现代本的标点
+投影到底本上，正文一字未抄，产出的却是一个侵权文件。故系统的做法是：</p>
+<ol>
+<li>用<strong>独立断句器</strong>（语气词收句、引语动词起引号、发语词前顿开）生成初稿，
+刻意不参考现代本；</li>
+<li>现代本标点只用于<strong>比对统计</strong>，产生「句读分歧」条目送合议庭；</li>
+<li>计算两者句读位置的 Jaccard 重合率，超过 0.92 即<strong>告警并要求人工重新断句</strong>，
+防止「洗稿式抄标点」。</li>
+</ol>
+<p>断句器刻意保守：「而」「則」不触发顿开，因为现代各家在此处的取舍差异极大，
+跟着它走就等于抄它的判断。「也」「與」按位置定性而非按词性猜测，宁可漏断不可错断——
+漏断只是不够精细，错断是硬伤。</p>
+
+<h3>两个本子</h3>
+<table>
+<tr><th>　</th><th>善本点校本（公开）</th><th>现代参校本（内部）</th></tr>
+<tr><td class="k">正文</td><td>底本原字形，改字处出校记</td><td>现代本 OCR 原样</td></tr>
+<tr><td class="k">句读</td><td>系统独立生成 ＋ 人工确认</td><td>现代本原有标点</td></tr>
+<tr><td class="k">校勘记</td><td>智能体依证据重新撰写</td><td>附全量合议记录</td></tr>
+<tr><td class="k">补字标示</td><td>据补之字以〔〕标出</td><td>—</td></tr>
+<tr class="hi"><td class="k">传播</td><td><em>可自由传播</em></td><td><em>禁止传播，强制声明</em></td></tr>
+</table>
+
+<!-- ══════════ 十 ══════════ -->
+<h2><span class="pai">卷十</span>S7　人工精校与回灌</h2>
+
+<p>人工的价值稀缺，所以人工只做机器不敢定的事。审校台的设计目标只有一个：
+<strong>每条悬置项能在 15 秒内做完决定</strong>。</p>
+<ul>
+<li>默认<strong>只显示悬置条目</strong>，机器已定的折叠在「已决」页签；</li>
+<li>每条完整呈现：上下文、底本读法、今本读法、三家原始意见与证据等级、机器裁断与悬置原因；</li>
+<li>候选读法一律<strong>投影为正体</strong>——否则人工会不小心选出一个简体字落进公开本；</li>
+<li>键盘流：<code>J/K</code> 移动、<code>1–9</code> 选读法、<code>3</code> 两存、<code>E</code> 导出；</li>
+<li>决策存于本机，导出 <code>decisions.json</code> 回灌流水线，重出定本，人工按语并入校勘记。</li>
+</ul>
+<p>单文件、零依赖、可离线打开。校勘工作常在无网络的善本阅览室进行，这不是技术洁癖。</p>
+
+<!-- ══════════ 十一 ══════════ -->
+<h2><span class="pai">卷十一</span>实测：《论语·学而》首六章</h2>
+
+<p>演示语料为<strong>合成书影</strong>——依《论语·学而》前六章构造，刻意植入七类问题：
+异体字（逺）、通假（說／弟／道）、避讳（人／民）、形近误识（眚／傅）、
+虫蛀缺字（□）、重文号误展（樂樂）、倒文（文學／學文）。以下为真实运行结果。</p>
+
+<table>
+<tr><th>阶段</th><th>指标</th><th>结果</th></tr>
+<tr><td class="k">S1</td><td>底本录文 ／ 双通道分歧</td><td>165 字 ／ 0 处</td></tr>
+<tr><td class="k">S1</td><td>视觉复核送检 ／ 改正</td><td>2 字 ／ 1 字（眚 → 省）</td></tr>
+<tr><td class="k">S2</td><td>字形差异消解（未产生假异文）</td><td>逺·汎·衆·爲 等全部消解</td></tr>
+<tr><td class="k">S3</td><td>检出异文</td><td>11 处，九类中命中七类</td></tr>
+<tr><td class="k">S4</td><td>三家发议</td><td>33 条，全部留痕可追溯</td></tr>
+<tr class="hi"><td class="k">S5</td><td>改字 ／ 仍旧 ／ 悬置</td><td>2 ／ 7 ／ 2（自动决议率 81.8%）</td></tr>
+<tr><td class="k">S6</td><td>独立断句 ／ 与今本重合率</td><td>23 处 ／ 0.51（阈值 0.92，未告警）</td></tr>
+<tr><td class="k">S7</td><td>人工处理</td><td>2 条 → 定本</td></tr>
+</table>
+
+<div class="bars">
+  <div class="bar"><span>通假古今字</span><div class="t" style="width:45%"></div><span class="v">5</span></div>
+  <div class="bar"><span>脱文缺字</span><div class="t z" style="width:9%"></div><span class="v">1 ⟂ 悬置</span></div>
+  <div class="bar"><span>衍文重出</span><div class="t" style="width:9%"></div><span class="v">1</span></div>
+  <div class="bar"><span>形近疑误</span><div class="t z" style="width:9%"></div><span class="v">1 ⟂ 悬置</span></div>
+  <div class="bar"><span>避讳改字</span><div class="t" style="width:9%"></div><span class="v">1</span></div>
+  <div class="bar"><span>实质异文</span><div class="t" style="width:9%"></div><span class="v">1</span></div>
+  <div class="bar"><span>倒文</span><div class="t" style="width:9%"></div><span class="v">1</span></div>
+</div>
+
+<h3>三个典型判例</h3>
+
+<h4>判例一　避讳「人／民」——机器没有上当</h4>
+<p>底本「使<em>人</em>以時」，今本作「使<em>民</em>以时」。系统识出这是唐讳（太宗李世民）改字，
+刘向以确证主张<strong>存底本之旧</strong>：「此避讳改字之迹，正可据以定版本时代，不可回改」；
+解缙引《经典释文》主张作「民」。加权后底本读法胜出，<strong>正文不改，出校记著其本字</strong>。
+若换成朴素的「以今本为准」策略，这里就会丢掉一条断代证据。</p>
+
+<h4>判例二　形近「傅／傳」——机器承认自己不知道</h4>
+<p>底本 OCR 作「傅不習乎」，今本作「传不习乎」。戴震的判断是
+<em>「二字形近而皆可成文，非训诂所能决。当覆核书影字口，不可以意定之」</em>——
+三家俱主两存，且该字 OCR 置信度仅 0.67，双重触发悬置。人工核验书影后判「右旁从叀不从尃」，
+定为 OCR 误识而非版本异文。<strong>这是系统最该有的行为：不装懂。</strong></p>
+
+<h4>判例三　倒文「文學／學文」——他校证据一锤定音</h4>
+<p>底本作「則以文學」，今本作「则以学文」。刘向无版本可据，只能「姑仍底本之旧」；
+戴震以文义推测今本较顺，但自陈<em>「无左证而以意乙正，不可从」</em>；
+解缙检得《后汉书》李贤注引作「則以學文」，属确证，权重压倒性胜出，<strong>据改并出校记</strong>。
+这正是他校法的价值所在，也说明<strong>引文索引库的质量直接决定系统上限</strong>。</p>
+
+<!-- ══════════ 十二 ══════════ -->
+<h2><span class="pai">卷十二</span>验收指标与工程路线</h2>
+
+<h3>该看什么指标</h3>
+<p>不要用「自动决议率」当 KPI——把 τ 调低就能刷到 99%，代价是把该问人的都替人答了。
+真正该守的是下面三个：</p>
+<table>
+<tr><th>指标</th><th>定义</th><th>目标</th><th>性质</th></tr>
+<tr class="hi"><td class="k">误改率</td><td>被自动改动、经人工判定为错误的字数 ／ 总字数</td><td>&lt; 0.02%</td><td><em>一票否决</em></td></tr>
+<tr><td class="k">异文召回</td><td>金标准异文中被检出的比例</td><td>&gt; 98%</td><td>漏检比误报更危险</td></tr>
+<tr><td class="k">假异文率</td><td>字形差异被误报为异文的比例</td><td>&lt; 1%</td><td>决定人工是否被噪音淹没</td></tr>
+<tr><td class="k">悬置精度</td><td>悬置项中人工确实推翻机器首选的比例</td><td>&gt; 30%</td><td>过低说明悬置太滥</td></tr>
+<tr><td class="k">句读独立度</td><td>与参校本句读的 Jaccard 距离</td><td>&lt; 0.92</td><td>合规红线</td></tr>
+<tr><td class="k">人工工时</td><td>每万字所需人工分钟数</td><td>基线的 1/5 以下</td><td>项目存在的理由</td></tr>
+</table>
+
+<h3>三期实施</h3>
+<ol>
+<li><strong>一期 · 打通（1–2 月）。</strong>选一部万字内、且已有可靠点校本的书作靶子，
+先建金标准异文集，把误改率与召回率的度量做扎实。此期的目标不是产出成果，是<em>建立度量</em>。</li>
+<li><strong>二期 · 提质（3–5 月）。</strong>接入真实古籍 OCR 与多模态复核；
+建类书／古注引文索引库（这是他校法的弹药，也是投入产出比最高的一项）；
+用一期的金标准做 A/B，校准 τ、δ、β 与分型权重。</li>
+<li><strong>三期 · 规模化（6 月起）。</strong>按卷分片并发；引文库转向量检索；
+建校勘知识库沉淀已决判例，同类异文可复用；人工审校台接多人协作与仲裁。</li>
+</ol>
+
+<h3>规模化的三个技术要点</h3>
+<ul>
+<li><strong>分片必须按篇章而非按字数。</strong>跨篇章切分会破坏锚点对齐，产生大量幻影异文。</li>
+<li><strong>合议要做缓存。</strong>同一部书中「說／悅」会重复出现数十次，
+按 (异文类型, 底本字, 今本字, 上下文指纹) 缓存判例，可省去绝大部分模型调用。</li>
+<li><strong>审计记录必须全量留存。</strong>每条结论的三家原始意见、证据等级、
+得分明细都要可回溯。校勘结论是要被同行质疑的，答不出「凭什么」就没有学术价值。</li>
+</ul>
+
+<!-- ══════════ 十三 ══════════ -->
+<h2><span class="pai">卷十三</span>风险登记</h2>
+<table>
+<tr><th>风险</th><th>后果</th><th>缓解</th></tr>
+<tr class="hi"><td class="k">理校泛滥</td><td>底本被「改通顺」，产出伪善本</td><td>角色限权 ＋ 底本偏置 β ＋ 无证改字一律悬置</td></tr>
+<tr class="hi"><td class="k">伪造书证</td><td>模型编造类书出处，学术后果最严重</td><td>提示词硬约束 ＋ 引文须对齐索引库可验证 ＋ 不能确指须声明「未得确证」</td></tr>
+<tr><td class="k">句读抄袭</td><td>隐蔽侵权</td><td>独立断句器 ＋ 重合率告警 ＋ 人工重断</td></tr>
+<tr><td class="k">OCR 错误固化</td><td>讹字被当作版本异文写入校记</td><td>置信度门控 ＋ 低置信强制悬置 ＋ bbox 可回原图</td></tr>
+<tr><td class="k">异文编号位移</td><td>人工决策回灌时错配条目</td><td>决策文件绑定 run_id，不匹配即告警</td></tr>
+<tr><td class="k">合议趋同</td><td>三家意见退化为一家</td><td>互不相见地独立发议 ＋ 分型权重 ＋ 证据等级降权</td></tr>
+<tr><td class="k">影像使用条款</td><td>馆藏扫描件另有限制</td><td>权属逐馆核验 ＋ 系统只存哈希与引用，不分发原图</td></tr>
+</table>
+
+<!-- ══════════ 附 ══════════ -->
+<h2><span class="pai">附錄</span>实现与运行</h2>
+
+<h4>模块</h4>
+<table>
+<tr><th>文件</th><th>职责</th></tr>
+<tr><td class="k">normalize.py</td><td>简繁／异体／通假／避讳／形近表；CNF 可逆投影</td></tr>
+<tr><td class="k">ocr.py</td><td>双通道 OCR、字符级置信度、视觉复核、对数几率融合</td></tr>
+<tr><td class="k">align.py</td><td>锚点对齐、古籍代价 NW、倒文形态归并、九类异文分类</td></tr>
+<tr><td class="k">agents.py</td><td>四位校书官的职权、铁律、提示词；离线启发式基线</td></tr>
+<tr><td class="k">adjudicate.py</td><td>分型加权、证据分级、底本偏置、三条悬置规则</td></tr>
+<tr><td class="k">render.py</td><td>独立断句器、点校本／校勘记生成、版权隔离</td></tr>
+<tr><td class="k">review.py</td><td>单文件人工精校台</td></tr>
+<tr><td class="k">pipeline.py</td><td>七阶段编排、审计留痕、决策回灌</td></tr>
+</table>
+
+<h4>运行</h4>
+<p>核心流水线零第三方依赖，Python 3.10+ 即可，无需网络、GPU 或 API Key：</p>
+<p><code>python -m guji_collator inspect --task data/demo/task.json</code>　只看异文<br>
+<code>python -m guji_collator run --task data/demo/task.json</code>　跑全流程<br>
+<code>python -m guji_collator apply --task ... --decisions decisions.json</code>　回灌出定本<br>
+<code>python -m guji_collator run --task ... --llm anthropic</code>　接入真实模型</p>
+
+<h4>演示件与生产件的替换</h4>
+<table>
+<tr><th>演示（确定性）</th><th>生产</th></tr>
+<tr><td class="k">PlainTextEngine</td><td>PaddleOCR / Kraken / 商用古籍 OCR（须保留 bbox 与分层）</td></tr>
+<tr><td class="k">VisionRechecker(client=None)</td><td>多模态模型 ＋ 原图裁切放大</td></tr>
+<tr><td class="k">HeuristicReasoner</td><td>AnthropicClient / OpenAICompatClient</td></tr>
+<tr><td class="k">内置简繁字表</td><td>OpenCC 词组级转换</td></tr>
+<tr><td class="k">示例引文 JSON</td><td>类书／古注引文全文索引库</td></tr>
+</table>
+<p>保留离线确定性组件不只是为了「能跑」——它是整条流水线的<strong>回归基线</strong>：
+换成 LLM 之后，可以用同一批用例做对照，看模型究竟是提升了判断，还是只是让输出更好听。</p>
+
+<div class="foot">
+AI 古籍校勘系统 · 方案与实现 · v0.3　｜　演示语料为依《论语·学而》构造的合成书影，
+所列他书引证为演示数据，不作学术依据　｜　实际发布前请自行确认所用书影的具体授权条款
+</div>
+
+</div><!-- /inner -->
+</div><!-- /sheet -->
+</body>
+</html>

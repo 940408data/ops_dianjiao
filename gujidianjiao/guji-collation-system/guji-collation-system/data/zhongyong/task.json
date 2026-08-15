@@ -1,0 +1,26 @@
+{
+  "work": "zhongyong-zhangju",
+  "title": "中庸章句",
+  "base": {
+    "id": "dangtu-zhongyong",
+    "label": "南宋當塗郡齋刊遞修本",
+    "path": "data/zhongyong/base.txt",
+    "kind": "base",
+    "rights": "public-domain",
+    "repository": "中國國家圖書館藏",
+    "edition_note": "中庸章句（當塗郡本），公有領域善本"
+  },
+  "modern": {
+    "id": "ruzang-zhongyong",
+    "label": "儒藏精華編第110冊本",
+    "path": "data/zhongyong/modern.txt",
+    "kind": "modern",
+    "rights": "copyrighted",
+    "repository": "儒藏精華編第110冊，經部四書類（原頁碼35-70）",
+    "edition_note": "僅作校勘線索，標點受著作權保護，不得公開"
+  },
+  "witnesses": [],
+  "out_dir": "outputs",
+  "citations_db": "",
+  "llm": "offline"
+}

@@ -1,0 +1,26 @@
+{
+  "work": "lunyu-xueer",
+  "title": "論語‧學而",
+  "base": {
+    "id": "shanben-song",
+    "label": "影宋蜀刻大字本",
+    "path": "data/demo/base_shanben_ocr.txt",
+    "kind": "base",
+    "rights": "public-domain",
+    "repository": "（示範）國家圖書館藏善本書影",
+    "edition_note": "《論語·學而》首六章，示範用合成書影"
+  },
+  "modern": {
+    "id": "modern-punct",
+    "label": "某現代點校本",
+    "path": "data/demo/modern_dianjiao_ocr.txt",
+    "kind": "modern",
+    "rights": "copyrighted",
+    "repository": "（示範）現代整理本掃描件",
+    "edition_note": "僅作校勘線索，不得公開"
+  },
+  "witnesses": [],
+  "out_dir": "outputs",
+  "citations_db": "data/demo/citations.json",
+  "llm": "offline"
+}

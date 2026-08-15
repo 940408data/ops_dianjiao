@@ -1,0 +1,910 @@
+{
+  "provenance": {
+    "run_id": "20260814T230305",
+    "base": {
+      "id": "shanben-song",
+      "label": "影宋蜀刻大字本",
+      "path": "data/demo/base_shanben_ocr.txt",
+      "kind": "base",
+      "rights": "public-domain",
+      "repository": "（示範）國家圖書館藏善本書影",
+      "edition_note": "《論語·學而》首六章，示範用合成書影",
+      "image_dir": "",
+      "sha256_16": "053fb0335ffb3ce4"
+    },
+    "modern": {
+      "id": "modern-punct",
+      "label": "某現代點校本",
+      "path": "data/demo/modern_dianjiao_ocr.txt",
+      "kind": "modern",
+      "rights": "copyrighted",
+      "repository": "（示範）現代整理本掃描件",
+      "edition_note": "僅作校勘線索，不得公開",
+      "image_dir": "",
+      "sha256_16": "9009f28485748e42"
+    },
+    "config": {
+      "work": "lunyu-xueer",
+      "title": "論語‧學而",
+      "base": {
+        "id": "shanben-song",
+        "label": "影宋蜀刻大字本",
+        "path": "data/demo/base_shanben_ocr.txt",
+        "kind": "base",
+        "rights": "public-domain",
+        "repository": "（示範）國家圖書館藏善本書影",
+        "edition_note": "《論語·學而》首六章，示範用合成書影",
+        "image_dir": ""
+      },
+      "modern": {
+        "id": "modern-punct",
+        "label": "某現代點校本",
+        "path": "data/demo/modern_dianjiao_ocr.txt",
+        "kind": "modern",
+        "rights": "copyrighted",
+        "repository": "（示範）現代整理本掃描件",
+        "edition_note": "僅作校勘線索，不得公開",
+        "image_dir": ""
+      },
+      "witnesses": [],
+      "out_dir": "outputs",
+      "citations_db": "data/demo/citations.json",
+      "ocr_engine": "plaintext",
+      "recheck_threshold": 0.78,
+      "dual_channel": true,
+      "tau": 0.55,
+      "delta": 0.18,
+      "base_preference_beta": 0.15,
+      "llm": "offline",
+      "model": "claude-sonnet-4-6",
+      "base_url": "",
+      "council": [
+        "liuxiang",
+        "xiejin",
+        "daizhen"
+      ],
+      "chair": "jiyun",
+      "publish_public_edition": true,
+      "punct_independent": true,
+      "punct_overlap_alarm": 0.92
+    }
+  },
+  "ocr": {
+    "glyphs": 165,
+    "dual_channel_conflicts": 0,
+    "recheck_sent": 2,
+    "recheck_changed": 1,
+    "recheck_events": [
+      {
+        "index": 15,
+        "before": "□",
+        "after": "□",
+        "changed": false,
+        "ocr_conf": 0.05,
+        "vlm_conf": 0.9,
+        "note": "字口漫漶，存疑待補",
+        "context": "說乎有朋自逺【□】來不亦樂樂乎"
+      },
+      {
+        "index": 96,
+        "before": "眚",
+        "after": "省",
+        "changed": true,
+        "ocr_conf": 0.604,
+        "vlm_conf": 0.94,
+        "note": "書影字口作「省」，上部從少不從屮，OCR 誤識為「眚」",
+        "context": "曾子曰吾日三【眚】吾身爲人謀而"
+      }
+    ]
+  },
+  "divergences": [
+    {
+      "id": "D0001",
+      "base_start": 9,
+      "base_end": 10,
+      "ref_start": 9,
+      "ref_end": 10,
+      "base_text": "說",
+      "ref_text": "悦",
+      "left_ctx": "曰學而時習之不亦",
+      "right_ctx": "乎有朋自逺□來不",
+      "dtype": "通假古今字",
+      "ocr_conf": 0.9591,
+      "auto_note": "「說」為「悅」之古字，經傳通用，不煩改字",
+      "candidates": [
+        "說",
+        "悦"
+      ],
+      "resolved": false
+    },
+    {
+      "id": "D0002",
+      "base_start": 15,
+      "base_end": 16,
+      "ref_start": 15,
+      "ref_end": 16,
+      "base_text": "□",
+      "ref_text": "方",
+      "left_ctx": "不亦說乎有朋自逺",
+      "right_ctx": "來不亦樂樂乎人不",
+      "dtype": "脫文缺字",
+      "ocr_conf": 0.3214,
+      "auto_note": "底本此處漫漶／蟲蛀，據今本擬補，當覆核書影",
+      "candidates": [
+        "□",
+        "方"
+      ],
+      "resolved": false
+    },
+    {
+      "id": "D0003",
+      "base_start": 19,
+      "base_end": 20,
+      "ref_start": 19,
+      "ref_end": 19,
+      "base_text": "樂",
+      "ref_text": "",
+      "left_ctx": "有朋自逺□來不亦",
+      "right_ctx": "樂乎人不知而不慍",
+      "dtype": "衍文重出",
+      "ocr_conf": 0.9691,
+      "auto_note": "底本重出，疑重文號「々」被誤展，或涉上下文而衍",
+      "candidates": [
+        "樂",
+        ""
+      ],
+      "resolved": false
+    },
+    {
+      "id": "D0004",
+      "base_start": 41,
+      "base_end": 42,
+      "ref_start": 40,
+      "ref_end": 41,
+      "base_text": "弟",
+      "ref_text": "悌",
+      "left_ctx": "有子曰其爲人也孝",
+      "right_ctx": "而好犯上者鮮矣不",
+      "dtype": "通假古今字",
+      "ocr_conf": 0.9779,
+      "auto_note": "「弟」為「悌」之本字，先秦典籍多作「弟」",
+      "candidates": [
+        "弟",
+        "悌"
+      ],
+      "resolved": false
+    },
+    {
+      "id": "D0005",
+      "base_start": 72,
+      "base_end": 73,
+      "ref_start": 71,
+      "ref_end": 72,
+      "base_text": "弟",
+      "ref_text": "悌",
+      "left_ctx": "務本本立而道生孝",
+      "right_ctx": "也者其爲仁之本與",
+      "dtype": "通假古今字",
+      "ocr_conf": 0.9738,
+      "auto_note": "「弟」為「悌」之本字，先秦典籍多作「弟」",
+      "candidates": [
+        "弟",
+        "悌"
+      ],
+      "resolved": false
+    },
+    {
+      "id": "D0006",
+      "base_start": 114,
+      "base_end": 115,
+      "ref_start": 113,
+      "ref_end": 114,
+      "base_text": "傅",
+      "ref_text": "传",
+      "left_ctx": "與朋友交而不信乎",
+      "right_ctx": "不習乎子曰道千乘",
+      "dtype": "形近疑誤",
+      "ocr_conf": 0.6704,
+      "auto_note": "「傅」「传」形近，須回書影覆核字口",
+      "candidates": [
+        "傅",
+        "传"
+      ],
+      "resolved": false
+    },
+    {
+      "id": "D0007",
+      "base_start": 120,
+      "base_end": 121,
+      "ref_start": 119,
+      "ref_end": 120,
+      "base_text": "道",
+      "ref_text": "导",
+      "left_ctx": "信乎傅不習乎子曰",
+      "right_ctx": "千乘之國敬事而信",
+      "dtype": "通假古今字",
+      "ocr_conf": 0.9575,
+      "auto_note": "「道」訓「治」，亦通「導」，說見《集解》引包咸",
+      "candidates": [
+        "道",
+        "导"
+      ],
+      "resolved": false
+    },
+    {
+      "id": "D0008",
+      "base_start": 135,
+      "base_end": 136,
+      "ref_start": 134,
+      "ref_end": 135,
+      "base_text": "人",
+      "ref_text": "民",
+      "left_ctx": "而信節用而愛人使",
+      "right_ctx": "以時子曰弟子入則",
+      "dtype": "避諱改字",
+      "ocr_conf": 0.9775,
+      "auto_note": "唐諱「民」，多改作「人」（避唐太宗李世民諱）；底本作「人」可為版本斷代之證",
+      "candidates": [
+        "人",
+        "民"
+      ],
+      "resolved": false
+    },
+    {
+      "id": "D0009",
+      "base_start": 147,
+      "base_end": 148,
+      "ref_start": 146,
+      "ref_end": 147,
+      "base_text": "弟",
+      "ref_text": "悌",
+      "left_ctx": "曰弟子入則孝出則",
+      "right_ctx": "謹而信汎愛衆而親",
+      "dtype": "通假古今字",
+      "ocr_conf": 0.9703,
+      "auto_note": "「弟」為「悌」之本字，先秦典籍多作「弟」",
+      "candidates": [
+        "弟",
+        "悌"
+      ],
+      "resolved": false
+    },
+    {
+      "id": "D0010",
+      "base_start": 148,
+      "base_end": 149,
+      "ref_start": 147,
+      "ref_end": 148,
+      "base_text": "謹",
+      "ref_text": "敬",
+      "left_ctx": "弟子入則孝出則弟",
+      "right_ctx": "而信汎愛衆而親仁",
+      "dtype": "實質異文",
+      "ocr_conf": 0.9728,
+      "auto_note": "二本用字不同，非形近亦非通假，屬實質異文",
+      "candidates": [
+        "謹",
+        "敬"
+      ],
+      "resolved": false
+    },
+    {
+      "id": "D0011",
+      "base_start": 163,
+      "base_end": 165,
+      "ref_start": 162,
+      "ref_end": 164,
+      "base_text": "文學",
+      "ref_text": "学文",
+      "left_ctx": "親仁行有餘力則以",
+      "right_ctx": "",
+      "dtype": "倒文",
+      "ocr_conf": 0.9626,
+      "auto_note": "二本字同而次序異，疑有倒文，當以文義及他書徵引定之",
+      "candidates": [
+        "文學",
+        "学文"
+      ],
+      "resolved": false
+    }
+  ],
+  "verdicts": [
+    {
+      "div_id": "D0001",
+      "dtype": "通假古今字",
+      "base_text": "說",
+      "ref_text": "悦",
+      "context": "曰學而時習之不亦【底本：說 / 今本：悦】乎有朋自逺□來不",
+      "chosen": "說",
+      "amend_base_text": false,
+      "suspended": false,
+      "confidence": 0.9799,
+      "margin": 0.9598,
+      "scores": {
+        "說": 1.6445,
+        "兩存": 0.0337
+      },
+      "apparatus_note": "「說」，今本作「悦」，二字通。戴震案：「說」為「悅」之古字，經傳通用，不煩改字。古書用借字者多，用本字者少。當存「說」而於校記著其讀，不當回改。今仍底本之舊，不改。",
+      "risk": "僅出校記，不改正文",
+      "opinions": [
+        {
+          "persona": "liuxiang",
+          "name": "劉向",
+          "method": "對校法",
+          "choice": "說",
+          "confidence": 0.8,
+          "evidence_grade": "確證",
+          "argument": "底本作「說」，古本多如此；今本作「悦」，乃後人以今字易古字，非舊觀也。",
+          "amend_base_text": false
+        },
+        {
+          "persona": "xiejin",
+          "name": "解縉",
+          "method": "他校法",
+          "choice": "兩存",
+          "confidence": 0.3,
+          "evidence_grade": "無證",
+          "argument": "遍檢類書注疏，未見徵引此句者。未得確證，闕疑可也。",
+          "amend_base_text": false
+        },
+        {
+          "persona": "daizhen",
+          "name": "戴震",
+          "method": "本校法・理校法（音韻訓詁）",
+          "choice": "說",
+          "confidence": 0.95,
+          "evidence_grade": "確證",
+          "argument": "「說」為「悅」之古字，經傳通用，不煩改字。古書用借字者多，用本字者少。當存「說」而於校記著其讀，不當回改。",
+          "amend_base_text": false
+        }
+      ],
+      "decided_by": "council",
+      "human_note": ""
+    },
+    {
+      "div_id": "D0002",
+      "dtype": "脫文缺字",
+      "base_text": "□",
+      "ref_text": "方",
+      "context": "不亦說乎有朋自逺【底本：□ / 今本：方】來不亦樂樂乎人不",
+      "chosen": "方",
+      "amend_base_text": false,
+      "suspended": true,
+      "confidence": 1.0,
+      "margin": 1.0,
+      "scores": {
+        "方": 1.5378
+      },
+      "apparatus_note": "底本無「方」字，今本有之。解縉案：《藝文類聚》卷二十一引《論語》引此文作「方」，唐初類書所引正作「有朋自遠方來」，可據補。諸說未一，姑兩存之，俟考。",
+      "risk": "底本該處 OCR 置信度僅 0.32，須覆核書影",
+      "opinions": [
+        {
+          "persona": "liuxiang",
+          "name": "劉向",
+          "method": "對校法",
+          "choice": "方",
+          "confidence": 0.6,
+          "evidence_grade": "旁證",
+          "argument": "底本此處版面漫漶，非本無其字。當據書影覆核，覈實乃可補。",
+          "amend_base_text": true
+        },
+        {
+          "persona": "xiejin",
+          "name": "解縉",
+          "method": "他校法",
+          "choice": "方",
+          "confidence": 0.85,
+          "evidence_grade": "確證",
+          "argument": "《藝文類聚》卷二十一引《論語》引此文作「方」，唐初類書所引正作「有朋自遠方來」，可據補。",
+          "amend_base_text": true
+        },
+        {
+          "persona": "daizhen",
+          "name": "戴震",
+          "method": "本校法・理校法（音韻訓詁）",
+          "choice": "方",
+          "confidence": 0.72,
+          "evidence_grade": "旁證",
+          "argument": "此句文例當有「方」字，無之則句法不完。以本書他處例之，可補。",
+          "amend_base_text": true
+        }
+      ],
+      "decided_by": "council",
+      "human_note": ""
+    },
+    {
+      "div_id": "D0003",
+      "dtype": "衍文重出",
+      "base_text": "樂",
+      "ref_text": "",
+      "context": "有朋自逺□來不亦【底本：樂 / 今本：〇】樂乎人不知而不慍",
+      "chosen": "",
+      "amend_base_text": true,
+      "suspended": false,
+      "confidence": 0.97,
+      "margin": 0.9399,
+      "scores": {
+        "": 1.163,
+        "兩存": 0.036
+      },
+      "apparatus_note": "底本「樂」重出，今本不重。劉向案：底本「樂」重出。刻本每以重文號「々」示疊字，傳錄者誤展，遂成衍文，當刪。今據刪。",
+      "risk": "改動底本正文",
+      "opinions": [
+        {
+          "persona": "liuxiang",
+          "name": "劉向",
+          "method": "對校法",
+          "choice": "",
+          "confidence": 0.82,
+          "evidence_grade": "確證",
+          "argument": "底本「樂」重出。刻本每以重文號「々」示疊字，傳錄者誤展，遂成衍文，當刪。",
+          "amend_base_text": true
+        },
+        {
+          "persona": "xiejin",
+          "name": "解縉",
+          "method": "他校法",
+          "choice": "兩存",
+          "confidence": 0.3,
+          "evidence_grade": "無證",
+          "argument": "遍檢類書注疏，未見徵引此句者。未得確證，闕疑可也。",
+          "amend_base_text": false
+        },
+        {
+          "persona": "daizhen",
+          "name": "戴震",
+          "method": "本校法・理校法（音韻訓詁）",
+          "choice": "",
+          "confidence": 0.7,
+          "evidence_grade": "旁證",
+          "argument": "重出之字於文義無所繫屬，衍無疑也。",
+          "amend_base_text": true
+        }
+      ],
+      "decided_by": "council",
+      "human_note": ""
+    },
+    {
+      "div_id": "D0004",
+      "dtype": "通假古今字",
+      "base_text": "弟",
+      "ref_text": "悌",
+      "context": "有子曰其爲人也孝【底本：弟 / 今本：悌】而好犯上者鮮矣不",
+      "chosen": "弟",
+      "amend_base_text": false,
+      "suspended": false,
+      "confidence": 0.9799,
+      "margin": 0.9598,
+      "scores": {
+        "弟": 1.6445,
+        "兩存": 0.0337
+      },
+      "apparatus_note": "「弟」，今本作「悌」，二字通。戴震案：「弟」為「悌」之本字，先秦典籍多作「弟」。古書用借字者多，用本字者少。當存「弟」而於校記著其讀，不當回改。今仍底本之舊，不改。",
+      "risk": "僅出校記，不改正文",
+      "opinions": [
+        {
+          "persona": "liuxiang",
+          "name": "劉向",
+          "method": "對校法",
+          "choice": "弟",
+          "confidence": 0.8,
+          "evidence_grade": "確證",
+          "argument": "底本作「弟」，古本多如此；今本作「悌」，乃後人以今字易古字，非舊觀也。",
+          "amend_base_text": false
+        },
+        {
+          "persona": "xiejin",
+          "name": "解縉",
+          "method": "他校法",
+          "choice": "兩存",
+          "confidence": 0.3,
+          "evidence_grade": "無證",
+          "argument": "遍檢類書注疏，未見徵引此句者。未得確證，闕疑可也。",
+          "amend_base_text": false
+        },
+        {
+          "persona": "daizhen",
+          "name": "戴震",
+          "method": "本校法・理校法（音韻訓詁）",
+          "choice": "弟",
+          "confidence": 0.95,
+          "evidence_grade": "確證",
+          "argument": "「弟」為「悌」之本字，先秦典籍多作「弟」。古書用借字者多，用本字者少。當存「弟」而於校記著其讀，不當回改。",
+          "amend_base_text": false
+        }
+      ],
+      "decided_by": "council",
+      "human_note": ""
+    },
+    {
+      "div_id": "D0005",
+      "dtype": "通假古今字",
+      "base_text": "弟",
+      "ref_text": "悌",
+      "context": "務本本立而道生孝【底本：弟 / 今本：悌】也者其爲仁之本與",
+      "chosen": "弟",
+      "amend_base_text": false,
+      "suspended": false,
+      "confidence": 0.9799,
+      "margin": 0.9598,
+      "scores": {
+        "弟": 1.6445,
+        "兩存": 0.0337
+      },
+      "apparatus_note": "「弟」，今本作「悌」，二字通。戴震案：「弟」為「悌」之本字，先秦典籍多作「弟」。古書用借字者多，用本字者少。當存「弟」而於校記著其讀，不當回改。今仍底本之舊，不改。",
+      "risk": "僅出校記，不改正文",
+      "opinions": [
+        {
+          "persona": "liuxiang",
+          "name": "劉向",
+          "method": "對校法",
+          "choice": "弟",
+          "confidence": 0.8,
+          "evidence_grade": "確證",
+          "argument": "底本作「弟」，古本多如此；今本作「悌」，乃後人以今字易古字，非舊觀也。",
+          "amend_base_text": false
+        },
+        {
+          "persona": "xiejin",
+          "name": "解縉",
+          "method": "他校法",
+          "choice": "兩存",
+          "confidence": 0.3,
+          "evidence_grade": "無證",
+          "argument": "遍檢類書注疏，未見徵引此句者。未得確證，闕疑可也。",
+          "amend_base_text": false
+        },
+        {
+          "persona": "daizhen",
+          "name": "戴震",
+          "method": "本校法・理校法（音韻訓詁）",
+          "choice": "弟",
+          "confidence": 0.95,
+          "evidence_grade": "確證",
+          "argument": "「弟」為「悌」之本字，先秦典籍多作「弟」。古書用借字者多，用本字者少。當存「弟」而於校記著其讀，不當回改。",
+          "amend_base_text": false
+        }
+      ],
+      "decided_by": "council",
+      "human_note": ""
+    },
+    {
+      "div_id": "D0006",
+      "dtype": "形近疑誤",
+      "base_text": "傅",
+      "ref_text": "传",
+      "context": "與朋友交而不信乎【底本：傅 / 今本：传】不習乎子曰道千乘",
+      "chosen": "兩存",
+      "amend_base_text": false,
+      "suspended": true,
+      "confidence": 1.0,
+      "margin": 1.0,
+      "scores": {
+        "兩存": 0.2337
+      },
+      "apparatus_note": "「傅」，今本作「传」。戴震案：二字形近而皆可成文，非訓詁所能決。當覆核書影字口，不可以意定之。諸說未一，姑兩存之，俟考。",
+      "risk": "三家主兩存；底本該處 OCR 置信度僅 0.67，須覆核書影",
+      "opinions": [
+        {
+          "persona": "liuxiang",
+          "name": "劉向",
+          "method": "對校法",
+          "choice": "兩存",
+          "confidence": 0.5,
+          "evidence_grade": "無證",
+          "argument": "「傅」「传」形近，此當覆核書影字口，非版本之爭，非吾所能斷。",
+          "amend_base_text": false
+        },
+        {
+          "persona": "xiejin",
+          "name": "解縉",
+          "method": "他校法",
+          "choice": "兩存",
+          "confidence": 0.35,
+          "evidence_grade": "無證",
+          "argument": "他書無引此句者，未得確證，不敢懸揣。",
+          "amend_base_text": false
+        },
+        {
+          "persona": "daizhen",
+          "name": "戴震",
+          "method": "本校法・理校法（音韻訓詁）",
+          "choice": "兩存",
+          "confidence": 0.5,
+          "evidence_grade": "推測",
+          "argument": "二字形近而皆可成文，非訓詁所能決。當覆核書影字口，不可以意定之。",
+          "amend_base_text": false
+        }
+      ],
+      "decided_by": "council",
+      "human_note": ""
+    },
+    {
+      "div_id": "D0007",
+      "dtype": "通假古今字",
+      "base_text": "道",
+      "ref_text": "导",
+      "context": "信乎傅不習乎子曰【底本：道 / 今本：导】千乘之國敬事而信",
+      "chosen": "道",
+      "amend_base_text": false,
+      "suspended": false,
+      "confidence": 0.9799,
+      "margin": 0.9598,
+      "scores": {
+        "道": 1.6445,
+        "兩存": 0.0337
+      },
+      "apparatus_note": "「道」，今本作「导」，二字通。戴震案：「道」訓「治」，亦通「導」，說見《集解》引包咸。古書用借字者多，用本字者少。當存「道」而於校記著其讀，不當回改。今仍底本之舊，不改。",
+      "risk": "僅出校記，不改正文",
+      "opinions": [
+        {
+          "persona": "liuxiang",
+          "name": "劉向",
+          "method": "對校法",
+          "choice": "道",
+          "confidence": 0.8,
+          "evidence_grade": "確證",
+          "argument": "底本作「道」，古本多如此；今本作「导」，乃後人以今字易古字，非舊觀也。",
+          "amend_base_text": false
+        },
+        {
+          "persona": "xiejin",
+          "name": "解縉",
+          "method": "他校法",
+          "choice": "兩存",
+          "confidence": 0.3,
+          "evidence_grade": "無證",
+          "argument": "遍檢類書注疏，未見徵引此句者。未得確證，闕疑可也。",
+          "amend_base_text": false
+        },
+        {
+          "persona": "daizhen",
+          "name": "戴震",
+          "method": "本校法・理校法（音韻訓詁）",
+          "choice": "道",
+          "confidence": 0.95,
+          "evidence_grade": "確證",
+          "argument": "「道」訓「治」，亦通「導」，說見《集解》引包咸。古書用借字者多，用本字者少。當存「道」而於校記著其讀，不當回改。",
+          "amend_base_text": false
+        }
+      ],
+      "decided_by": "council",
+      "human_note": ""
+    },
+    {
+      "div_id": "D0008",
+      "dtype": "避諱改字",
+      "base_text": "人",
+      "ref_text": "民",
+      "context": "而信節用而愛人使【底本：人 / 今本：民】以時子曰弟子入則",
+      "chosen": "人",
+      "amend_base_text": false,
+      "suspended": false,
+      "confidence": 0.788,
+      "margin": 0.5759,
+      "scores": {
+        "人": 1.4203,
+        "民": 0.3822
+      },
+      "apparatus_note": "「人」，今本作「民」，避諱改字。劉向案：底本作「人」，今本作「民」，此避諱改字之跡，正可據以定版本時代，當存底本之舊，不可回改。今仍底本之舊，不改。",
+      "risk": "僅出校記，不改正文",
+      "opinions": [
+        {
+          "persona": "liuxiang",
+          "name": "劉向",
+          "method": "對校法",
+          "choice": "人",
+          "confidence": 0.92,
+          "evidence_grade": "確證",
+          "argument": "底本作「人」，今本作「民」，此避諱改字之跡，正可據以定版本時代，當存底本之舊，不可回改。",
+          "amend_base_text": false
+        },
+        {
+          "persona": "xiejin",
+          "name": "解縉",
+          "method": "他校法",
+          "choice": "民",
+          "confidence": 0.78,
+          "evidence_grade": "旁證",
+          "argument": "《經典釋文·論語音義》引此文作「民」，陸氏所據本作「民」，唐寫本避諱多改「人」。",
+          "amend_base_text": true
+        },
+        {
+          "persona": "daizhen",
+          "name": "戴震",
+          "method": "本校法・理校法（音韻訓詁）",
+          "choice": "人",
+          "confidence": 0.75,
+          "evidence_grade": "旁證",
+          "argument": "避諱改字，於訓詁無涉，然改字則害文義，仍當復其本字之舊。",
+          "amend_base_text": false
+        }
+      ],
+      "decided_by": "council",
+      "human_note": ""
+    },
+    {
+      "div_id": "D0009",
+      "dtype": "通假古今字",
+      "base_text": "弟",
+      "ref_text": "悌",
+      "context": "曰弟子入則孝出則【底本：弟 / 今本：悌】謹而信汎愛衆而親",
+      "chosen": "弟",
+      "amend_base_text": false,
+      "suspended": false,
+      "confidence": 0.9799,
+      "margin": 0.9598,
+      "scores": {
+        "弟": 1.6445,
+        "兩存": 0.0337
+      },
+      "apparatus_note": "「弟」，今本作「悌」，二字通。戴震案：「弟」為「悌」之本字，先秦典籍多作「弟」。古書用借字者多，用本字者少。當存「弟」而於校記著其讀，不當回改。今仍底本之舊，不改。",
+      "risk": "僅出校記，不改正文",
+      "opinions": [
+        {
+          "persona": "liuxiang",
+          "name": "劉向",
+          "method": "對校法",
+          "choice": "弟",
+          "confidence": 0.8,
+          "evidence_grade": "確證",
+          "argument": "底本作「弟」，古本多如此；今本作「悌」，乃後人以今字易古字，非舊觀也。",
+          "amend_base_text": false
+        },
+        {
+          "persona": "xiejin",
+          "name": "解縉",
+          "method": "他校法",
+          "choice": "兩存",
+          "confidence": 0.3,
+          "evidence_grade": "無證",
+          "argument": "遍檢類書注疏，未見徵引此句者。未得確證，闕疑可也。",
+          "amend_base_text": false
+        },
+        {
+          "persona": "daizhen",
+          "name": "戴震",
+          "method": "本校法・理校法（音韻訓詁）",
+          "choice": "弟",
+          "confidence": 0.95,
+          "evidence_grade": "確證",
+          "argument": "「弟」為「悌」之本字，先秦典籍多作「弟」。古書用借字者多，用本字者少。當存「弟」而於校記著其讀，不當回改。",
+          "amend_base_text": false
+        }
+      ],
+      "decided_by": "council",
+      "human_note": ""
+    },
+    {
+      "div_id": "D0010",
+      "dtype": "實質異文",
+      "base_text": "謹",
+      "ref_text": "敬",
+      "context": "弟子入則孝出則弟【底本：謹 / 今本：敬】而信汎愛衆而親仁",
+      "chosen": "謹",
+      "amend_base_text": false,
+      "suspended": false,
+      "confidence": 0.6824,
+      "margin": 0.3648,
+      "scores": {
+        "謹": 0.4448,
+        "兩存": 0.207
+      },
+      "apparatus_note": "「謹」，今本作「敬」。劉向案：底本作「謹」。不改一字，存異而已。今仍底本之舊，不改。",
+      "risk": "僅出校記，不改正文",
+      "opinions": [
+        {
+          "persona": "liuxiang",
+          "name": "劉向",
+          "method": "對校法",
+          "choice": "謹",
+          "confidence": 0.65,
+          "evidence_grade": "旁證",
+          "argument": "底本作「謹」。不改一字，存異而已。",
+          "amend_base_text": false
+        },
+        {
+          "persona": "xiejin",
+          "name": "解縉",
+          "method": "他校法",
+          "choice": "兩存",
+          "confidence": 0.3,
+          "evidence_grade": "無證",
+          "argument": "遍檢類書注疏，未見徵引此句者。未得確證，闕疑可也。",
+          "amend_base_text": false
+        },
+        {
+          "persona": "daizhen",
+          "name": "戴震",
+          "method": "本校法・理校法（音韻訓詁）",
+          "choice": "兩存",
+          "confidence": 0.45,
+          "evidence_grade": "推測",
+          "argument": "無左證而以意改者，雖通不可從。當存異待考。",
+          "amend_base_text": false
+        }
+      ],
+      "decided_by": "council",
+      "human_note": ""
+    },
+    {
+      "div_id": "D0011",
+      "dtype": "倒文",
+      "base_text": "文學",
+      "ref_text": "学文",
+      "context": "親仁行有餘力則以【底本：文學 / 今本：学文】",
+      "chosen": "學文",
+      "amend_base_text": true,
+      "suspended": false,
+      "confidence": 0.5996,
+      "margin": 0.3456,
+      "scores": {
+        "文學": 0.3542,
+        "學文": 0.836,
+        "学文": 0.204
+      },
+      "apparatus_note": "底本作「文學」，今本作「学文」，次第互異。解縉案：《後漢書》李賢注引《論語》引此文作「學文」，唐李賢注引作「則以學文」，與今本合。今據改作「學文」。",
+      "risk": "改動底本正文",
+      "opinions": [
+        {
+          "persona": "liuxiang",
+          "name": "劉向",
+          "method": "對校法",
+          "choice": "文學",
+          "confidence": 0.55,
+          "evidence_grade": "旁證",
+          "argument": "二本次第互異。無他本可證之前，姑仍底本之舊，出校記可也。",
+          "amend_base_text": false
+        },
+        {
+          "persona": "xiejin",
+          "name": "解縉",
+          "method": "他校法",
+          "choice": "學文",
+          "confidence": 0.88,
+          "evidence_grade": "確證",
+          "argument": "《後漢書》李賢注引《論語》引此文作「學文」，唐李賢注引作「則以學文」，與今本合。",
+          "amend_base_text": true
+        },
+        {
+          "persona": "daizhen",
+          "name": "戴震",
+          "method": "本校法・理校法（音韻訓詁）",
+          "choice": "学文",
+          "confidence": 0.6,
+          "evidence_grade": "推測",
+          "argument": "以文義先後推之，今本次第較順。然無左證而以意乙正，不可從，姑志之。",
+          "amend_base_text": false
+        }
+      ],
+      "decided_by": "council",
+      "human_note": ""
+    }
+  ],
+  "stats": {
+    "total": 11,
+    "amended": 2,
+    "kept": 7,
+    "suspended": 2,
+    "by_type": {
+      "通假古今字": 5,
+      "脫文缺字": 1,
+      "衍文重出": 1,
+      "形近疑誤": 1,
+      "避諱改字": 1,
+      "實質異文": 1,
+      "倒文": 1
+    },
+    "auto_resolution_rate": 0.8182
+  },
+  "punctuation": {
+    "ours": 23,
+    "modern": 36,
+    "shared_positions": 20,
+    "jaccard": 0.5128,
+    "identical_marks": 18,
+    "warn": false
+  },
+  "alerts": [],
+  "elapsed_sec": 0.017
+}

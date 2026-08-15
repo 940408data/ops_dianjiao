@@ -1,0 +1,108 @@
+{
+  "run_id": "20260814T230305",
+  "count": 2,
+  "items": [
+    {
+      "div_id": "D0002",
+      "dtype": "脫文缺字",
+      "base_text": "□",
+      "ref_text": "方",
+      "context": "不亦說乎有朋自逺【底本：□ / 今本：方】來不亦樂樂乎人不",
+      "chosen": "方",
+      "amend_base_text": false,
+      "suspended": true,
+      "confidence": 1.0,
+      "margin": 1.0,
+      "scores": {
+        "方": 1.5378
+      },
+      "apparatus_note": "底本無「方」字，今本有之。解縉案：《藝文類聚》卷二十一引《論語》引此文作「方」，唐初類書所引正作「有朋自遠方來」，可據補。諸說未一，姑兩存之，俟考。",
+      "risk": "底本該處 OCR 置信度僅 0.32，須覆核書影",
+      "opinions": [
+        {
+          "persona": "liuxiang",
+          "name": "劉向",
+          "method": "對校法",
+          "choice": "方",
+          "confidence": 0.6,
+          "evidence_grade": "旁證",
+          "argument": "底本此處版面漫漶，非本無其字。當據書影覆核，覈實乃可補。",
+          "amend_base_text": true
+        },
+        {
+          "persona": "xiejin",
+          "name": "解縉",
+          "method": "他校法",
+          "choice": "方",
+          "confidence": 0.85,
+          "evidence_grade": "確證",
+          "argument": "《藝文類聚》卷二十一引《論語》引此文作「方」，唐初類書所引正作「有朋自遠方來」，可據補。",
+          "amend_base_text": true
+        },
+        {
+          "persona": "daizhen",
+          "name": "戴震",
+          "method": "本校法・理校法（音韻訓詁）",
+          "choice": "方",
+          "confidence": 0.72,
+          "evidence_grade": "旁證",
+          "argument": "此句文例當有「方」字，無之則句法不完。以本書他處例之，可補。",
+          "amend_base_text": true
+        }
+      ],
+      "decided_by": "council",
+      "human_note": ""
+    },
+    {
+      "div_id": "D0006",
+      "dtype": "形近疑誤",
+      "base_text": "傅",
+      "ref_text": "传",
+      "context": "與朋友交而不信乎【底本：傅 / 今本：传】不習乎子曰道千乘",
+      "chosen": "兩存",
+      "amend_base_text": false,
+      "suspended": true,
+      "confidence": 1.0,
+      "margin": 1.0,
+      "scores": {
+        "兩存": 0.2337
+      },
+      "apparatus_note": "「傅」，今本作「传」。戴震案：二字形近而皆可成文，非訓詁所能決。當覆核書影字口，不可以意定之。諸說未一，姑兩存之，俟考。",
+      "risk": "三家主兩存；底本該處 OCR 置信度僅 0.67，須覆核書影",
+      "opinions": [
+        {
+          "persona": "liuxiang",
+          "name": "劉向",
+          "method": "對校法",
+          "choice": "兩存",
+          "confidence": 0.5,
+          "evidence_grade": "無證",
+          "argument": "「傅」「传」形近，此當覆核書影字口，非版本之爭，非吾所能斷。",
+          "amend_base_text": false
+        },
+        {
+          "persona": "xiejin",
+          "name": "解縉",
+          "method": "他校法",
+          "choice": "兩存",
+          "confidence": 0.35,
+          "evidence_grade": "無證",
+          "argument": "他書無引此句者，未得確證，不敢懸揣。",
+          "amend_base_text": false
+        },
+        {
+          "persona": "daizhen",
+          "name": "戴震",
+          "method": "本校法・理校法（音韻訓詁）",
+          "choice": "兩存",
+          "confidence": 0.5,
+          "evidence_grade": "推測",
+          "argument": "二字形近而皆可成文，非訓詁所能決。當覆核書影字口，不可以意定之。",
+          "amend_base_text": false
+        }
+      ],
+      "decided_by": "council",
+      "human_note": ""
+    }
+  ]
+}
