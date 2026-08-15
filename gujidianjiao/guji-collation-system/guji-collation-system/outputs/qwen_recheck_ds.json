@@ -1,0 +1,29 @@
+{
+  "D0086": {
+    "base": "巳",
+    "ref": "己",
+    "ocr_conf": 0.6647,
+    "page": "page_0021.md",
+    "qwen_char": null,
+    "qwen_conf": null,
+    "qwen_note": ""
+  },
+  "D0088": {
+    "base": "已",
+    "ref": "己",
+    "ocr_conf": 0.6355,
+    "page": "page_0021.md",
+    "qwen_char": "己",
+    "qwen_conf": 0.95,
+    "qwen_note": "書影該字左側豎畫明顯向上出頭，字形為「己」，OCR誤識為「已」。"
+  },
+  "D0125": {
+    "base": "巳",
+    "ref": "已",
+    "ocr_conf": 0.6656,
+    "page": "page_0029.md",
+    "qwen_char": "已",
+    "qwen_conf": 1.0,
+    "qwen_note": "字形清晰，右側半封口，確為「已」字，OCR誤識為「巳」。"
+  }
+}

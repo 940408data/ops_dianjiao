@@ -1,0 +1,927 @@
+{
+  "共议": 154,
+  "一致": 63,
+  "分歧": 91,
+  "分歧率": 0.5909,
+  "deepseek悬置": 34,
+  "glm悬置": 49,
+  "共同悬置": 15,
+  "分歧类型分布": {
+    "衍文重出": 7,
+    "實質異文": 52,
+    "脫文缺字": 29,
+    "形近疑誤": 3
+  },
+  "分歧明细": [
+    {
+      "id": "D0001",
+      "type": "衍文重出",
+      "base": "宋本大學章句",
+      "ref": "",
+      "deepseek": "兩存",
+      "glm": "宋本大學章句",
+      "ds_susp": false,
+      "glm_susp": false
+    },
+    {
+      "id": "D0002",
+      "type": "實質異文",
+      "base": "旣",
+      "ref": "既",
+      "deepseek": "兩存",
+      "glm": "旣",
+      "ds_susp": false,
+      "glm_susp": false
+    },
+    {
+      "id": "D0003",
+      "type": "實質異文",
+      "base": "閒",
+      "ref": "間",
+      "deepseek": "閒",
+      "glm": "間",
+      "ds_susp": false,
+      "glm_susp": false
+    },
+    {
+      "id": "D0007",
+      "type": "實質異文",
+      "base": "彞",
+      "ref": "彝",
+      "deepseek": "彞",
+      "glm": "彝",
+      "ds_susp": false,
+      "glm_susp": false
+    },
+    {
+      "id": "D0008",
+      "type": "實質異文",
+      "base": "丗",
+      "ref": "世",
+      "deepseek": "丗",
+      "glm": "世",
+      "ds_susp": false,
+      "glm_susp": false
+    },
+    {
+      "id": "D0010",
+      "type": "實質異文",
+      "base": "頽",
+      "ref": "頹",
+      "deepseek": "頽",
+      "glm": "兩存",
+      "ds_susp": false,
+      "glm_susp": true
+    },
+    {
+      "id": "D0012",
+      "type": "實質異文",
+      "base": "丗",
+      "ref": "世",
+      "deepseek": "兩存",
+      "glm": "世",
+      "ds_susp": true,
+      "glm_susp": false
+    },
+    {
+      "id": "D0015",
+      "type": "實質異文",
+      "base": "髙",
+      "ref": "高",
+      "deepseek": "高",
+      "glm": "兩存",
+      "ds_susp": false,
+      "glm_susp": true
+    },
+    {
+      "id": "D0016",
+      "type": "實質異文",
+      "base": "丗",
+      "ref": "世",
+      "deepseek": "丗",
+      "glm": "兩存",
+      "ds_susp": false,
+      "glm_susp": true
+    },
+    {
+      "id": "D0020",
+      "type": "實質異文",
+      "base": "旣",
+      "ref": "既",
+      "deepseek": "兩存",
+      "glm": "既",
+      "ds_susp": false,
+      "glm_susp": false
+    },
+    {
+      "id": "D0021",
+      "type": "實質異文",
+      "base": "丗",
+      "ref": "世",
+      "deepseek": "兩存",
+      "glm": "丗",
+      "ds_susp": false,
+      "glm_susp": false
+    },
+    {
+      "id": "D0022",
+      "type": "實質異文",
+      "base": "閒",
+      "ref": "間",
+      "deepseek": "兩存",
+      "glm": "閒",
+      "ds_susp": false,
+      "glm_susp": false
+    },
+    {
+      "id": "D0024",
+      "type": "衍文重出",
+      "base": "朱熹章句",
+      "ref": "",
+      "deepseek": "兩存",
+      "glm": "朱熹章句",
+      "ds_susp": false,
+      "glm_susp": false
+    },
+    {
+      "id": "D0025",
+      "type": "脫文缺字",
+      "base": "",
+      "ref": "朱熹章句",
+      "deepseek": "兩存",
+      "glm": "底本",
+      "ds_susp": false,
+      "glm_susp": false
+    },
+    {
+      "id": "D0026",
+      "type": "實質異文",
+      "base": "〇",
+      "ref": "○",
+      "deepseek": "〇",
+      "glm": "○",
+      "ds_susp": false,
+      "glm_susp": false
+    },
+    {
+      "id": "D0029",
+      "type": "脫文缺字",
+      "base": "",
+      "ref": "大學",
+      "deepseek": "兩存",
+      "glm": "大學",
+      "ds_susp": false,
+      "glm_susp": false
+    },
+    {
+      "id": "D0031",
+      "type": "實質異文",
+      "base": "至",
+      "ref": "止",
+      "deepseek": "止",
+      "glm": "兩存",
+      "ds_susp": false,
+      "glm_susp": true
+    },
+    {
+      "id": "D0032",
+      "type": "衍文重出",
+      "base": "后與後同",
+      "ref": "",
+      "deepseek": "兩存",
+      "glm": "后與後同、後放此止者所當止",
+      "ds_susp": false,
+      "glm_susp": false
+    },
+    {
+      "id": "D0033",
+      "type": "脫文缺字",
+      "base": "",
+      "ref": "○",
+      "deepseek": "兩存",
+      "glm": "○",
+      "ds_susp": false,
+      "glm_susp": false
+    },
+    {
+      "id": "D0035",
+      "type": "脫文缺字",
+      "base": "",
+      "ref": "○",
+      "deepseek": "○",
+      "glm": "兩存",
+      "ds_susp": false,
+      "glm_susp": true
+    },
+    {
+      "id": "D0038",
+      "type": "實質異文",
+      "base": "旣",
+      "ref": "既",
+      "deepseek": "兩存",
+      "glm": "旣",
+      "ds_susp": false,
+      "glm_susp": false
+    },
+    {
+      "id": "D0039",
+      "type": "實質異文",
+      "base": "旣",
+      "ref": "既",
+      "deepseek": "既",
+      "glm": "旣",
+      "ds_susp": false,
+      "glm_susp": false
+    },
+    {
+      "id": "D0041",
+      "type": "形近疑誤",
+      "base": "脩",
+      "ref": "修",
+      "deepseek": "脩",
+      "glm": "兩存",
+      "ds_susp": false,
+      "glm_susp": true
+    },
+    {
+      "id": "D0043",
+      "type": "實質異文",
+      "base": "乆",
+      "ref": "久",
+      "deepseek": "兩存",
+      "glm": "乆",
+      "ds_susp": false,
+      "glm_susp": false
+    },
+    {
+      "id": "D0044",
+      "type": "脫文缺字",
+      "base": "",
+      "ref": "○",
+      "deepseek": "兩存",
+      "glm": "○",
+      "ds_susp": true,
+      "glm_susp": false
+    },
+    {
+      "id": "D0045",
+      "type": "脫文缺字",
+      "base": "",
+      "ref": "大學",
+      "deepseek": "兩存",
+      "glm": "大學",
+      "ds_susp": false,
+      "glm_susp": false
+    },
+    {
+      "id": "D0046",
+      "type": "脫文缺字",
+      "base": "",
+      "ref": "○",
+      "deepseek": "兩存",
+      "glm": "○",
+      "ds_susp": true,
+      "glm_susp": false
+    },
+    {
+      "id": "D0047",
+      "type": "實質異文",
+      "base": "湯",
+      "ref": "物",
+      "deepseek": "兩存",
+      "glm": "湯",
+      "ds_susp": true,
+      "glm_susp": false
+    },
+    {
+      "id": "D0049",
+      "type": "形近疑誤",
+      "base": "曰",
+      "ref": "日",
+      "deepseek": "曰",
+      "glm": "兩存",
+      "ds_susp": false,
+      "glm_susp": true
+    },
+    {
+      "id": "D0051",
+      "type": "實質異文",
+      "base": "曰曰",
+      "ref": "日日新之又日",
+      "deepseek": "日日新之又日",
+      "glm": "兩存",
+      "ds_susp": false,
+      "glm_susp": true
+    },
+    {
+      "id": "D0052",
+      "type": "脫文缺字",
+      "base": "",
+      "ref": "不",
+      "deepseek": "不",
+      "glm": "兩存",
+      "ds_susp": false,
+      "glm_susp": true
+    },
+    {
+      "id": "D0053",
+      "type": "實質異文",
+      "base": "閒",
+      "ref": "間",
+      "deepseek": "兩存",
+      "glm": "閒",
+      "ds_susp": true,
+      "glm_susp": false
+    },
+    {
+      "id": "D0060",
+      "type": "實質異文",
+      "base": "旣",
+      "ref": "既",
+      "deepseek": "既",
+      "glm": "旣",
+      "ds_susp": false,
+      "glm_susp": false
+    },
+    {
+      "id": "D0061",
+      "type": "實質異文",
+      "base": "旣",
+      "ref": "既",
+      "deepseek": "既",
+      "glm": "兩存",
+      "ds_susp": false,
+      "glm_susp": true
+    },
+    {
+      "id": "D0063",
+      "type": "實質異文",
+      "base": "丗",
+      "ref": "世",
+      "deepseek": "世",
+      "glm": "丗",
+      "ds_susp": false,
+      "glm_susp": false
+    },
+    {
+      "id": "D0065",
+      "type": "實質異文",
+      "base": "丗",
+      "ref": "世",
+      "deepseek": "兩存",
+      "glm": "世",
+      "ds_susp": false,
+      "glm_susp": false
+    },
+    {
+      "id": "D0066",
+      "type": "實質異文",
+      "base": "旣",
+      "ref": "既",
+      "deepseek": "兩存",
+      "glm": "旣",
+      "ds_susp": false,
+      "glm_susp": false
+    },
+    {
+      "id": "D0067",
+      "type": "實質異文",
+      "base": "丗",
+      "ref": "世",
+      "deepseek": "世",
+      "glm": "丗",
+      "ds_susp": false,
+      "glm_susp": false
+    },
+    {
+      "id": "D0068",
+      "type": "實質異文",
+      "base": "乆",
+      "ref": "久",
+      "deepseek": "乆",
+      "glm": "久",
+      "ds_susp": false,
+      "glm_susp": false
+    },
+    {
+      "id": "D0071",
+      "type": "脫文缺字",
+      "base": "",
+      "ref": "①錫原作錫據仿元本及韻會改②泆仿元本作液",
+      "deepseek": "兩存",
+      "glm": "底本不誤，無脫文",
+      "ds_susp": true,
+      "glm_susp": false
+    },
+    {
+      "id": "D0072",
+      "type": "實質異文",
+      "base": "旣",
+      "ref": "既",
+      "deepseek": "兩存",
+      "glm": "旣",
+      "ds_susp": false,
+      "glm_susp": false
+    },
+    {
+      "id": "D0073",
+      "type": "衍文重出",
+      "base": "目石フ息",
+      "ref": "",
+      "deepseek": "兩存",
+      "glm": "目石フ息",
+      "ds_susp": true,
+      "glm_susp": true
+    },
+    {
+      "id": "D0074",
+      "type": "衍文重出",
+      "base": "申方つと",
+      "ref": "",
+      "deepseek": "兩存",
+      "glm": "今本作〔〇〕",
+      "ds_susp": false,
+      "glm_susp": false
+    },
+    {
+      "id": "D0078",
+      "type": "實質異文",
+      "base": "母",
+      "ref": "毋",
+      "deepseek": "毋",
+      "glm": "兩存",
+      "ds_susp": false,
+      "glm_susp": true
+    },
+    {
+      "id": "D0079",
+      "type": "脫文缺字",
+      "base": "",
+      "ref": "①慊吴本作謙",
+      "deepseek": "兩存",
+      "glm": "補「慊」字，吳本作「謙」存異",
+      "ds_susp": false,
+      "glm_susp": false
+    },
+    {
+      "id": "D0081",
+      "type": "實質異文",
+      "base": "隂",
+      "ref": "陰",
+      "deepseek": "兩存",
+      "glm": "隂",
+      "ds_susp": true,
+      "glm_susp": false
+    },
+    {
+      "id": "D0083",
+      "type": "脫文缺字",
+      "base": "",
+      "ref": "其意",
+      "deepseek": "兩存",
+      "glm": "其意",
+      "ds_susp": true,
+      "glm_susp": false
+    },
+    {
+      "id": "D0084",
+      "type": "衍文重出",
+      "base": "其意",
+      "ref": "",
+      "deepseek": "兩存",
+      "glm": "其意",
+      "ds_susp": true,
+      "glm_susp": false
+    },
+    {
+      "id": "D0085",
+      "type": "脫文缺字",
+      "base": "",
+      "ref": "○",
+      "deepseek": "兩存",
+      "glm": "、",
+      "ds_susp": true,
+      "glm_susp": false
+    },
+    {
+      "id": "D0090",
+      "type": "脫文缺字",
+      "base": "",
+      "ref": "○",
+      "deepseek": "○",
+      "glm": "兩存",
+      "ds_susp": false,
+      "glm_susp": true
+    },
+    {
+      "id": "D0092",
+      "type": "實質異文",
+      "base": "内",
+      "ref": "內",
+      "deepseek": "內",
+      "glm": "内",
+      "ds_susp": false,
+      "glm_susp": false
+    },
+    {
+      "id": "D0093",
+      "type": "脫文缺字",
+      "base": "",
+      "ref": "○",
+      "deepseek": "兩存",
+      "glm": "○",
+      "ds_susp": false,
+      "glm_susp": false
+    },
+    {
+      "id": "D0094",
+      "type": "脫文缺字",
+      "base": "",
+      "ref": "○",
+      "deepseek": "兩存",
+      "glm": "○",
+      "ds_susp": false,
+      "glm_susp": false
+    },
+    {
+      "id": "D0097",
+      "type": "脫文缺字",
+      "base": "",
+      "ref": "大學",
+      "deepseek": "，大學",
+      "glm": "大學",
+      "ds_susp": false,
+      "glm_susp": false
+    },
+    {
+      "id": "D0098",
+      "type": "脫文缺字",
+      "base": "",
+      "ref": "○",
+      "deepseek": "兩存",
+      "glm": "○",
+      "ds_susp": false,
+      "glm_susp": false
+    },
+    {
+      "id": "D0099",
+      "type": "實質異文",
+      "base": "強",
+      "ref": "强",
+      "deepseek": "強",
+      "glm": "兩存",
+      "ds_susp": false,
+      "glm_susp": true
+    },
+    {
+      "id": "D0101",
+      "type": "脫文缺字",
+      "base": "",
+      "ref": "○",
+      "deepseek": "兩存",
+      "glm": "○",
+      "ds_susp": true,
+      "glm_susp": false
+    },
+    {
+      "id": "D0102",
+      "type": "實質異文",
+      "base": "償",
+      "ref": "債",
+      "deepseek": "償",
+      "glm": "兩存",
+      "ds_susp": false,
+      "glm_susp": true
+    },
+    {
+      "id": "D0104",
+      "type": "脫文缺字",
+      "base": "",
+      "ref": "無諸己而后非諸人原脱據元甲本司禮監本仿元本吴本補",
+      "deepseek": "無諸己而后非諸人",
+      "glm": "補「無諸己而后非諸人」八字",
+      "ds_susp": false,
+      "glm_susp": false
+    },
+    {
+      "id": "D0105",
+      "type": "脫文缺字",
+      "base": "",
+      "ref": "○",
+      "deepseek": "兩存",
+      "glm": "○",
+      "ds_susp": true,
+      "glm_susp": false
+    },
+    {
+      "id": "D0107",
+      "type": "脫文缺字",
+      "base": "",
+      "ref": "○",
+      "deepseek": "補○",
+      "glm": "○",
+      "ds_susp": false,
+      "glm_susp": false
+    },
+    {
+      "id": "D0109",
+      "type": "實質異文",
+      "base": "㓜",
+      "ref": "幼",
+      "deepseek": "幼",
+      "glm": "㓜",
+      "ds_susp": false,
+      "glm_susp": false
+    },
+    {
+      "id": "D0111",
+      "type": "實質異文",
+      "base": "母",
+      "ref": "毋",
+      "deepseek": "毋",
+      "glm": "兩存",
+      "ds_susp": false,
+      "glm_susp": true
+    },
+    {
+      "id": "D0112",
+      "type": "實質異文",
+      "base": "母",
+      "ref": "毋",
+      "deepseek": "毋",
+      "glm": "兩存",
+      "ds_susp": false,
+      "glm_susp": true
+    },
+    {
+      "id": "D0113",
+      "type": "實質異文",
+      "base": "母",
+      "ref": "毋",
+      "deepseek": "毋",
+      "glm": "兩存",
+      "ds_susp": false,
+      "glm_susp": true
+    },
+    {
+      "id": "D0114",
+      "type": "實質異文",
+      "base": "母",
+      "ref": "毋",
+      "deepseek": "毋",
+      "glm": "母",
+      "ds_susp": false,
+      "glm_susp": false
+    },
+    {
+      "id": "D0117",
+      "type": "脫文缺字",
+      "base": "",
+      "ref": "○",
+      "deepseek": "兩存",
+      "glm": "○",
+      "ds_susp": true,
+      "glm_susp": false
+    },
+    {
+      "id": "D0120",
+      "type": "脫文缺字",
+      "base": "",
+      "ref": "下僇矣",
+      "deepseek": "兩存",
+      "glm": "下僇矣",
+      "ds_susp": true,
+      "glm_susp": false
+    },
+    {
+      "id": "D0121",
+      "type": "實質異文",
+      "base": "慘",
+      "ref": "僇",
+      "deepseek": "僇",
+      "glm": "兩存",
+      "ds_susp": false,
+      "glm_susp": true
+    },
+    {
+      "id": "D0122",
+      "type": "實質異文",
+      "base": "髙",
+      "ref": "高",
+      "deepseek": "高",
+      "glm": "兩存",
+      "ds_susp": false,
+      "glm_susp": true
+    },
+    {
+      "id": "D0124",
+      "type": "脫文缺字",
+      "base": "",
+      "ref": "○",
+      "deepseek": "○",
+      "glm": "兩存",
+      "ds_susp": false,
+      "glm_susp": true
+    },
+    {
+      "id": "D0125",
+      "type": "形近疑誤",
+      "base": "巳",
+      "ref": "已",
+      "deepseek": "兩存",
+      "glm": "已",
+      "ds_susp": true,
+      "glm_susp": false
+    },
+    {
+      "id": "D0127",
+      "type": "實質異文",
+      "base": "爭",
+      "ref": "争",
+      "deepseek": "兩存",
+      "glm": "爭",
+      "ds_susp": false,
+      "glm_susp": true
+    },
+    {
+      "id": "D0129",
+      "type": "實質異文",
+      "base": "鬪",
+      "ref": "鬭",
+      "deepseek": "兩存",
+      "glm": "鬪",
+      "ds_susp": false,
+      "glm_susp": false
+    },
+    {
+      "id": "D0130",
+      "type": "實質異文",
+      "base": "刼",
+      "ref": "劫",
+      "deepseek": "兩存",
+      "glm": "刼",
+      "ds_susp": false,
+      "glm_susp": false
+    },
+    {
+      "id": "D0132",
+      "type": "實質異文",
+      "base": "爭",
+      "ref": "争",
+      "deepseek": "爭",
+      "glm": "刪「爭」字，從劉、戴說，定為衍字",
+      "ds_susp": false,
+      "glm_susp": false
+    },
+    {
+      "id": "D0133",
+      "type": "脫文缺字",
+      "base": "",
+      "ref": "○",
+      "deepseek": "○",
+      "glm": "兩存",
+      "ds_susp": false,
+      "glm_susp": true
+    },
+    {
+      "id": "D0137",
+      "type": "實質異文",
+      "base": "逆",
+      "ref": "大學迸",
+      "deepseek": "兩存",
+      "glm": "逆",
+      "ds_susp": true,
+      "glm_susp": false
+    },
+    {
+      "id": "D0138",
+      "type": "脫文缺字",
+      "base": "",
+      "ref": "○",
+      "deepseek": "兩存",
+      "glm": "○",
+      "ds_susp": true,
+      "glm_susp": true
+    },
+    {
+      "id": "D0140",
+      "type": "脫文缺字",
+      "base": "",
+      "ref": "○",
+      "deepseek": "兩存",
+      "glm": "○",
+      "ds_susp": false,
+      "glm_susp": false
+    },
+    {
+      "id": "D0141",
+      "type": "實質異文",
+      "base": "蓄",
+      "ref": "菑",
+      "deepseek": "菑",
+      "glm": "兩存",
+      "ds_susp": false,
+      "glm_susp": true
+    },
+    {
+      "id": "D0142",
+      "type": "實質異文",
+      "base": "髙",
+      "ref": "高",
+      "deepseek": "高",
+      "glm": "髙",
+      "ds_susp": false,
+      "glm_susp": false
+    },
+    {
+      "id": "D0143",
+      "type": "實質異文",
+      "base": "呂",
+      "ref": "○吕",
+      "deepseek": "兩存",
+      "glm": "呂",
+      "ds_susp": false,
+      "glm_susp": false
+    },
+    {
+      "id": "D0145",
+      "type": "實質異文",
+      "base": "乗",
+      "ref": "乘",
+      "deepseek": "乗",
+      "glm": "乘",
+      "ds_susp": false,
+      "glm_susp": false
+    },
+    {
+      "id": "D0146",
+      "type": "實質異文",
+      "base": "乗",
+      "ref": "乘",
+      "deepseek": "兩存",
+      "glm": "乘",
+      "ds_susp": false,
+      "glm_susp": false
+    },
+    {
+      "id": "D0147",
+      "type": "脫文缺字",
+      "base": "",
+      "ref": "○",
+      "deepseek": "兩存",
+      "glm": "○",
+      "ds_susp": true,
+      "glm_susp": false
+    },
+    {
+      "id": "D0148",
+      "type": "實質異文",
+      "base": "乗",
+      "ref": "乘",
+      "deepseek": "兩存",
+      "glm": "乘",
+      "ds_susp": false,
+      "glm_susp": false
+    },
+    {
+      "id": "D0149",
+      "type": "實質異文",
+      "base": "乗",
+      "ref": "乘",
+      "deepseek": "乘",
+      "glm": "乗",
+      "ds_susp": false,
+      "glm_susp": false
+    },
+    {
+      "id": "D0150",
+      "type": "脫文缺字",
+      "base": "",
+      "ref": "○",
+      "deepseek": "兩存",
+      "glm": "○",
+      "ds_susp": true,
+      "glm_susp": false
+    },
+    {
+      "id": "D0151",
+      "type": "實質異文",
+      "base": "兼",
+      "ref": "夢",
+      "deepseek": "夢",
+      "glm": "兼",
+      "ds_susp": false,
+      "glm_susp": false
+    },
+    {
+      "id": "D0153",
+      "type": "衍文重出",
+      "base": "肅吳公所刊見謂善本尤應竭來假守依倣規製取中庸",
+      "ref": "",
+      "deepseek": "兩存",
+      "glm": "肅吳公所刊見謂善本尤應竭來假守依倣規製取中庸",
+      "ds_susp": true,
+      "glm_susp": false
+    }
+  ]
+}

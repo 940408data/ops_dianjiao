@@ -51,7 +51,10 @@ def _client(cfg: Config):
     if cfg.llm == "anthropic":
         return AnthropicClient(model=cfg.model)
     if cfg.llm == "openai-compat":
-        return OpenAICompatClient(cfg.base_url, cfg.model)
+        # 推理模型关思维链：全书 616 次调用，开思维链 glm 单条 ~16s（几小时，不可行）；
+        # 关闭后 ~2s 且 content 不被截空（无需大 max_tokens），全书 ~20 分钟可跑完。
+        return OpenAICompatClient(cfg.base_url, cfg.model, max_tokens=4096,
+                                  enable_thinking=False)
     return None
 
 

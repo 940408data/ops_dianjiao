@@ -1,0 +1,47 @@
+{
+  "D0006": {
+    "base": "曰",
+    "ref": "日",
+    "ocr_conf": 0.58,
+    "page": "page_0003.md",
+    "qwen_char": "日",
+    "qwen_conf": 0.95,
+    "qwen_note": "字形瘦長，中橫連右豎，明顯為「日」字，非扁寬之「曰」。"
+  },
+  "D0041": {
+    "base": "脩",
+    "ref": "修",
+    "ocr_conf": 0.6318,
+    "page": "page_0010.md",
+    "qwen_char": "脩",
+    "qwen_conf": 1.0,
+    "qwen_note": "字形左為單人旁，右為攸，確為脩字。"
+  },
+  "D0049": {
+    "base": "曰",
+    "ref": "日",
+    "ocr_conf": 0.668,
+    "page": "page_0012.md",
+    "qwen_char": "日",
+    "qwen_conf": 0.95,
+    "qwen_note": "字形長方形，中間一橫連左右，確為「日」字，OCR誤作「曰」。"
+  },
+  "D0086": {
+    "base": "巳",
+    "ref": "己",
+    "ocr_conf": 0.6647,
+    "page": "page_0021.md",
+    "qwen_char": "已",
+    "qwen_conf": 0.9,
+    "qwen_note": "字形封口似「巳」，古刻本「已」「巳」形近混用，依文意應作「已」。"
+  },
+  "D0088": {
+    "base": "已",
+    "ref": "己",
+    "ocr_conf": 0.6355,
+    "page": "page_0021.md",
+    "qwen_char": "己",
+    "qwen_conf": 0.95,
+    "qwen_note": "書影字跡清晰，該字作「己」，未封口，OCR誤識。"
+  }
+}

@@ -208,24 +208,69 @@ class AnthropicClient:
 
 
 class OpenAICompatClient:
-    """兼容 OpenAI /v1/chat/completions 的自建或第三方端点。"""
+    """兼容 OpenAI /v1/chat/completions 的自建或第三方端点（阿里云百炼等）。
 
-    def __init__(self, base_url: str, model: str, api_key_env: str = "OPENAI_API_KEY"):
+    支持推理模型：百炼的 deepseek-v4-flash / glm-5.2 / qwen3.7-plus 会先输出
+    reasoning_content（思维链）再输出 content，故 max_tokens 必须足够大，
+    否则 content 被截空、下游回退规则。本类只取 content 作最终答复。
+    """
+
+    def __init__(self, base_url: str, model: str, api_key_env: str = "OPENAI_API_KEY",
+                 max_tokens: int = 4096, vision_model: str | None = None,
+                 enable_thinking: bool | None = None):
         self.base_url, self.model = base_url.rstrip("/"), model
+        self.max_tokens = max_tokens
+        self.vision_model = vision_model or model
+        self.enable_thinking = enable_thinking
         self._key = os.environ.get(api_key_env, "")
 
-    def complete(self, system: str, user: str) -> str:
-        import urllib.request
-        body = json.dumps({"model": self.model, "messages": [
-            {"role": "system", "content": system},
-            {"role": "user", "content": user}]}).encode()
+    def _post(self, body: dict) -> dict:
+        import urllib.request, time
         req = urllib.request.Request(
-            f"{self.base_url}/chat/completions", data=body,
+            f"{self.base_url}/chat/completions", data=json.dumps(body).encode(),
             headers={"content-type": "application/json",
                      "authorization": f"Bearer {self._key}"})
-        with urllib.request.urlopen(req, timeout=120) as r:
-            data = json.loads(r.read())
-        return data["choices"][0]["message"]["content"]
+        last = None
+        for attempt in range(4):           # 限流/超时退避重试，避免整轮 run 崩
+            try:
+                with urllib.request.urlopen(req, timeout=180) as r:
+                    return json.loads(r.read())
+            except Exception as e:
+                last = e
+                time.sleep(2 * (attempt + 1))
+        raise last
+
+    @staticmethod
+    def _content(data: dict) -> str:
+        try:
+            return data.get("choices", [{}])[0].get("message", {}).get("content") or ""
+        except Exception:
+            return ""
+
+    def complete(self, system: str, user: str, **extra) -> str:
+        body = {"model": self.model, "max_tokens": self.max_tokens,
+                "messages": [{"role": "system", "content": system},
+                             {"role": "user", "content": user}]}
+        if self.enable_thinking is not None:
+            body["enable_thinking"] = self.enable_thinking
+        body.update(extra)          # 允许 enable_thinking=False 关思维链加速
+        return self._content(self._post(body))
+
+    def complete_vision(self, prompt: str, image_ref=None) -> str:
+        """字形/视觉复核。image_ref 为真图（URL 或 base64）时走多模态；
+        为 None（当前 PlainTextEngine 无真图 bbox）时退化为文本层断字——
+        给定上下文与候选，让模型判断该处应作何字。"""
+        if image_ref is None:
+            data = self._post({"model": self.vision_model, "max_tokens": self.max_tokens,
+                               "messages": [{"role": "user", "content": prompt}]})
+            return self._content(data)
+        img = image_ref if str(image_ref).startswith(("http", "data:")) \
+            else f"data:image/jpeg;base64,{image_ref}"
+        data = self._post({"model": self.vision_model, "max_tokens": self.max_tokens,
+                           "messages": [{"role": "user", "content": [
+                               {"type": "text", "text": prompt},
+                               {"type": "image_url", "image_url": {"url": img}}]}]})
+        return self._content(data)
 
 
 def _parse_json(raw: str) -> dict | None:
