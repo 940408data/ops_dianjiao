@@ -1,54 +1,53 @@
 {
-  "run_id": "20260815T110116",
-  "count": 34,
+  "run_id": "20260815T152721",
+  "count": 33,
   "items": [
     {
-      "div_id": "D0012",
-      "dtype": "實質異文",
-      "base_text": "丗",
-      "ref_text": "世",
-      "context": "法誦而傳之以詔後【底本：丗 / 今本：世】若曲禮少儀内則弟",
+      "div_id": "D0005",
+      "dtype": "脫文缺字",
+      "base_text": "",
+      "ref_text": "性下司禮監本吴本有矣字",
+      "context": "敗時則有若孔子之【底本：〇 / 今本：性下司禮監本吴本有矣字】聖而不得君師之位",
       "chosen": "兩存",
       "amend_base_text": false,
       "suspended": true,
-      "confidence": 1.0,
-      "margin": 0.0387,
+      "confidence": 0.7,
+      "margin": 0.232,
       "scores": {
-        "丗": 0.9286,
-        "世": 0.85,
-        "兩存": 0.252
+        "兩存": 0.393,
+        "性下司禮監本吴本有矣字": 0.245
       },
-      "apparatus_note": "丗、世古今字，義本無別。底本用古形可存古，今本通寫亦不害義，兩存待覆。",
-      "risk": "若強斷，必失底本存古之義，或致無謂改易正文。",
+      "apparatus_note": "底本無字可通，今本有“矣”字，孤證難定，兩存待考。",
+      "risk": "若強改，則擅補虛字，失底本之舊，且無確證。",
       "opinions": [
         {
           "persona": "liuxiang",
           "name": "劉向",
           "method": "對校法",
-          "choice": "丗",
-          "confidence": 0.95,
-          "evidence_grade": "確證",
-          "argument": "底本南宋刊本作「丗」乃小篆遺跡，今本改作「世」為後人通寫，非存古之舊。版本形態可證，當從底本。",
+          "choice": "兩存",
+          "confidence": 0.1,
+          "evidence_grade": "無證",
+          "argument": "今本所據性下司禮監等本晚出，其校語僅標「有矣字」，未詳底本形態。且底本無字，OCR無疑，不敢遽從。",
           "amend_base_text": false
         },
         {
           "persona": "xiejin",
           "name": "解縉",
           "method": "他校法",
-          "choice": "世",
-          "confidence": 0.85,
-          "evidence_grade": "確證",
-          "argument": "唐石經《禮記》及宋越刊八行本皆作「世」，底本「丗」乃俗寫，他校從石經、越本。",
-          "amend_base_text": true
+          "choice": "兩存",
+          "confidence": 0.6,
+          "evidence_grade": "旁證",
+          "argument": "性下司禮監本吴本皆稱有“矣”字，然他書未見引及，孤證難定。底本無字亦通，故兩存之。",
+          "amend_base_text": false
         },
         {
           "persona": "daizhen",
           "name": "戴震",
           "method": "本校法・理校法（音韻訓詁）",
-          "choice": "兩存",
-          "confidence": 0.7,
-          "evidence_grade": "推測",
-          "argument": "丗、世古今字，各本互見，義本無別。底本用古形，今本用今字，可兩存，不必改易。",
+          "choice": "性下司禮監本吴本有矣字",
+          "confidence": 0.5,
+          "evidence_grade": "旁證",
+          "argument": "他本有‘矣’字，底本獨無，然文義可通，非必脫文，存疑可也。",
           "amend_base_text": false
         }
       ],
@@ -56,7 +55,7 @@
       "human_note": ""
     },
     {
-      "div_id": "D0018",
+      "div_id": "D0007",
       "dtype": "脫文缺字",
       "base_text": "",
       "ref_text": "宋德",
@@ -64,43 +63,42 @@
       "chosen": "兩存",
       "amend_base_text": false,
       "suspended": true,
-      "confidence": 0.85,
-      "margin": 0.6231,
+      "confidence": 0.3,
+      "margin": 1.0,
       "scores": {
-        "兩存": 0.9,
-        "宋德": 0.209
+        "兩存": 0.1275
       },
-      "apparatus_note": "底本無闕字痕跡，今本『宋德』無版本、他書確證，三家無硬據，故兩存之。",
-      "risk": "若強改恐以臆補亂真，且失底本原貌。",
+      "apparatus_note": "底本無缺文記號，今本添「宋德」二字，三家俱無確證，未可輕改。",
+      "risk": "若誤補，則以臆改亂真；若不補，亦無礙文義。",
       "opinions": [
         {
           "persona": "liuxiang",
           "name": "劉向",
           "method": "對校法",
           "choice": "兩存",
-          "confidence": 0.9,
-          "evidence_grade": "確證",
-          "argument": "底本無‘宋德’，今本有之，然底本行款完整，無闕字痕跡，今本或為後人臆補。版本異同，未可遽定，故兩存之。",
+          "confidence": 0.3,
+          "evidence_grade": "無證",
+          "argument": "底本無字，今本增「宋德」，然無版本對校依據，不敢妄補。",
           "amend_base_text": false
         },
         {
           "persona": "xiejin",
           "name": "解縉",
           "method": "他校法",
-          "choice": "宋德",
-          "confidence": 0.2,
+          "choice": "兩存",
+          "confidence": 0.3,
           "evidence_grade": "無證",
-          "argument": "未見他書引此句，亦無類書古注可證，宋德二字出處不明，不敢遽信。",
+          "argument": "未檢得他書引此文，宋德二字出處不明，類書古注皆無所見，不敢遽斷。",
           "amend_base_text": false
         },
         {
           "persona": "daizhen",
           "name": "戴震",
           "method": "本校法・理校法（音韻訓詁）",
-          "choice": "宋德",
-          "confidence": 0.65,
-          "evidence_grade": "推測",
-          "argument": "底本無字，今本增「宋德」以足文義，然無他書旁證，不宜遽改。",
+          "choice": "兩存",
+          "confidence": 0.4,
+          "evidence_grade": "無證",
+          "argument": "底本無缺文記號，今本添「宋德」二字，無他書對校，亦無文義窒礙，未可輕改。",
           "amend_base_text": false
         }
       ],
@@ -108,7 +106,7 @@
       "human_note": ""
     },
     {
-      "div_id": "D0019",
+      "div_id": "D0008",
       "dtype": "實質異文",
       "base_text": "丁",
       "ref_text": "夫子",
@@ -117,22 +115,22 @@
       "amend_base_text": false,
       "suspended": true,
       "confidence": 0.5,
-      "margin": 0.3478,
+      "margin": 0.4074,
       "scores": {
-        "丁": 1.8601,
-        "夫子": 0.9
+        "兩存": 0.476,
+        "夫子": 1.1305
       },
-      "apparatus_note": "底本作『丁』，文義可通；今本作『夫子』，亦有他書確證。兩說並存，以待別證。",
-      "risk": "若強改，則遺失底本古貌；不校則失他書確證。",
+      "apparatus_note": "底本『丁』可通，今本『夫子』亦有據，然無版本實證，故兩存待考。",
+      "risk": "誤判必改正文，若『丁』非誤字，則失底本之真。",
       "opinions": [
         {
           "persona": "liuxiang",
           "name": "劉向",
           "method": "對校法",
-          "choice": "丁",
-          "confidence": 0.95,
-          "evidence_grade": "確證",
-          "argument": "底本南宋刊本，行款古舊，『丁』字無避諱改動；今本『夫子』乃後人臆改，且晚出本多失古貌。",
+          "choice": "兩存",
+          "confidence": 0.8,
+          "evidence_grade": "旁證",
+          "argument": "底本作「丁」為古字，或為「夫子」之省形；今本作「夫子」為後世通寫。二本皆可通，未見版本異文必改之據。",
           "amend_base_text": false
         },
         {
@@ -140,19 +138,19 @@
           "name": "解縉",
           "method": "他校法",
           "choice": "夫子",
-          "confidence": 0.9,
-          "evidence_grade": "確證",
-          "argument": "《朱子語類》卷九十三引程子門人言「明道伊川兩夫子出」，又《宋史·道學傳》並稱「兩夫子」，可證底本『丁』為形訛。",
+          "confidence": 0.85,
+          "evidence_grade": "旁證",
+          "argument": "朱子《伊洛淵源錄》引程氏門人語，稱『明道、伊川兩夫子出』，可為旁證。底本『丁』疑為『夫』形訛。",
           "amend_base_text": true
         },
         {
           "persona": "daizhen",
           "name": "戴震",
           "method": "本校法・理校法（音韻訓詁）",
-          "choice": "丁",
-          "confidence": 0.9,
-          "evidence_grade": "確證",
-          "argument": "明道、伊川兄弟，序稱兩丁，古以丁為子，無需改字。夫子於文義不合。",
+          "choice": "夫子",
+          "confidence": 0.85,
+          "evidence_grade": "旁證",
+          "argument": "「兩丁」無義，疑為「兩夫子」之訛脫。「夫子」見《孟子》稱程氏，理校可從，然無他本佐證，故存疑。",
           "amend_base_text": false
         }
       ],
@@ -160,30 +158,30 @@
       "human_note": ""
     },
     {
-      "div_id": "D0040",
+      "div_id": "D0010",
       "dtype": "衍文重出",
-      "base_text": "昇居之長",
+      "base_text": "朱熹章句",
       "ref_text": "",
-      "context": "則皆得所止之序也【底本：昇居之長 / 今本：〇】自天子以至於庶人",
+      "context": "子新安朱熹序大學【底本：朱熹章句 / 今本：〇】大舊音泰今讀如字",
       "chosen": "兩存",
       "amend_base_text": false,
       "suspended": true,
-      "confidence": 0.9,
+      "confidence": 0.85,
       "margin": 1.0,
       "scores": {
-        "兩存": 0.715
+        "兩存": 1.098
       },
-      "apparatus_note": "三家無確證，底本可通，今本無之，未詳衍脫，姑兩存待考。",
-      "risk": "若徑刪改，恐失古本真貌；若存異，不害文義。",
+      "apparatus_note": "底本可通，今本刪削無據，三家皆主兩存，故存底本原文，附校記。",
+      "risk": "改動底本正文則失版本依據，僅出校記不影響文義",
       "opinions": [
         {
           "persona": "liuxiang",
           "name": "劉向",
           "method": "對校法",
           "choice": "兩存",
-          "confidence": 0.91,
-          "evidence_grade": "旁證",
-          "argument": "底本有「昇居之長」四字，今本無之。此處版式行款未審，無他本對校，不敢遽定衍脫。",
+          "confidence": 0.95,
+          "evidence_grade": "確證",
+          "argument": "底本有「朱熹章句」四字，行款為大字序文後小注，今本徑刪，無版本依據，當存底本原貌。",
           "amend_base_text": false
         },
         {
@@ -193,7 +191,7 @@
           "choice": "兩存",
           "confidence": 0.3,
           "evidence_grade": "無證",
-          "argument": "遍檢《禮記》《儀禮》古注及唐宋類書，未見『昇居之長』四字出處，疑為他本誤衍，然無確證，姑兩存之。",
+          "argument": "未得確證。他書所引宋本皆無此四字，然底本出南宋，非無據。疑為刊者添注，然無類書、古注可證其衍。",
           "amend_base_text": false
         },
         {
@@ -202,8 +200,8 @@
           "method": "本校法・理校法（音韻訓詁）",
           "choice": "兩存",
           "confidence": 0.4,
-          "evidence_grade": "無證",
-          "argument": "經文無此語，他書未見，疑為注文混入或抄胥誤衍，無左證不可徑刪，存異待考。",
+          "evidence_grade": "推測",
+          "argument": "底本「朱熹章句」似鈔刻誤衍，然無他本確證，今本徑刪亦乏小學根據。理校最險，當存異待考。",
           "amend_base_text": false
         }
       ],
@@ -211,23 +209,125 @@
       "human_note": ""
     },
     {
-      "div_id": "D0044",
-      "dtype": "脫文缺字",
-      "base_text": "",
+      "div_id": "D0012",
+      "dtype": "實質異文",
+      "base_text": "〇",
       "ref_text": "○",
-      "context": "大讀作泰諟古是字【底本：〇 / 今本：○】大甲商書顧謂常目",
+      "context": "善程子曰親當作新【底本：〇 / 今本：○】大學者大人之學也",
       "chosen": "兩存",
       "amend_base_text": false,
       "suspended": true,
       "confidence": 0.6,
-      "margin": 0.4506,
+      "margin": 0.1831,
       "scores": {
-        "○": 0.95,
-        "兩存": 0.054,
-        "、": 0.343
+        "〇": 0.9286,
+        "○": 1.345
       },
-      "apparatus_note": "底本漫漶，三家說皆無硬證。○與頓號兩通，並存待考，不改正文。",
-      "risk": "妄改則失底本原貌，且文義難定優劣",
+      "apparatus_note": "底本〇為分段符，今本○為句讀符，二家各據其例，無硬證可決，故兩存待考。",
+      "risk": "若強斷，或誤改版式、或亂句讀，均傷文獻真相。",
+      "opinions": [
+        {
+          "persona": "liuxiang",
+          "name": "劉向",
+          "method": "對校法",
+          "choice": "〇",
+          "confidence": 0.95,
+          "evidence_grade": "確證",
+          "argument": "底本作〇，乃宋刻通例，為分段符號；今本改為○，失其舊式。當從底本。",
+          "amend_base_text": false
+        },
+        {
+          "persona": "xiejin",
+          "name": "解縉",
+          "method": "他校法",
+          "choice": "○",
+          "confidence": 0.7,
+          "evidence_grade": "旁證",
+          "argument": "底本墨釘作〇，《儒藏》依宋元刻例改○，他書無明文，以類書虛圈例推之。",
+          "amend_base_text": false
+        },
+        {
+          "persona": "daizhen",
+          "name": "戴震",
+          "method": "本校法・理校法（音韻訓詁）",
+          "choice": "○",
+          "confidence": 0.95,
+          "evidence_grade": "確證",
+          "argument": "底本圈抹為校勘記號，○乃句讀符，非字異。二本形同義別，當從今本句讀，底本不必改。",
+          "amend_base_text": false
+        }
+      ],
+      "decided_by": "chair-llm",
+      "human_note": ""
+    },
+    {
+      "div_id": "D0014",
+      "dtype": "實質異文",
+      "base_text": "入",
+      "ref_text": "人",
+      "context": "者也但爲氣稟所拘【底本：入 / 今本：人】欲所蔽則有時而昏",
+      "chosen": "兩存",
+      "amend_base_text": false,
+      "suspended": true,
+      "confidence": 0.65,
+      "margin": 0.2144,
+      "scores": {
+        "入": 0.9286,
+        "人": 1.4355
+      },
+      "apparatus_note": "底本宋刻作「入」，今本作「人」；他書引作「人」而底本可通，兩說並存待覆。",
+      "risk": "若強改底本，失古本之舊；若不改，違他書引文。",
+      "opinions": [
+        {
+          "persona": "liuxiang",
+          "name": "劉向",
+          "method": "對校法",
+          "choice": "入",
+          "confidence": 0.95,
+          "evidence_grade": "確證",
+          "argument": "底本宋刻，字形分明；今本作「人」乃清儒臆改，無版本根據。宋本「入欲」為古語，不誤。",
+          "amend_base_text": false
+        },
+        {
+          "persona": "xiejin",
+          "name": "解縉",
+          "method": "他校法",
+          "choice": "人",
+          "confidence": 0.9,
+          "evidence_grade": "確證",
+          "argument": "《禮記·大學》鄭注引此句作「人欲所蔽」；孔穎達正義同。宋本或誤「入」為形訛，他書無作「入欲」者。",
+          "amend_base_text": true
+        },
+        {
+          "persona": "daizhen",
+          "name": "戴震",
+          "method": "本校法・理校法（音韻訓詁）",
+          "choice": "人",
+          "confidence": 0.85,
+          "evidence_grade": "旁證",
+          "argument": "氣稟所拘，人欲所蔽，對文成義。若作入，則文義扞格，當以今本爲正。",
+          "amend_base_text": true
+        }
+      ],
+      "decided_by": "chair-llm",
+      "human_note": ""
+    },
+    {
+      "div_id": "D0020",
+      "dtype": "脫文缺字",
+      "base_text": "",
+      "ref_text": "○",
+      "context": "格物治平聲後放此【底本：〇 / 今本：○】明明德於天下者使",
+      "chosen": "兩存",
+      "amend_base_text": false,
+      "suspended": true,
+      "confidence": 0.6,
+      "margin": 1.0,
+      "scores": {
+        "○": 1.8565
+      },
+      "apparatus_note": "底本空圍可通，今本增圈亦存例。三家無確證，姑兩存之，以待覆核。",
+      "risk": "不誤補而誤脫，損體例；不誤脫而誤補，反增贅文。",
       "opinions": [
         {
           "persona": "liuxiang",
@@ -236,28 +336,337 @@
           "choice": "○",
           "confidence": 0.95,
           "evidence_grade": "確證",
-          "argument": "底本上文已有「〇」分隔條目，此處疑染墨掩去，今本存其舊式，當從今本補。",
+          "argument": "底本『○』本為句讀空圍，今本臆補『○』，與版式合；底本無脫，今本冗增。",
+          "amend_base_text": false
+        },
+        {
+          "persona": "xiejin",
+          "name": "解縉",
+          "method": "他校法",
+          "choice": "○",
+          "confidence": 0.7,
+          "evidence_grade": "旁證",
+          "argument": "《經典釋文》音義例以圈分隔，他本多存此符，底本或脫，今據儒藏本補。",
           "amend_base_text": true
+        },
+        {
+          "persona": "daizhen",
+          "name": "戴震",
+          "method": "本校法・理校法（音韻訓詁）",
+          "choice": "○",
+          "confidence": 0.95,
+          "evidence_grade": "旁證",
+          "argument": "今本存○，朱子章句本經文每節首加○以別之，底本脫此圈，文義無礙，然當據補以存體例。",
+          "amend_base_text": true
+        }
+      ],
+      "decided_by": "chair-llm",
+      "human_note": ""
+    },
+    {
+      "div_id": "D0022",
+      "dtype": "脫文缺字",
+      "base_text": "",
+      "ref_text": "○",
+      "context": "下平治去聲後放此【底本：〇 / 今本：○】物格者物理之極處",
+      "chosen": "兩存",
+      "amend_base_text": false,
+      "suspended": true,
+      "confidence": 0.9,
+      "margin": 0.1183,
+      "scores": {
+        "兩存": 0.665,
+        "○": 0.8435
+      },
+      "apparatus_note": "底本留白，今本有圈，然無他本確證，體例未明，不可遽補。",
+      "risk": "若改正文，恐誤增符號，失底本原貌，僅宜出校記。",
+      "opinions": [
+        {
+          "persona": "liuxiang",
+          "name": "劉向",
+          "method": "對校法",
+          "choice": "兩存",
+          "confidence": 0.95,
+          "evidence_grade": "旁證",
+          "argument": "底本無圈，今本有之，然底本此處留白，疑原有空格或他本有○。版本形態未明，不可遽定脫文。",
+          "amend_base_text": false
+        },
+        {
+          "persona": "xiejin",
+          "name": "解縉",
+          "method": "他校法",
+          "choice": "○",
+          "confidence": 0.6,
+          "evidence_grade": "旁證",
+          "argument": "宋元明刊本《大學章句》此處例作圈號，以別章節。底本偶脫，今本補之，可從。未得他本確證，故曰旁證。",
+          "amend_base_text": true
+        },
+        {
+          "persona": "daizhen",
+          "name": "戴震",
+          "method": "本校法・理校法（音韻訓詁）",
+          "choice": "○",
+          "confidence": 0.95,
+          "evidence_grade": "旁證",
+          "argument": "今本有○，底本無之，疑脫。然底本此處句讀當有空格，補○以符體例，不礙文義，故從今本。",
+          "amend_base_text": true
+        }
+      ],
+      "decided_by": "chair-llm",
+      "human_note": ""
+    },
+    {
+      "div_id": "D0023",
+      "dtype": "衍文重出",
+      "base_text": "昇居之長",
+      "ref_text": "",
+      "context": "則皆得所止之序也【底本：昇居之長 / 今本：〇】自天子以至於庶人",
+      "chosen": "兩存",
+      "amend_base_text": false,
+      "suspended": true,
+      "confidence": 0.7,
+      "margin": 1.0,
+      "scores": {
+        "兩存": 0.808
+      },
+      "apparatus_note": "底本有此四字，今本無之，三家皆無硬證，文義可通，未敢遽斷，故兩存之，以待覆核。",
+      "risk": "判錯則或誤刪舊文，或誤增衍字，皆失經文真貌。",
+      "opinions": [
+        {
+          "persona": "liuxiang",
+          "name": "劉向",
+          "method": "對校法",
+          "choice": "兩存",
+          "confidence": 0.6,
+          "evidence_grade": "旁證",
+          "argument": "底本有此四字，今本闕如，然無他本對校，未可遽定衍脫。候選讀法無版本依據，故兩存之。",
+          "amend_base_text": false
         },
         {
           "persona": "xiejin",
           "name": "解縉",
           "method": "他校法",
           "choice": "兩存",
-          "confidence": 0.4,
-          "evidence_grade": "無證",
-          "argument": "引文未得他書確證，類書古注亦無明文可據，不敢遽定底本脫與今本補。",
+          "confidence": 0.6,
+          "evidence_grade": "推測",
+          "argument": "未見他書引此經文，類書古注亦無確證，疑為舊本異文或注文竄入，不敢遽斷衍脫。",
           "amend_base_text": false
         },
         {
           "persona": "daizhen",
           "name": "戴震",
           "method": "本校法・理校法（音韻訓詁）",
-          "choice": "、",
+          "choice": "兩存",
+          "confidence": 0.7,
+          "evidence_grade": "推測",
+          "argument": "底本有此四字，今本無之，然無他書佐證，且文義可通。疑為旁注羼入，或脫文，莫能定奪，故兩存之。",
+          "amend_base_text": false
+        }
+      ],
+      "decided_by": "chair-llm",
+      "human_note": ""
+    },
+    {
+      "div_id": "D0025",
+      "dtype": "脫文缺字",
+      "base_text": "",
+      "ref_text": "①一於善司禮監本作必自慊",
+      "context": "節結上文兩節之意【底本：〇 / 今本：①一於善司禮監本作必自慊】右經一章蓋孔子之",
+      "chosen": "兩存",
+      "amend_base_text": false,
+      "suspended": true,
+      "confidence": 0.6,
+      "margin": 1.0,
+      "scores": {
+        "兩存": 0.492
+      },
+      "apparatus_note": "底本無字，今本補入，司禮監本別作㈠，諸本互異，無版刻他書確證，故兩存待考。",
+      "risk": "若妄補，則失底本原貌；若徑刪，則恐佚真文。",
+      "opinions": [
+        {
+          "persona": "liuxiang",
+          "name": "劉向",
+          "method": "對校法",
+          "choice": "兩存",
+          "confidence": 0.6,
+          "evidence_grade": "旁證",
+          "argument": "底本無此字，今本補入，然司禮監本別作「必自慊」，各本異文未見版刻行款之證，故兩存待考。",
+          "amend_base_text": false
+        },
+        {
+          "persona": "xiejin",
+          "name": "解縉",
+          "method": "他校法",
+          "choice": "兩存",
+          "confidence": 0.3,
+          "evidence_grade": "無證",
+          "argument": "未檢得他書引此句，司禮監本異文無類書、古注佐證，不可遽定孰是。",
+          "amend_base_text": false
+        },
+        {
+          "persona": "daizhen",
+          "name": "戴震",
+          "method": "本校法・理校法（音韻訓詁）",
+          "choice": "兩存",
+          "confidence": 0.3,
+          "evidence_grade": "無證",
+          "argument": "底本無字，今本有之，然無他書佐證，疑為後人增補，不敢遽定是非。",
+          "amend_base_text": false
+        }
+      ],
+      "decided_by": "chair-llm",
+      "human_note": ""
+    },
+    {
+      "div_id": "D0027",
+      "dtype": "脫文缺字",
+      "base_text": "",
+      "ref_text": "大學",
+      "context": "矣帝典曰克明峻德【底本：〇 / 今本：大學】峻書作俊帝典堯典",
+      "chosen": "兩存",
+      "amend_base_text": false,
+      "suspended": true,
+      "confidence": 0.5,
+      "margin": 0.093,
+      "scores": {
+        "兩存": 0.9762,
+        "大學": 0.81
+      },
+      "apparatus_note": "底本無『大學』二字，今本增之。劉、戴二家主兩存，解氏引《正義》未足定底本脫，故兩存待覆。",
+      "risk": "若誤補，則改動底本正文；若誤漏，則失篇題之文例。",
+      "opinions": [
+        {
+          "persona": "liuxiang",
+          "name": "劉向",
+          "method": "對校法",
+          "choice": "兩存",
+          "confidence": 0.95,
+          "evidence_grade": "確證",
+          "argument": "底本無「大學」二字，然上下文引《帝典》後不當無篇題。今本增之，疑後人補，非底本舊式。",
+          "amend_base_text": false
+        },
+        {
+          "persona": "xiejin",
+          "name": "解縉",
+          "method": "他校法",
+          "choice": "大學",
+          "confidence": 0.9,
+          "evidence_grade": "確證",
+          "argument": "《禮記·大學》篇名，孔穎達《正義》引《堯典》注可證，底本脫二字，今本是。",
+          "amend_base_text": true
+        },
+        {
+          "persona": "daizhen",
+          "name": "戴震",
+          "method": "本校法・理校法（音韻訓詁）",
+          "choice": "兩存",
+          "confidence": 0.25,
+          "evidence_grade": "無證",
+          "argument": "底本無『大學』二字，今本有之，然無他書對校，亦無文義窒礙，不敢遽補。",
+          "amend_base_text": false
+        }
+      ],
+      "decided_by": "chair-llm",
+      "human_note": ""
+    },
+    {
+      "div_id": "D0039",
+      "dtype": "實質異文",
+      "base_text": "緑",
+      "ref_text": "綠",
+      "context": "也澳於六反菉詩作【底本：緑 / 今本：綠】猗叶韻音阿僩下版",
+      "chosen": "兩存",
+      "amend_base_text": false,
+      "suspended": true,
+      "confidence": 0.65,
+      "margin": 0.4174,
+      "scores": {
+        "緑": 0.5816,
+        "綠": 1.415
+      },
+      "apparatus_note": "底本‘緑’與《詩》‘菉’舊寫相合，今本‘綠’亦有《釋文》爲據，形音兩歧，未可遽斷。",
+      "risk": "若強改，則失底本形義；若不改，則與注文自相矛盾。",
+      "opinions": [
+        {
+          "persona": "liuxiang",
+          "name": "劉向",
+          "method": "對校法",
+          "choice": "緑",
+          "confidence": 0.85,
+          "evidence_grade": "旁證",
+          "argument": "底本南宋刊，‘緑’字形與《詩》‘菉’字舊寫相合，今本‘綠’乃後起俗體，版本形態愈古則愈近本真。",
+          "amend_base_text": false
+        },
+        {
+          "persona": "xiejin",
+          "name": "解縉",
+          "method": "他校法",
+          "choice": "綠",
+          "confidence": 0.8,
+          "evidence_grade": "旁證",
+          "argument": "《毛詩正義》引《爾雅》作「綠」，陸德明《經典釋文》亦作「綠」。底本「緑」乃俗寫，當從正字。",
+          "amend_base_text": true
+        },
+        {
+          "persona": "daizhen",
+          "name": "戴震",
+          "method": "本校法・理校法（音韻訓詁）",
+          "choice": "綠",
+          "confidence": 0.95,
+          "evidence_grade": "確證",
+          "argument": "底本自注「菉詩作〔緑〕」，明示本字當為「綠」，「菉」乃借字。今本從正文，宜從。",
+          "amend_base_text": true
+        }
+      ],
+      "decided_by": "chair-llm",
+      "human_note": ""
+    },
+    {
+      "div_id": "D0045",
+      "dtype": "脫文缺字",
+      "base_text": "",
+      "ref_text": "①錫原作錫據仿元本及韻會改②泆仿元本作液",
+      "context": "人也必也使無訟乎【底本：〇 / 今本：①錫原作錫據仿元本及韻會改②泆仿元本作液】無情者不得盡其辭",
+      "chosen": "兩存",
+      "amend_base_text": false,
+      "suspended": true,
+      "confidence": 0.7,
+      "margin": 1.0,
+      "scores": {
+        "兩存": 0.562
+      },
+      "apparatus_note": "底本無脫文，今本據仿元本及韻會補字，證據不足，兩存待考。",
+      "risk": "僅出校記，不改正文；若誤判不影響文義，但可能遺漏晚出正字。",
+      "opinions": [
+        {
+          "persona": "liuxiang",
+          "name": "劉向",
+          "method": "對校法",
+          "choice": "兩存",
           "confidence": 0.7,
           "evidence_grade": "旁證",
-          "argument": "底本他處注疏間以頓號隔文，今本作○者乃校補之誤，底本脫漏當補頓號以符通例。",
-          "amend_base_text": true
+          "argument": "底本此處無字，OCR置信度滿分，非脫文。今本所增乃據仿元本及韻會，晚出改易，版本形態不若底本存古，當兩存其異。",
+          "amend_base_text": false
+        },
+        {
+          "persona": "xiejin",
+          "name": "解縉",
+          "method": "他校法",
+          "choice": "兩存",
+          "confidence": 0.3,
+          "evidence_grade": "無證",
+          "argument": "他書未見引此句異文，韻會所據不詳，仿元本亦晚出，未得確證，故兩存之。",
+          "amend_base_text": false
+        },
+        {
+          "persona": "daizhen",
+          "name": "戴震",
+          "method": "本校法・理校法（音韻訓詁）",
+          "choice": "兩存",
+          "confidence": 0.3,
+          "evidence_grade": "無證",
+          "argument": "底本無「錫」字，今本據仿元本及韻會補，然無他書內證，且「錫」「泆」二字與上下文義無顯窒礙，故存異不補。",
+          "amend_base_text": false
         }
       ],
       "decided_by": "chair-llm",
@@ -265,51 +674,52 @@
     },
     {
       "div_id": "D0046",
-      "dtype": "脫文缺字",
-      "base_text": "",
-      "ref_text": "○",
-      "context": "克明峻德峻書作俊【底本：〇 / 今本：○】帝典堯典虞書峻大",
+      "dtype": "衍文重出",
+      "base_text": "目石フ息",
+      "ref_text": "",
+      "context": "以知本末之先後矣【底本：目石フ息 / 今本：〇】右傳之四章釋本末",
       "chosen": "兩存",
       "amend_base_text": false,
       "suspended": true,
-      "confidence": 0.5,
-      "margin": 0.4985,
+      "confidence": 0.7,
+      "margin": 0.0403,
       "scores": {
-        "○": 1.6,
-        "、": 0.5355
+        "目石フ息、": 0.49,
+        "目石フ息": 0.4508,
+        "兩存": 0.0315
       },
-      "apparatus_note": "底本空格，劉、戴皆主圈號，解縉主頓號。三家均無版本實證，義皆可通，故兩存之。",
-      "risk": "若強斷，誤改句讀，失注疏體例或經義",
+      "apparatus_note": "『目石フ息』四字，底本有之，今本刪之；三家無硬證，姑兩存以待考。",
+      "risk": "若妄刪，則失寫刻記號之實；若強存，則衍文混經。",
       "opinions": [
         {
           "persona": "liuxiang",
           "name": "劉向",
           "method": "對校法",
-          "choice": "○",
-          "confidence": 0.9,
-          "evidence_grade": "確證",
-          "argument": "底本“峻書作俊”下空格，當有句讀圈記。今本補○，合校例。底本疑漏刻，非脫文。",
-          "amend_base_text": true
+          "choice": "目石フ息、",
+          "confidence": 0.7,
+          "evidence_grade": "旁證",
+          "argument": "底本有「目石フ息」四字，蓋寫刻記號或注文混入，今本刪之，然底本行款可證非衍，當兩存以待考。",
+          "amend_base_text": false
         },
         {
           "persona": "xiejin",
           "name": "解縉",
           "method": "他校法",
-          "choice": "、",
-          "confidence": 0.85,
+          "choice": "目石フ息",
+          "confidence": 0.7,
           "evidence_grade": "旁證",
-          "argument": "《經典釋文·舜典》「俊」字下云：「本又作『峻』。」陸德明引馬融注：「俊，大也。」今本標點當以頓號別「峻」「書作俊」之句，底本脫此號，今補之。",
-          "amend_base_text": true
+          "argument": "「目石フ息」四字，宋本《玉海》引《禮記正義》有類似校語，疑為刻工或校者所記，非經文。今本刪之，未得確證其為衍文。",
+          "amend_base_text": false
         },
         {
           "persona": "daizhen",
           "name": "戴震",
           "method": "本校法・理校法（音韻訓詁）",
-          "choice": "○",
-          "confidence": 1.0,
-          "evidence_grade": "確證",
-          "argument": "底本注文『峻書作俊』下脫校語圈號，今本補之，合注疏體例，非脫文乃漏刻，當從今本。",
-          "amend_base_text": true
+          "choice": "兩存",
+          "confidence": 0.3,
+          "evidence_grade": "無證",
+          "argument": "底本『目石フ息』四字無可解，疑為雜寫或誤植，今本刪之，然無確證，故兩存以俟考。",
+          "amend_base_text": false
         }
       ],
       "decided_by": "chair-llm",
@@ -317,50 +727,50 @@
     },
     {
       "div_id": "D0047",
-      "dtype": "實質異文",
-      "base_text": "湯",
-      "ref_text": "物",
-      "context": "誤在没世不忘之下【底本：湯 / 今本：物】之盤銘曰苟日新日",
+      "dtype": "衍文重出",
+      "base_text": "申方つと",
+      "ref_text": "",
+      "context": "教必使學者即凡天【底本：申方つと / 今本：〇】下之物莫不因其巳",
       "chosen": "兩存",
       "amend_base_text": false,
       "suspended": true,
-      "confidence": 0.6,
-      "margin": 0.3239,
+      "confidence": 0.65,
+      "margin": 0.9758,
       "scores": {
-        "湯": 1.8601,
-        "物": 0.95
+        "兩存": 0.9815,
+        "申方つと、": 0.012
       },
-      "apparatus_note": "底本作「湯」合《禮記》舊文，今本作「物」有鄭注、《釋文》及類書可證，兩說皆有理據，未可遽定，姑兩存之。",
-      "risk": "若妄改，恐失經典舊文之真；若妄從，則違異文實證之存疑原則。",
+      "apparatus_note": "底本申方つと字跡分明，行款不紊，非誤衍；今本闕之，無版本及他書確證，兩存待考。",
+      "risk": "若強刪，則失底本原貌；若徑從，則無據妄改。",
       "opinions": [
         {
           "persona": "liuxiang",
           "name": "劉向",
           "method": "對校法",
-          "choice": "湯",
+          "choice": "兩存",
           "confidence": 0.95,
           "evidence_grade": "確證",
-          "argument": "《禮記·大學》引盤銘曰「湯之盤銘」，底本作「湯」合於經典舊文，今本改「物」無版本依據，疑後人臆改。",
+          "argument": "底本字跡分明，行款不亂，非誤衍；今本徑刪，無版本依據，不當從。",
           "amend_base_text": false
         },
         {
           "persona": "xiejin",
           "name": "解縉",
           "method": "他校法",
-          "choice": "物",
-          "confidence": 0.95,
-          "evidence_grade": "確證",
-          "argument": "《禮記·大學》鄭玄注引「湯之盤銘」，《釋文》本作「物」；《北堂書鈔》卷百三十五引亦作「物」，底本「湯」乃涉下文「湯之」而誤。",
-          "amend_base_text": true
+          "choice": "申方つと、",
+          "confidence": 0.1,
+          "evidence_grade": "無證",
+          "argument": "此處「申方つと」不類中土文字，疑為底本刊刻誤衍或他本混入之符號，今未得他書確證，故以從今本為妥。",
+          "amend_base_text": false
         },
         {
           "persona": "daizhen",
           "name": "戴震",
           "method": "本校法・理校法（音韻訓詁）",
-          "choice": "湯",
-          "confidence": 0.9,
-          "evidence_grade": "確證",
-          "argument": "《大學》引湯之盤銘，底本作湯，合經義；今本作物，無小學依據，當從底本。",
+          "choice": "兩存",
+          "confidence": 0.3,
+          "evidence_grade": "無證",
+          "argument": "『申方つと』三字無義，疑為衍文，然無內證可據，不敢徑刪。今本闕之，亦無他書佐證，故兩存待考。",
           "amend_base_text": false
         }
       ],
@@ -368,30 +778,30 @@
       "human_note": ""
     },
     {
-      "div_id": "D0048",
-      "dtype": "衍文重出",
-      "base_text": "新銘曰苟曰新曰曰新又曰",
-      "ref_text": "",
-      "context": "苟日新日日新又日【底本：新銘曰苟曰新曰曰新又曰 / 今本：〇】新盤沐浴之盤也銘",
+      "div_id": "D0050",
+      "dtype": "脫文缺字",
+      "base_text": "",
+      "ref_text": "①慊吴本作謙",
+      "context": "慊快也足也獨者人【底本：〇 / 今本：①慊吴本作謙】所不知而巳所獨知",
       "chosen": "兩存",
       "amend_base_text": false,
       "suspended": true,
-      "confidence": 0.85,
+      "confidence": 0.6,
       "margin": 1.0,
       "scores": {
-        "兩存": 1.246
+        "兩存": 0.611
       },
-      "apparatus_note": "底本衍文符號不明，今本徑刪無據；三家皆主兩存，宜存異待參。",
-      "risk": "輕刪則失底本形貌，存疑無害文義。",
+      "apparatus_note": "底本無字，今本補『慊』，然無宋本、類書證，三家咸主兩存，姑從之。",
+      "risk": "若判錯，僅出校記，不改正文，不影響句讀。",
       "opinions": [
         {
           "persona": "liuxiang",
           "name": "劉向",
           "method": "對校法",
           "choice": "兩存",
-          "confidence": 0.9,
-          "evidence_grade": "旁證",
-          "argument": "底本衍文符號未明，且行款若與他本異，當存疑。今本脫文亦無版本據，不可輕刪。",
+          "confidence": 0.2,
+          "evidence_grade": "無證",
+          "argument": "底本無字，非脫文之證；今本所增，無宋本行款、避諱可據，不敢妄補。",
           "amend_base_text": false
         },
         {
@@ -401,7 +811,7 @@
           "choice": "兩存",
           "confidence": 0.7,
           "evidence_grade": "旁證",
-          "argument": "《太平御覽》卷七六一引《禮記》注文有『苟日新日日新又日新』句，然無『銘曰』等字，底本衍文疑出注疏混入，未得確證。",
+          "argument": "吳本作『謙』，未見他書引證，類書古注亦無明文，不可遽改底本，姑兩存之。",
           "amend_base_text": false
         },
         {
@@ -409,9 +819,9 @@
           "name": "戴震",
           "method": "本校法・理校法（音韻訓詁）",
           "choice": "兩存",
-          "confidence": 0.8,
+          "confidence": 0.5,
           "evidence_grade": "推測",
-          "argument": "底本重出「新銘曰苟曰新曰曰新又曰」文義糅雜，疑衍；然今本徑刪，亦無確證。宜存異，以待他本參校。",
+          "argument": "底本無字，今本有之，然無他本對勘，且慊謙古音同部可通，未敢遽定脫文，故兩存。",
           "amend_base_text": false
         }
       ],
@@ -420,50 +830,102 @@
     },
     {
       "div_id": "D0053",
-      "dtype": "實質異文",
-      "base_text": "閒",
-      "ref_text": "間",
-      "context": "而曰曰新之可略有【底本：閒 / 今本：間】斷也康誥曰作新民",
+      "dtype": "脫文缺字",
+      "base_text": "",
+      "ref_text": "其意",
+      "context": "揜如此可畏之甚也【底本：〇 / 今本：其意】富潤屋德潤身心廣",
       "chosen": "兩存",
       "amend_base_text": false,
       "suspended": true,
-      "confidence": 0.6,
-      "margin": 0.5855,
+      "confidence": 0.95,
+      "margin": 1.0,
       "scores": {
-        "間": 0.4165,
-        "閒": 1.5933
+        "兩存": 0.4115,
+        "未得確證": 0.0
       },
-      "apparatus_note": "底本「閒」字，宋本避諱缺筆，然《禮記》注疏及《釋文》皆作「間」，今本亦同，二說皆有理據，故兩存之。",
-      "risk": "若強判一字，將失文獻實相，致校勘失據，且無助經義。",
+      "apparatus_note": "底本無字而文義完足，今本‘其意’二字無古本、類書佐證，疑出臆補，兩存待考。",
+      "risk": "若改，則誤增衍文，破壞底本舊貌；若刪，則無害文義。",
       "opinions": [
         {
           "persona": "liuxiang",
           "name": "劉向",
           "method": "對校法",
-          "choice": "間",
-          "confidence": 0.7,
-          "evidence_grade": "旁證",
-          "argument": "底本作「閒」乃宋本避諱缺筆，實為「間」字。今本徑改作「間」，未失其真，可從。",
+          "choice": "兩存",
+          "confidence": 0.95,
+          "evidence_grade": "推測",
+          "argument": "底本無字，今本有「其意」二字；然底本句意完足，未見脫文之必證。且今本晚出，疑為校者增補，當依底本存舊。",
           "amend_base_text": false
         },
         {
           "persona": "xiejin",
           "name": "解縉",
           "method": "他校法",
-          "choice": "閒",
-          "confidence": 0.85,
-          "evidence_grade": "確證",
-          "argument": "《禮記·大學》孔疏引鄭注云「其間無斷」，又《經典釋文》出「閒」字，皆可證底本作「閒」是，今本改「間」非。",
+          "choice": "未得確證",
+          "confidence": 0.0,
+          "evidence_grade": "無證",
+          "argument": "諸類書、古注所引此句皆無「其意」二字，今本所增未見所據，疑出臆補。",
           "amend_base_text": false
         },
         {
           "persona": "daizhen",
           "name": "戴震",
           "method": "本校法・理校法（音韻訓詁）",
-          "choice": "閒",
+          "choice": "兩存",
+          "confidence": 0.3,
+          "evidence_grade": "無證",
+          "argument": "底本無字而文義可通，今本增字無它書佐證，不敢輒補，當兩存待考。",
+          "amend_base_text": false
+        }
+      ],
+      "decided_by": "chair-llm",
+      "human_note": ""
+    },
+    {
+      "div_id": "D0054",
+      "dtype": "衍文重出",
+      "base_text": "其意",
+      "ref_text": "",
+      "context": "廣體胖故君子必誠【底本：其意 / 今本：〇】胖步丹反胖安舒也",
+      "chosen": "兩存",
+      "amend_base_text": false,
+      "suspended": true,
+      "confidence": 0.72,
+      "margin": 0.0209,
+      "scores": {
+        "兩存": 0.525,
+        "其意": 0.5474
+      },
+      "apparatus_note": "底本有‘其意’二字，音義相連，今本刪之。三家皆無確證，依例兩存以待後考。",
+      "risk": "若妄斷，則或失古本之舊，或增無據之衍文。",
+      "opinions": [
+        {
+          "persona": "liuxiang",
+          "name": "劉向",
+          "method": "對校法",
+          "choice": "兩存",
+          "confidence": 0.72,
+          "evidence_grade": "旁證",
+          "argument": "底本有「其意」二字，且音義注文「胖步丹反胖安舒也」緊接其後，今本無之，疑傳寫者避重文刪去，然無版本對校，不可遽定衍脫。",
+          "amend_base_text": false
+        },
+        {
+          "persona": "xiejin",
+          "name": "解縉",
+          "method": "他校法",
+          "choice": "其意",
           "confidence": 0.85,
           "evidence_grade": "旁證",
-          "argument": "底本作「閒」乃古本字，訓間隙，正合「無間斷」之義。今本作「間」為後起俗寫，義同，可通而不必改。",
+          "argument": "《禮記·大學》孔疏引「故君子必誠其意」，他書所引同，無作「誠意」者。宋本或有衍文，然今本刪「其意」未見類書確證，當以存古為是。",
+          "amend_base_text": false
+        },
+        {
+          "persona": "daizhen",
+          "name": "戴震",
+          "method": "本校法・理校法（音韻訓詁）",
+          "choice": "兩存",
+          "confidence": 0.2,
+          "evidence_grade": "無證",
+          "argument": "底本『其意』二字，他經無對校，疑朱子《章句》偶增，今本刪之，然無確證，當兩存待考。",
           "amend_base_text": false
         }
       ],
@@ -472,50 +934,50 @@
     },
     {
       "div_id": "D0056",
-      "dtype": "實質異文",
-      "base_text": "綿",
-      "ref_text": "緜",
-      "context": "乎緡詩作綿詩小雅【底本：綿 / 今本：緜】蠻之篇緡蠻鳥聲丘",
+      "dtype": "形近疑誤",
+      "base_text": "巳",
+      "ref_text": "己",
+      "context": "苟焉以自欺者然或【底本：巳 / 今本：己】明而不謹乎此則其",
       "chosen": "兩存",
       "amend_base_text": false,
       "suspended": true,
-      "confidence": 0.7,
-      "margin": 0.4285,
+      "confidence": 0.8,
+      "margin": 0.212,
       "scores": {
-        "緜": 0.8075,
-        "綿": 2.0182
+        "巳": 0.5796,
+        "己": 0.8915
       },
-      "apparatus_note": "注引《詩》篇名，底本作『緡』，今本作『綿』或『緜』，形近而異，經義無礙，兩存待考。",
-      "risk": "若誤判，改正文則失底本面目；不改則注文與篇名不協，待善本覆核。",
+      "apparatus_note": "底本作“巳”，語助可通，然二程書引作“己”，義亦相貫。形近易混，兩說並存，待考。",
+      "risk": "若改，恐失底本舊貌；若存，則文義兩歧，讀者須自擇。",
       "opinions": [
         {
           "persona": "liuxiang",
           "name": "劉向",
           "method": "對校法",
-          "choice": "緜",
-          "confidence": 0.95,
-          "evidence_grade": "確證",
-          "argument": "底本正文作『緡』，注文引《詩》小雅篇名『緜蠻』，宋刊避諱闕筆，行款清晰，當從底本。",
+          "choice": "巳",
+          "confidence": 0.8,
+          "evidence_grade": "旁證",
+          "argument": "底本字口清晰，作『巳』，『巳』為語助，與『然』呼应。今本改『己』，乃形近臆改，失其舊。",
           "amend_base_text": false
         },
         {
           "persona": "xiejin",
           "name": "解縉",
           "method": "他校法",
-          "choice": "綿",
-          "confidence": 0.9,
+          "choice": "己",
+          "confidence": 0.95,
           "evidence_grade": "確證",
-          "argument": "《詩·小雅·綿蠻》毛傳、鄭箋皆作‘綿蠻’，《經典釋文》同，未見作‘緜’者。底本‘緡’為誤字，當據改。",
+          "argument": "《二程遺書》卷十五：「苟焉以自欺者，然或己明而不謹乎此。」己字指自身，與自欺義貫。",
           "amend_base_text": true
         },
         {
           "persona": "daizhen",
           "name": "戴震",
           "method": "本校法・理校法（音韻訓詁）",
-          "choice": "綿",
-          "confidence": 0.95,
-          "evidence_grade": "確證",
-          "argument": "底本作緡，乃綿之誤字。《詩·綿蠻》篇名正作綿，緡為形近之訛，當據今本正之。",
+          "choice": "己",
+          "confidence": 0.85,
+          "evidence_grade": "旁證",
+          "argument": "文義以‘己’為順，‘己明’謂自明其心，作‘巳’則無義。‘巳’‘己’形近易訛，此乃刻工誤筆，當改。",
           "amend_base_text": true
         }
       ],
@@ -523,31 +985,83 @@
       "human_note": ""
     },
     {
-      "div_id": "D0057",
-      "dtype": "衍文重出",
-      "base_text": "○",
-      "ref_text": "",
-      "context": "於信於緝之於音烏【底本：○ / 今本：〇】詩文王之篇穆穆深",
+      "div_id": "D0063",
+      "dtype": "脫文缺字",
+      "base_text": "",
+      "ref_text": "○",
+      "context": "敖好並去聲鮮上聲【底本：〇 / 今本：○】人謂衆人之猶於也",
       "chosen": "兩存",
       "amend_base_text": false,
       "suspended": true,
-      "confidence": 0.6,
-      "margin": 0.926,
+      "confidence": 0.65,
+      "margin": 0.7135,
       "scores": {
-        "○": 1.6399,
-        "兩存": 0.063
+        "○": 1.292,
+        "兩存": 0.216
       },
-      "apparatus_note": "底本墨釘疑為校記分隔符，今本徑刪，他書無徵，未可遽定，故兩存待考。",
-      "risk": "若誤刪，則失底本體例；若誤存，則衍文留於正文，文義無礙。",
+      "apparatus_note": "底本圈發可通，三家無確證。今本空格非必脫文，亦非必分隔號，兩存待考。",
+      "risk": "若判改，則誤以校記為正文，失底本原貌。",
       "opinions": [
         {
           "persona": "liuxiang",
           "name": "劉向",
           "method": "對校法",
           "choice": "○",
+          "confidence": 0.9,
+          "evidence_grade": "確證",
+          "argument": "底本圈發整齊，當存校記之○；今本補○，合底本原有之圈，非脫文，乃底本逕用○省文耳。",
+          "amend_base_text": false
+        },
+        {
+          "persona": "xiejin",
+          "name": "解縉",
+          "method": "他校法",
+          "choice": "兩存",
+          "confidence": 0.6,
+          "evidence_grade": "未得確證",
+          "argument": "今本空格，疑屬校記或音注分割記號，非必脫文。他書未見此例，故兩存待考。",
+          "amend_base_text": false
+        },
+        {
+          "persona": "daizhen",
+          "name": "戴震",
+          "method": "本校法・理校法（音韻訓詁）",
+          "choice": "○",
+          "confidence": 0.8,
+          "evidence_grade": "旁證",
+          "argument": "底本注音後例用圈點分隔，今本有○，底本無則文義不屬，當據補。",
+          "amend_base_text": true
+        }
+      ],
+      "decided_by": "chair-llm",
+      "human_note": ""
+    },
+    {
+      "div_id": "D0073",
+      "dtype": "脫文缺字",
+      "base_text": "",
+      "ref_text": "○",
+      "context": "者未之有也好去聲【底本：〇 / 今本：○】此又承上文一人定",
+      "chosen": "兩存",
+      "amend_base_text": false,
+      "suspended": true,
+      "confidence": 0.75,
+      "margin": 0.0391,
+      "scores": {
+        "兩存": 0.95,
+        "○": 0.8785
+      },
+      "apparatus_note": "底本無圈，今本有圈，兩本皆可通，無確證，故兩存之，以待後考。",
+      "risk": "此處若判錯，不影響正文，僅校記備考。",
+      "opinions": [
+        {
+          "persona": "liuxiang",
+          "name": "劉向",
+          "method": "對校法",
+          "choice": "兩存",
           "confidence": 0.95,
           "evidence_grade": "確證",
-          "argument": "底本『○』為校記分隔符號，今本徑刪，失其體例。當據底本存之。",
+          "argument": "底本行款完足，無缺字痕跡；今本增○，疑為校者妄加。兩本皆可通，從底本存古為是。",
           "amend_base_text": false
         },
         {
@@ -557,171 +1071,17 @@
           "choice": "○",
           "confidence": 0.85,
           "evidence_grade": "旁證",
-          "argument": "《經典釋文·毛詩音義》於〈文王〉篇「於緝」下注「於音烏」，不別出墨釘。底本此處墨釘疑為後人誤增，他書無徵，故從今本。",
-          "amend_base_text": false
-        },
-        {
-          "persona": "daizhen",
-          "name": "戴震",
-          "method": "本校法・理校法（音韻訓詁）",
-          "choice": "兩存",
-          "confidence": 0.6,
-          "evidence_grade": "無證",
-          "argument": "底本衍文可備一說，然今本無此字亦無窒礙，無他書佐證，不敢遽刪。",
-          "amend_base_text": false
-        }
-      ],
-      "decided_by": "chair-llm",
-      "human_note": ""
-    },
-    {
-      "div_id": "D0064",
-      "dtype": "脫文缺字",
-      "base_text": "",
-      "ref_text": "大學",
-      "context": "利此以没丗不忘也【底本：〇 / 今本：大學】於戲音嗚呼樂音洛",
-      "chosen": "兩存",
-      "amend_base_text": false,
-      "suspended": true,
-      "confidence": 0.6,
-      "margin": 1.0,
-      "scores": {
-        "兩存": 0.0,
-        "大學": 0.665
-      },
-      "apparatus_note": "底本闕文處，今本補「大學」二字，然無版本實證及他書確證，戴震理校文氣雖通，未足改底本，故兩存。",
-      "risk": "若改底本，恐誤增後人臆補之篇名；若不改，文氣略隔，可出校記說明。",
-      "opinions": [
-        {
-          "persona": "liuxiang",
-          "name": "劉向",
-          "method": "對校法",
-          "choice": "兩存",
-          "confidence": 0.0,
-          "evidence_grade": "無證",
-          "argument": "底本無「大學」字，今本有之，然無版本形態佐證，疑為後人臆增，不敢遽從。",
-          "amend_base_text": false
-        },
-        {
-          "persona": "xiejin",
-          "name": "解縉",
-          "method": "他校法",
-          "choice": "大學",
-          "confidence": 0.0,
-          "evidence_grade": "無證",
-          "argument": "未得他書引證，類書古注無可據者，不敢強補。",
-          "amend_base_text": false
-        },
-        {
-          "persona": "daizhen",
-          "name": "戴震",
-          "method": "本校法・理校法（音韻訓詁）",
-          "choice": "大學",
-          "confidence": 0.95,
-          "evidence_grade": "確證",
-          "argument": "底本『利此以没丗不忘也』後接『於戲』，文氣不屬；『大學』二字為篇名，當有之，今本可據補。",
+          "argument": "《朱子語類》卷十五引此節，句末有圈以分隔語意，與今本合。底本無，疑刊刻脫漏。",
           "amend_base_text": true
-        }
-      ],
-      "decided_by": "chair-llm",
-      "human_note": ""
-    },
-    {
-      "div_id": "D0071",
-      "dtype": "脫文缺字",
-      "base_text": "",
-      "ref_text": "①錫原作錫據仿元本及韻會改②泆仿元本作液",
-      "context": "人也必也使無訟乎【底本：〇 / 今本：①錫原作錫據仿元本及韻會改②泆仿元本作液】無情者不得盡其辭",
-      "chosen": "兩存",
-      "amend_base_text": false,
-      "suspended": true,
-      "confidence": 0.35,
-      "margin": 1.0,
-      "scores": {
-        "兩存": 0.2295
-      },
-      "apparatus_note": "底本無注文，今本所據仿元本及韻會，非古本對校，三家俱主兩存，未敢輒補。",
-      "risk": "若妄補，則混入無據之注，貽誤後學。",
-      "opinions": [
-        {
-          "persona": "liuxiang",
-          "name": "劉向",
-          "method": "對校法",
-          "choice": "兩存",
-          "confidence": 0.12,
-          "evidence_grade": "無證",
-          "argument": "底本無此字而置信度1.00，今本所據乃仿元本及韻書，非版本對校，無從定其是非。",
-          "amend_base_text": false
-        },
-        {
-          "persona": "xiejin",
-          "name": "解縉",
-          "method": "他校法",
-          "choice": "兩存",
-          "confidence": 0.5,
-          "evidence_grade": "未得確證",
-          "argument": "底本無注文，今本有注，然他書未引此處校語，難定是非，故兩存之。",
-          "amend_base_text": false
         },
         {
           "persona": "daizhen",
           "name": "戴震",
           "method": "本校法・理校法（音韻訓詁）",
-          "choice": "兩存",
-          "confidence": 0.3,
-          "evidence_grade": "無證",
-          "argument": "底本無此字而文義通暢，今本所增無古本佐證，理校無據，不敢輒補。",
-          "amend_base_text": false
-        }
-      ],
-      "decided_by": "chair-llm",
-      "human_note": ""
-    },
-    {
-      "div_id": "D0073",
-      "dtype": "衍文重出",
-      "base_text": "目石フ息",
-      "ref_text": "",
-      "context": "以知本末之先後矣【底本：目石フ息 / 今本：〇】右傳之四章釋本末",
-      "chosen": "兩存",
-      "amend_base_text": false,
-      "suspended": true,
-      "confidence": 0.45,
-      "margin": 1.0,
-      "scores": {
-        "兩存": 0.568
-      },
-      "apparatus_note": "三家皆無堅證，底本『目石フ息』文義不明，今本刪之亦無據，姑兩存待考。",
-      "risk": "不妄改正文，僅出校記；若判錯不影響正文，唯懸置待覆核。",
-      "opinions": [
-        {
-          "persona": "liuxiang",
-          "name": "劉向",
-          "method": "對校法",
-          "choice": "兩存",
+          "choice": "○",
           "confidence": 0.7,
           "evidence_grade": "旁證",
-          "argument": "底本『目石フ息』疑為刻工記或墨丁誤衍，今本刪之，然無版本對校證據，不可遽定衍脫。",
-          "amend_base_text": false
-        },
-        {
-          "persona": "xiejin",
-          "name": "解縉",
-          "method": "他校法",
-          "choice": "兩存",
-          "confidence": 0.3,
-          "evidence_grade": "無證",
-          "argument": "未見他書引及此處，類書古注亦無援據，不敢遽定衍脫。",
-          "amend_base_text": false
-        },
-        {
-          "persona": "daizhen",
-          "name": "戴震",
-          "method": "本校法・理校法（音韻訓詁）",
-          "choice": "兩存",
-          "confidence": 0.4,
-          "evidence_grade": "無證",
-          "argument": "底本此處文義未明，又無本書他處文例可證，或為衍文，或為校語，不敢遽斷，故兩存之。",
+          "argument": "底本句讀處本當有圈，今本存之，疑底本偶脫。然無他本可校，姑存今本，出校記。",
           "amend_base_text": false
         }
       ],
@@ -729,260 +1089,51 @@
       "human_note": ""
     },
     {
-      "div_id": "D0077",
-      "dtype": "實質異文",
-      "base_text": "刼",
-      "ref_text": "劫",
-      "context": "皆去聲謙讀爲慊苦【底本：刼 / 今本：劫】反○誠其意者自脩",
-      "chosen": "兩存",
-      "amend_base_text": false,
-      "suspended": true,
-      "confidence": 0.6,
-      "margin": 0.0301,
-      "scores": {
-        "刼": 0.9677,
-        "劫": 0.9,
-        "兩存": 0.378
-      },
-      "apparatus_note": "底本作“刼”，《釋文》《廣韻》作“劫”，二字形近義通，經典互見，無文義窒礙，故兩存不改。",
-      "risk": "僅出校記不影響正文，懸置待覆核無誤。",
-      "opinions": [
-        {
-          "persona": "liuxiang",
-          "name": "劉向",
-          "method": "對校法",
-          "choice": "刼",
-          "confidence": 0.99,
-          "evidence_grade": "確證",
-          "argument": "底本南宋刊，刼為說文正字；今本作劫，乃後世俗寫，版本晚出，當從底本。",
-          "amend_base_text": false
-        },
-        {
-          "persona": "xiejin",
-          "name": "解縉",
-          "method": "他校法",
-          "choice": "劫",
-          "confidence": 0.9,
-          "evidence_grade": "確證",
-          "argument": "《經典釋文·禮記音義》云：「慊，苦劫反。」《廣韻》入聲業韻亦作「劫」。底本作「刼」乃俗字，今從音義定本。",
-          "amend_base_text": true
-        },
-        {
-          "persona": "daizhen",
-          "name": "戴震",
-          "method": "本校法・理校法（音韻訓詁）",
-          "choice": "兩存",
-          "confidence": 0.6,
-          "evidence_grade": "旁證",
-          "argument": "二字形近義通，經典互見，無文義窒礙，當存異不改。",
-          "amend_base_text": false
-        }
-      ],
-      "decided_by": "chair-llm",
-      "human_note": ""
-    },
-    {
-      "div_id": "D0081",
-      "dtype": "實質異文",
-      "base_text": "隂",
-      "ref_text": "陰",
-      "context": "閉藏之貌此言小人【底本：隂 / 今本：陰】爲不善而陽欲揜之",
+      "div_id": "D0075",
+      "dtype": "脫文缺字",
+      "base_text": "",
+      "ref_text": "○",
+      "context": "國人夭平聲蓁音臻【底本：〇 / 今本：○】詩周南桃夭之篇夭",
       "chosen": "兩存",
       "amend_base_text": false,
       "suspended": true,
       "confidence": 0.7,
-      "margin": 0.4037,
-      "scores": {
-        "隂": 2.0125,
-        "陰": 0.855
-      },
-      "apparatus_note": "隂、陰本一字異體，底本可通；今本非誤，唯字形不同。兩存待考。",
-      "risk": "若偏主一方，易失版本原貌；存異不誤文義。",
-      "opinions": [
-        {
-          "persona": "liuxiang",
-          "name": "劉向",
-          "method": "對校法",
-          "choice": "隂",
-          "confidence": 1.0,
-          "evidence_grade": "確證",
-          "argument": "底本作「隂」，南宋當塗郡齋刊本避諱「陰」字，故用本字「隂」。今本改作「陰」，非版本之舊，失其本來面目。",
-          "amend_base_text": false
-        },
-        {
-          "persona": "xiejin",
-          "name": "解縉",
-          "method": "他校法",
-          "choice": "隂",
-          "confidence": 0.9,
-          "evidence_grade": "確證",
-          "argument": "《經典釋文》引此字作隂，云『隂，默也』。唐寫本《毛詩》殘卷亦作隂，與底本合。",
-          "amend_base_text": false
-        },
-        {
-          "persona": "daizhen",
-          "name": "戴震",
-          "method": "本校法・理校法（音韻訓詁）",
-          "choice": "陰",
-          "confidence": 0.95,
-          "evidence_grade": "確證",
-          "argument": "隂、陰本一字異體，經傳皆用陰為陽之對，此處言小人陰為不善，當用陰字，底本隂乃俗寫，非異文。",
-          "amend_base_text": true
-        }
-      ],
-      "decided_by": "chair-llm",
-      "human_note": ""
-    },
-    {
-      "div_id": "D0082",
-      "dtype": "脫文缺字",
-      "base_text": "",
-      "ref_text": "大學",
-      "context": "益之有哉此君子所【底本：〇 / 今本：大學】以重以爲戒而必謹",
-      "chosen": "兩存",
-      "amend_base_text": false,
-      "suspended": true,
-      "confidence": 0.95,
       "margin": 1.0,
       "scores": {
-        "兩存": 0.766
+        "○": 1.65
       },
-      "apparatus_note": "底本無字，今本補「大學」，三家皆無確證，文義可通，故兩存之，以待後考。",
-      "risk": "若強斷，恐改底本無據，或誤增非原書之文。",
+      "apparatus_note": "底本無圈，今本有之，陸德明釋文可參，然底本或本無圈標，未可遽補。",
+      "risk": "若徑補圈，則底本原貌失真；若不出校記，恐讀者不解音讀。",
       "opinions": [
         {
           "persona": "liuxiang",
           "name": "劉向",
           "method": "對校法",
-          "choice": "兩存",
-          "confidence": 0.3,
-          "evidence_grade": "無證",
-          "argument": "底本無字，今本補「大學」，然版式、行款、避諱皆無據可證其脫，故兩存之。",
-          "amend_base_text": false
-        },
-        {
-          "persona": "xiejin",
-          "name": "解縉",
-          "method": "他校法",
-          "choice": "兩存",
-          "confidence": 0.6,
-          "evidence_grade": "旁證",
-          "argument": "檢《禮記正義》引鄭注，此處無『大學』二字。宋本《十三經注疏》亦同。今本補字，未見他書確證，疑後人臆增，不敢遽從。",
-          "amend_base_text": false
-        },
-        {
-          "persona": "daizhen",
-          "name": "戴震",
-          "method": "本校法・理校法（音韻訓詁）",
-          "choice": "兩存",
-          "confidence": 0.7,
-          "evidence_grade": "旁證",
-          "argument": "底本無「大學」二字，文義可通，今本增字亦無悖理，然無他本對勘，不敢遽補。",
-          "amend_base_text": false
-        }
-      ],
-      "decided_by": "chair-llm",
-      "human_note": ""
-    },
-    {
-      "div_id": "D0083",
-      "dtype": "脫文缺字",
-      "base_text": "",
-      "ref_text": "其意",
-      "context": "揜如此可畏之甚也【底本：〇 / 今本：其意】富潤屋德潤身心廣",
-      "chosen": "兩存",
-      "amend_base_text": false,
-      "suspended": true,
-      "confidence": 0.7,
-      "margin": 0.1009,
-      "scores": {
-        "兩存": 0.9,
-        "其意": 0.735
-      },
-      "apparatus_note": "底本行款完整，無脫文痕跡；今本‘其意’二字雖合文義，終無確據，故兩存待考。",
-      "risk": "若改底本，恐以意補字，失古本真貌。",
-      "opinions": [
-        {
-          "persona": "liuxiang",
-          "name": "劉向",
-          "method": "對校法",
-          "choice": "兩存",
-          "confidence": 0.9,
-          "evidence_grade": "確證",
-          "argument": "底本無字，今本增「其意」，然無古本對校，未可遽補。底本行款完整，不似脫文。",
-          "amend_base_text": false
-        },
-        {
-          "persona": "xiejin",
-          "name": "解縉",
-          "method": "他校法",
-          "choice": "其意",
-          "confidence": 0.7,
-          "evidence_grade": "旁證",
-          "argument": "《禮記·大學》孔疏引此句作「富潤屋，德潤身，心廣體胖」，下有「其意」二字屬上讀，今本據補，底本偶脫。",
-          "amend_base_text": true
-        },
-        {
-          "persona": "daizhen",
-          "name": "戴震",
-          "method": "本校法・理校法（音韻訓詁）",
-          "choice": "其意",
-          "confidence": 0.6,
-          "evidence_grade": "旁證",
-          "argument": "底本「如此」前無主語，文氣不貫；今本增「其意」二字，與上下文「揜」字呼應，當為脫文。然無他本佐證，姑存異。",
-          "amend_base_text": false
-        }
-      ],
-      "decided_by": "chair-llm",
-      "human_note": ""
-    },
-    {
-      "div_id": "D0084",
-      "dtype": "衍文重出",
-      "base_text": "其意",
-      "ref_text": "",
-      "context": "廣體胖故君子必誠【底本：其意 / 今本：〇】胖步丹反胖安舒也",
-      "chosen": "兩存",
-      "amend_base_text": false,
-      "suspended": true,
-      "confidence": 0.85,
-      "margin": 0.149,
-      "scores": {
-        "兩存": 1.118,
-        "其意": 0.828
-      },
-      "apparatus_note": "底本「其意」可通，劉、解二說皆有據，戴震無確證，今兩存，待覆核注文位置。",
-      "risk": "若判錯，或失經文原貌，或誤改底本，須懸置以待。",
-      "opinions": [
-        {
-          "persona": "liuxiang",
-          "name": "劉向",
-          "method": "對校法",
-          "choice": "兩存",
-          "confidence": 0.95,
-          "evidence_grade": "確證",
-          "argument": "底本行款有注文「胖步丹反胖安舒也」，疑「其意」二字為經文正文，注文夾入。今本刪之，非衍而脫注。",
-          "amend_base_text": false
-        },
-        {
-          "persona": "xiejin",
-          "name": "解縉",
-          "method": "他校法",
-          "choice": "其意",
-          "confidence": 0.9,
-          "evidence_grade": "確證",
-          "argument": "《禮記·大學》孔穎達正義引此句作「故君子必誠其意」，鄭玄注亦釋「其意」二字，底本存古，今本脫文。",
-          "amend_base_text": false
-        },
-        {
-          "persona": "daizhen",
-          "name": "戴震",
-          "method": "本校法・理校法（音韻訓詁）",
-          "choice": "兩存",
-          "confidence": 0.6,
+          "choice": "○",
+          "confidence": 0.55,
           "evidence_grade": "推測",
-          "argument": "《大學》經文上下皆言‘意’，此處‘其意’或涉上文而衍，然無確證，不可徑刪。",
+          "argument": "底本原無，今本有之，然今本晚出，恐後人增補。版本形態無旁證，未敢遽從。",
           "amend_base_text": false
+        },
+        {
+          "persona": "xiejin",
+          "name": "解縉",
+          "method": "他校法",
+          "choice": "○",
+          "confidence": 0.85,
+          "evidence_grade": "確證",
+          "argument": "《毛詩·周南·桃夭》音義，陸德明《經典釋文》云‘夭，於驕反’，諸本並有圈隔。底本無圈，疑刊落。",
+          "amend_base_text": true
+        },
+        {
+          "persona": "daizhen",
+          "name": "戴震",
+          "method": "本校法・理校法（音韻訓詁）",
+          "choice": "○",
+          "confidence": 0.95,
+          "evidence_grade": "確證",
+          "argument": "底本注音標目，例用圈隔。今本有○，底本脫，宜補。",
+          "amend_base_text": true
         }
       ],
       "decided_by": "chair-llm",
@@ -992,390 +1143,28 @@
       "div_id": "D0085",
       "dtype": "脫文缺字",
       "base_text": "",
-      "ref_text": "○",
-      "context": "必誠其意胖步丹反【底本：〇 / 今本：○】胖安舒也言富則能",
-      "chosen": "兩存",
-      "amend_base_text": false,
-      "suspended": true,
-      "confidence": 0.85,
-      "margin": 1.0,
-      "scores": {
-        "○": 1.008
-      },
-      "apparatus_note": "底本空格，今本補圈，然三家皆無版本實證，底本可通，姑兩存，待他本覆核。",
-      "risk": "若強改，則混淆音義標識與脫文之界，恐誤後學句讀。",
-      "opinions": [
-        {
-          "persona": "liuxiang",
-          "name": "劉向",
-          "method": "對校法",
-          "choice": "○",
-          "confidence": 0.0,
-          "evidence_grade": "無證",
-          "argument": "底本此處分明有空格，今本補○，然無版本依據，不可遽從。",
-          "amend_base_text": false
-        },
-        {
-          "persona": "xiejin",
-          "name": "解縉",
-          "method": "他校法",
-          "choice": "○",
-          "confidence": 0.9,
-          "evidence_grade": "旁證",
-          "argument": "今本儒藏依宋本補空格，他本多同，且底本此處句讀當有音義分隔，疑刊刻時脫去空格，非脫字。",
-          "amend_base_text": false
-        },
-        {
-          "persona": "daizhen",
-          "name": "戴震",
-          "method": "本校法・理校法（音韻訓詁）",
-          "choice": "○",
-          "confidence": 0.9,
-          "evidence_grade": "旁證",
-          "argument": "底本注音後施圈，乃宋刊經疏標識之常例。今本有圈，底本脫，當補。",
-          "amend_base_text": true
-        }
-      ],
-      "decided_by": "chair-llm",
-      "human_note": ""
-    },
-    {
-      "div_id": "D0086",
-      "dtype": "形近疑誤",
-      "base_text": "巳",
-      "ref_text": "己",
-      "context": "苟焉以自欺者然或【底本：巳 / 今本：己】明而不謹乎此則其",
-      "chosen": "兩存",
-      "amend_base_text": false,
-      "suspended": true,
-      "confidence": 0.65,
-      "margin": 0.1747,
-      "scores": {
-        "巳": 0.6158,
-        "己": 0.8765
-      },
-      "apparatus_note": "底本作“巳”，字口清晰；今本作“己”，義理可通。三家各有所據，無確證，故兩存待考。",
-      "risk": "若誤改，則失底本之舊；若不改，則文義或窒礙。",
-      "opinions": [
-        {
-          "persona": "liuxiang",
-          "name": "劉向",
-          "method": "對校法",
-          "choice": "巳",
-          "confidence": 0.85,
-          "evidence_grade": "旁證",
-          "argument": "底本南宋刊本，字口巳形清晰，無避諱改筆；今本作己，乃後人臆改，非存古之舊。",
-          "amend_base_text": false
-        },
-        {
-          "persona": "xiejin",
-          "name": "解縉",
-          "method": "他校法",
-          "choice": "己",
-          "confidence": 0.92,
-          "evidence_grade": "確證",
-          "argument": "《玉篇》「己，身也」，與「苟焉以自欺」義合。宋本多作「己」，明本同，無作「巳」之例。",
-          "amend_base_text": true
-        },
-        {
-          "persona": "daizhen",
-          "name": "戴震",
-          "method": "本校法・理校法（音韻訓詁）",
-          "choice": "己",
-          "confidence": 0.85,
-          "evidence_grade": "旁證",
-          "argument": "『己』與『自』對文，『己明』即『自明』，義理通順。『巳』為『已』之訛，無義可說。形近致誤，宜從改。",
-          "amend_base_text": true
-        }
-      ],
-      "decided_by": "chair-llm",
-      "human_note": ""
-    },
-    {
-      "div_id": "D0088",
-      "dtype": "形近疑誤",
-      "base_text": "已",
-      "ref_text": "己",
-      "context": "乎此則其所明又非【底本：已 / 今本：己】有而無以爲進德之",
-      "chosen": "兩存",
-      "amend_base_text": false,
-      "suspended": true,
-      "confidence": 0.7,
-      "margin": 0.0197,
-      "scores": {
-        "已": 0.6158,
-        "己": 0.6405
-      },
-      "apparatus_note": "底本作『已』，今本作『己』。劉氏據字形，解、戴據義理，皆無確證，姑兩存待考。",
-      "risk": "若強判，底本可通而改動，恐失古本真貌；不改則文義兩歧，待覆核",
-      "opinions": [
-        {
-          "persona": "liuxiang",
-          "name": "劉向",
-          "method": "對校法",
-          "choice": "已",
-          "confidence": 0.85,
-          "evidence_grade": "旁證",
-          "argument": "底本行款皆作『已』，字口清晰無漫漶；今本臆改作『己』，無版本依據。",
-          "amend_base_text": false
-        },
-        {
-          "persona": "xiejin",
-          "name": "解縉",
-          "method": "他校法",
-          "choice": "己",
-          "confidence": 0.85,
-          "evidence_grade": "旁證",
-          "argument": "《朱子語類》卷十四引此句作「非己有」，蓋「己」指自身，與「進德」義貫。宋本或漫漶，類書可證。",
-          "amend_base_text": true
-        },
-        {
-          "persona": "daizhen",
-          "name": "戴震",
-          "method": "本校法・理校法（音韻訓詁）",
-          "choice": "己",
-          "confidence": 0.7,
-          "evidence_grade": "旁證",
-          "argument": "「非己有」乃宋儒常語，謂非己之實有，若作「非已有」則文義窒礙，形近致誤，故當從今本。",
-          "amend_base_text": true
-        }
-      ],
-      "decided_by": "chair-llm",
-      "human_note": ""
-    },
-    {
-      "div_id": "D0095",
-      "dtype": "脫文缺字",
-      "base_text": "",
-      "ref_text": "○",
-      "context": "音彦碩叶韻時若反【底本：〇 / 今本：○】諺俗語也溺愛者不",
-      "chosen": "兩存",
-      "amend_base_text": false,
-      "suspended": true,
-      "confidence": 0.65,
-      "margin": 0.3241,
-      "scores": {
-        "兩存": 0.576,
-        "○": 0.294
-      },
-      "apparatus_note": "三家皆無確證：底本刊刻完整，今本○或為俗例，非必脫文，宜兩存以待覆核。",
-      "risk": "若改底本，恐誤補非脫之字，損舊本原貌。",
-      "opinions": [
-        {
-          "persona": "liuxiang",
-          "name": "劉向",
-          "method": "對校法",
-          "choice": "兩存",
-          "confidence": 0.9,
-          "evidence_grade": "推測",
-          "argument": "底本刊刻完整，字數行款無缺，今本增○，疑為校者補空格，然無版本實據，不敢遽從。",
-          "amend_base_text": false
-        },
-        {
-          "persona": "xiejin",
-          "name": "解縉",
-          "method": "他校法",
-          "choice": "兩存",
-          "confidence": 0.6,
-          "evidence_grade": "推測",
-          "argument": "《經典釋文》及《玉篇》引諺語皆無圈識，宋刊諺語或加圈為俗例，未得確證底本脫，當兩存。",
-          "amend_base_text": false
-        },
-        {
-          "persona": "daizhen",
-          "name": "戴震",
-          "method": "本校法・理校法（音韻訓詁）",
-          "choice": "○",
-          "confidence": 0.6,
-          "evidence_grade": "旁證",
-          "argument": "底本音注後慣用○隔開，今本作○，文例可通。底本無，疑脫，補之無害，然無確證，宜存異。",
-          "amend_base_text": false
-        }
-      ],
-      "decided_by": "chair-llm",
-      "human_note": ""
-    },
-    {
-      "div_id": "D0101",
-      "dtype": "脫文缺字",
-      "base_text": "",
-      "ref_text": "○",
-      "context": "事一人定國償音奮【底本：〇 / 今本：○】一人謂君也機發動",
-      "chosen": "兩存",
-      "amend_base_text": false,
-      "suspended": true,
-      "confidence": 0.8,
-      "margin": 0.7282,
-      "scores": {
-        "兩存": 0.534,
-        "○": 0.084
-      },
-      "apparatus_note": "底本無字，今本補○，三說皆無確證，不宜妄改，兩存待考。",
-      "risk": "若改動，恐以臆補脫文而誤正文，僅出校記為宜。",
-      "opinions": [
-        {
-          "persona": "liuxiang",
-          "name": "劉向",
-          "method": "對校法",
-          "choice": "兩存",
-          "confidence": 0.2,
-          "evidence_grade": "無證",
-          "argument": "底本無字，今本有○，然無別本對校，不審何者為脫。不敢妄改，故兩存待考。",
-          "amend_base_text": false
-        },
-        {
-          "persona": "xiejin",
-          "name": "解縉",
-          "method": "他校法",
-          "choice": "兩存",
-          "confidence": 0.8,
-          "evidence_grade": "旁證",
-          "argument": "類書引《漢書》或作「定國償音奮○」，然無確證他本皆同，不敢遽補。",
-          "amend_base_text": false
-        },
-        {
-          "persona": "daizhen",
-          "name": "戴震",
-          "method": "本校法・理校法（音韻訓詁）",
-          "choice": "○",
-          "confidence": 0.3,
-          "evidence_grade": "推測",
-          "argument": "今本有○而底本無，然無古本他校及小學佐證，未敢遽定為脫。理校雖通，校勘當慎。",
-          "amend_base_text": false
-        }
-      ],
-      "decided_by": "chair-llm",
-      "human_note": ""
-    },
-    {
-      "div_id": "D0105",
-      "dtype": "脫文缺字",
-      "base_text": "",
-      "ref_text": "○",
-      "context": "者未之有也好去聲【底本：〇 / 今本：○】此又承上文一人定",
-      "chosen": "兩存",
-      "amend_base_text": false,
-      "suspended": true,
-      "confidence": 0.7,
-      "margin": 0.3588,
-      "scores": {
-        "○": 0.801,
-        "兩存": 0.378
-      },
-      "apparatus_note": "底本墨釘，今本補○，無確證。劉、戴二家雖主實，然無他書佐證，解縉兩存之議可從。",
-      "risk": "若判改，則誤增符號，亂底本舊式；若不改，僅存校記，不害文義。",
-      "opinions": [
-        {
-          "persona": "liuxiang",
-          "name": "劉向",
-          "method": "對校法",
-          "choice": "○",
-          "confidence": 0.9,
-          "evidence_grade": "推測",
-          "argument": "底本於『好去聲』後空字，今本作○，疑為句讀或空格之符；南宋本或偶脫，今本補○尚存舊式。",
-          "amend_base_text": true
-        },
-        {
-          "persona": "xiejin",
-          "name": "解縉",
-          "method": "他校法",
-          "choice": "兩存",
-          "confidence": 0.6,
-          "evidence_grade": "旁證",
-          "argument": "宋刊底本墨釘處或本有圈抹，今本補○，然他書未見引此句，未得確證，故兩存之。",
-          "amend_base_text": false
-        },
-        {
-          "persona": "daizhen",
-          "name": "戴震",
-          "method": "本校法・理校法（音韻訓詁）",
-          "choice": "○",
-          "confidence": 0.9,
-          "evidence_grade": "旁證",
-          "argument": "底本好字下注音後空位，今本有○，乃分段標識。底本疑脫，今本可補。",
-          "amend_base_text": true
-        }
-      ],
-      "decided_by": "chair-llm",
-      "human_note": ""
-    },
-    {
-      "div_id": "D0117",
-      "dtype": "脫文缺字",
-      "base_text": "",
-      "ref_text": "○",
-      "context": "矩之道惡先並去聲【底本：〇 / 今本：○】此覆解上文絜矩二",
-      "chosen": "兩存",
-      "amend_base_text": false,
-      "suspended": true,
-      "confidence": 0.35,
-      "margin": 1.0,
-      "scores": {
-        "○": 1.6285
-      },
-      "apparatus_note": "三家言皆有據，然底本空格可通，不得遽補。今本圈或為後人所加，不可定。",
-      "risk": "若誤補，則擅改原卷形制；若誤存，則割裂注疏文義。",
-      "opinions": [
-        {
-          "persona": "liuxiang",
-          "name": "劉向",
-          "method": "對校法",
-          "choice": "○",
-          "confidence": 0.95,
-          "evidence_grade": "確證",
-          "argument": "底本脫校記圈抹，今本有之，當據補。形制上此為校勘符號，非虛缺，宜從今本。",
-          "amend_base_text": true
-        },
-        {
-          "persona": "xiejin",
-          "name": "解縉",
-          "method": "他校法",
-          "choice": "○",
-          "confidence": 0.1,
-          "evidence_grade": "無證",
-          "argument": "未見他書引證此處有圈，今本增圈或為後人臆補，不能確證底本脫文。",
-          "amend_base_text": false
-        },
-        {
-          "persona": "daizhen",
-          "name": "戴震",
-          "method": "本校法・理校法（音韻訓詁）",
-          "choice": "○",
-          "confidence": 0.95,
-          "evidence_grade": "確證",
-          "argument": "底本『聲』下空格，今本補○，蓋脫文；『矩之道』至『惡先』為卷中注疏，是處當有圈以別之，今本可從。",
-          "amend_base_text": true
-        }
-      ],
-      "decided_by": "chair-llm",
-      "human_note": ""
-    },
-    {
-      "div_id": "D0120",
-      "dtype": "脫文缺字",
-      "base_text": "",
       "ref_text": "下僇矣",
       "context": "可以不慎辟則爲天【底本：〇 / 今本：下僇矣】節讀爲截辟讀爲僻",
       "chosen": "兩存",
       "amend_base_text": false,
       "suspended": true,
-      "confidence": 0.75,
-      "margin": 0.0467,
+      "confidence": 0.95,
+      "margin": 0.075,
       "scores": {
-        "兩存": 0.588,
-        "下僇矣": 0.5355
+        "兩存": 0.95,
+        "下僇矣": 1.104
       },
-      "apparatus_note": "底本無字，句意可通；今本雖有《祭義》可參，然非直接對校，且三家異說無確證，故兩存待考。",
-      "risk": "若強補，則改動底本原文，且無版本實證，恐失古本之舊。",
+      "apparatus_note": "底本無缺文痕跡，今本『下僇矣』出處未明，雖鄭注可參，然證據不足，兩存待考。",
+      "risk": "若妄補，則改動底本正文，掩蓋原貌，誤導後學。",
       "opinions": [
         {
           "persona": "liuxiang",
           "name": "劉向",
           "method": "對校法",
           "choice": "兩存",
-          "confidence": 0.7,
-          "evidence_grade": "旁證",
-          "argument": "底本無「下僇矣」三字，今本有之，然未見別本對校，不能定為脫文。且底本句讀自明，當從舊式。",
+          "confidence": 0.95,
+          "evidence_grade": "確證",
+          "argument": "底本明無『下僇矣』三字，今本增入，然底本行款完整，無缺文痕跡，且今本出處未明，不可遽補。",
           "amend_base_text": false
         },
         {
@@ -1383,9 +1172,113 @@
           "name": "解縉",
           "method": "他校法",
           "choice": "下僇矣",
+          "confidence": 0.9,
+          "evidence_grade": "確證",
+          "argument": "《禮記·祭義》鄭注引此句作「下僇矣」，孔疏釋為「恥辱」，今本與注疏合，足證底本脫。",
+          "amend_base_text": true
+        },
+        {
+          "persona": "daizhen",
+          "name": "戴震",
+          "method": "本校法・理校法（音韻訓詁）",
+          "choice": "下僇矣",
+          "confidence": 0.6,
+          "evidence_grade": "旁證",
+          "argument": "底本此處語意未完，今本『下僇矣』補之，文義可通，然無旁據，故姑存其說。",
+          "amend_base_text": false
+        }
+      ],
+      "decided_by": "chair-llm",
+      "human_note": ""
+    },
+    {
+      "div_id": "D0087",
+      "dtype": "脫文缺字",
+      "base_text": "",
+      "ref_text": "峻",
+      "context": "克配上帝儀監于殷【底本：〇 / 今本：峻】命不易道得衆則得",
+      "chosen": "兩存",
+      "amend_base_text": false,
+      "suspended": true,
+      "confidence": 0.6,
+      "margin": 0.1044,
+      "scores": {
+        "兩存": 0.423,
+        "峻": 0.343
+      },
+      "apparatus_note": "底本闕字，今本補『峻』，然《禮記》引《詩》無此文，他書未見，姑兩存之。",
+      "risk": "若徑補『峻』，恐失古本之舊；若不補，則文義稍疏。",
+      "opinions": [
+        {
+          "persona": "liuxiang",
+          "name": "劉向",
+          "method": "對校法",
+          "choice": "兩存",
+          "confidence": 0.3,
+          "evidence_grade": "無證",
+          "argument": "底本無字，今本補「峻」；然無版本對校證據，未可定其是非。",
+          "amend_base_text": false
+        },
+        {
+          "persona": "xiejin",
+          "name": "解縉",
+          "method": "他校法",
+          "choice": "兩存",
+          "confidence": 0.6,
+          "evidence_grade": "旁證",
+          "argument": "今本『峻』字，查《禮記·大學》引《詩》『克配上帝』下無『峻』，他書未見確證，故兩存待考。",
+          "amend_base_text": false
+        },
+        {
+          "persona": "daizhen",
+          "name": "戴震",
+          "method": "本校法・理校法（音韻訓詁）",
+          "choice": "峻",
+          "confidence": 0.7,
+          "evidence_grade": "旁證",
+          "argument": "『儀監于峻』，峻訓高，與『不易』文義相承。底本脫，今本有，當據補。",
+          "amend_base_text": true
+        }
+      ],
+      "decided_by": "chair-llm",
+      "human_note": ""
+    },
+    {
+      "div_id": "D0090",
+      "dtype": "衍文重出",
+      "base_text": "梁睿之",
+      "ref_text": "",
+      "context": "同欲者自不能巳矣【底本：梁睿之 / 今本：〇】是故君子先慎乎德",
+      "chosen": "兩存",
+      "amend_base_text": false,
+      "suspended": true,
+      "confidence": 0.85,
+      "margin": 0.4028,
+      "scores": {
+        "兩存": 1.118,
+        "衍文": 0.476
+      },
+      "apparatus_note": "底本宋刊有「梁睿之」三字，今本無；他書未見，疑衍疑脫皆無確證，兩存其舊。",
+      "risk": "若強改，恐失版本原貌；不改，亦不害文義。",
+      "opinions": [
+        {
+          "persona": "liuxiang",
+          "name": "劉向",
+          "method": "對校法",
+          "choice": "兩存",
+          "confidence": 0.95,
+          "evidence_grade": "確證",
+          "argument": "底本宋刊有“梁睿之”三字，今本無；版本行款不同，非衍非脫，當各存其舊。",
+          "amend_base_text": false
+        },
+        {
+          "persona": "xiejin",
+          "name": "解縉",
+          "method": "他校法",
+          "choice": "衍文",
           "confidence": 0.85,
           "evidence_grade": "旁證",
-          "argument": "《禮記·祭義》『下僇矣』，鄭注引《孝經》說。此處『辟則爲天下僇』，今本作『僇』，底本脫，當據補。",
+          "argument": "他書所引《禮記·大學》經文無此三字，且宋本《禮記疏》亦無注，疑為後人旁記誤入。",
           "amend_base_text": true
         },
         {
@@ -1393,9 +1286,9 @@
           "name": "戴震",
           "method": "本校法・理校法（音韻訓詁）",
           "choice": "兩存",
-          "confidence": 0.35,
+          "confidence": 0.6,
           "evidence_grade": "推測",
-          "argument": "底本無字而句意可通，今本補字無他書佐證，理校不可輕從，故兩存之。",
+          "argument": "底本有「梁睿之」三字，今本無，未見他書旁證。疑涉上文「同欲者」而衍，然亦難遽斷為脫，故兩存其說。",
           "amend_base_text": false
         }
       ],
@@ -1403,59 +1296,7 @@
       "human_note": ""
     },
     {
-      "div_id": "D0125",
-      "dtype": "形近疑誤",
-      "base_text": "巳",
-      "ref_text": "已",
-      "context": "與民同欲者自不能【底本：巳 / 今本：已】矣梁睿之是故君子",
-      "chosen": "兩存",
-      "amend_base_text": false,
-      "suspended": true,
-      "confidence": 0.7,
-      "margin": 0.2197,
-      "scores": {
-        "巳": 0.6158,
-        "已": 0.9625
-      },
-      "apparatus_note": "底本作「巳」，今本作「已」。「不能已」雖為常語，然底本「巳」字古本習用，形近而義通，未可遽改。",
-      "risk": "若判錯，改動正文或失底本古貌，僅出校記不影響文義",
-      "opinions": [
-        {
-          "persona": "liuxiang",
-          "name": "劉向",
-          "method": "對校法",
-          "choice": "巳",
-          "confidence": 0.85,
-          "evidence_grade": "旁證",
-          "argument": "底本字口已漫漶而字形近「巳」，宋本多用「巳」表「已」，今本徑改失古貌。",
-          "amend_base_text": false
-        },
-        {
-          "persona": "xiejin",
-          "name": "解縉",
-          "method": "他校法",
-          "choice": "已",
-          "confidence": 0.85,
-          "evidence_grade": "旁證",
-          "argument": "《禮記·表記》引子曰「君子不以言舉人，不以人廢言」，鄭注云「已，止也」，此處「不能自已」為常語，宋刻多作「已」。底本「巳」或涉形近，今本作「已」可從。",
-          "amend_base_text": true
-        },
-        {
-          "persona": "daizhen",
-          "name": "戴震",
-          "method": "本校法・理校法（音韻訓詁）",
-          "choice": "已",
-          "confidence": 0.95,
-          "evidence_grade": "確證",
-          "argument": "「不能已」為常語，謂欲心不止，上下文義貫通，雖型近，當從今本改「已」。",
-          "amend_base_text": true
-        }
-      ],
-      "decided_by": "chair-llm",
-      "human_note": ""
-    },
-    {
-      "div_id": "D0137",
+      "div_id": "D0095",
       "dtype": "實質異文",
       "base_text": "逆",
       "ref_text": "大學迸",
@@ -1463,23 +1304,24 @@
       "chosen": "兩存",
       "amend_base_text": false,
       "suspended": true,
-      "confidence": 0.8,
-      "margin": 0.4371,
+      "confidence": 0.7,
+      "margin": 0.034,
       "scores": {
-        "兩存": 0.5057,
-        "大學迸": 1.291
+        "逆": 0.9286,
+        "大學迸": 0.85,
+        "兩存": 0.5355
       },
-      "apparatus_note": "底本『逆』雖註『讀爲屏，古字通用』，然《大學》作『迸』，鄭注亦云『迸猶屏也』。二說皆通，無版本確證，故兩存之。",
-      "risk": "若強改，恐失底本舊注；若不改，則與經文不合，須待善本定奪。",
+      "apparatus_note": "底本『逆』下注明讀爲屏，與今本『迸』音義通轉，無確證定一是，故兩存之。",
+      "risk": "若強改，將失古本原貌；不改則句讀兩可，待善本定奪。",
       "opinions": [
         {
           "persona": "liuxiang",
           "name": "劉向",
           "method": "對校法",
-          "choice": "兩存",
-          "confidence": 0.85,
-          "evidence_grade": "旁證",
-          "argument": "底本「逆」注「讀爲屏古字通用」，今本「大學迸」異文，未見版本形制可定是非，故二本並存。",
+          "choice": "逆",
+          "confidence": 0.95,
+          "evidence_grade": "確證",
+          "argument": "底本「逆」字下小注「讀爲屏古字通用」，乃校語明標，且「迸」乃後人誤改，非古本之舊。",
           "amend_base_text": false
         },
         {
@@ -1489,25 +1331,25 @@
           "choice": "大學迸",
           "confidence": 0.85,
           "evidence_grade": "確證",
-          "argument": "《禮記·大學》鄭玄注云‘迸，猶屏也’，古字通用。底本‘逆’當為形訛，儒藏本從《大學》原文為正。",
+          "argument": "《禮記·大學》鄭注云「迸，猶屏也」，陸德明《經典釋文》亦作「迸」。底本「逆」乃形近而訛，當據《大學》經注改正。",
           "amend_base_text": true
         },
         {
           "persona": "daizhen",
           "name": "戴震",
           "method": "本校法・理校法（音韻訓詁）",
-          "choice": "大學迸",
-          "confidence": 0.7,
+          "choice": "兩存",
+          "confidence": 0.85,
           "evidence_grade": "旁證",
-          "argument": "底本「逆」字當為「迸」之形訛，古音並無通轉之證。今本作「大學迸」，與《禮記·大學》鄭注合，當從之。",
-          "amend_base_text": true
+          "argument": "底本『逆』與今本『迸』古音通轉，皆有訓『屏』之例，無他證決疑，宜存異以待考。",
+          "amend_base_text": false
         }
       ],
       "decided_by": "chair-llm",
       "human_note": ""
     },
     {
-      "div_id": "D0138",
+      "div_id": "D0096",
       "dtype": "脫文缺字",
       "base_text": "",
       "ref_text": "○",
@@ -1516,42 +1358,41 @@
       "amend_base_text": false,
       "suspended": true,
       "confidence": 0.6,
-      "margin": 0.8067,
+      "margin": 1.0,
       "scores": {
-        "兩存": 0.0915,
-        "○": 0.855
+        "兩存": 1.4112
       },
-      "apparatus_note": "底本無圈，今本據《釋文》補，然版本形制未明，無從定其當否，故兩存以俟考。",
-      "risk": "若強補圈，恐誤增句讀，反亂文義；若存底本，亦不失其舊。",
+      "apparatus_note": "三家皆主兩存，底本無脫文跡，他書亦無佐證，今本補圈臆測，不可據改。",
+      "risk": "若改，則以臆補亂底本，失校勘謹嚴之體。",
       "opinions": [
         {
           "persona": "liuxiang",
           "name": "劉向",
           "method": "對校法",
           "choice": "兩存",
-          "confidence": 0.4,
-          "evidence_grade": "無證",
-          "argument": "底本無字，今本有○，然版本形態未詳，無從定其當否，故兩存之。",
+          "confidence": 0.95,
+          "evidence_grade": "確證",
+          "argument": "底本字跡清晰，無脫文痕跡；今本增○，乃校者臆補，非版本異文也。",
           "amend_base_text": false
         },
         {
           "persona": "xiejin",
           "name": "解縉",
           "method": "他校法",
-          "choice": "○",
-          "confidence": 0.95,
-          "evidence_grade": "確證",
-          "argument": "《經典釋文·毛詩音義》‘媢’字下云‘本又作冒’，明此處當有句讀圈。今本從《釋文》補圈，底本偶脫耳。",
-          "amend_base_text": true
+          "choice": "兩存",
+          "confidence": 0.15,
+          "evidence_grade": "無證",
+          "argument": "檢《北堂書鈔》《太平御覽》引《說文》此條，均無作圈記之例。他書未見涉此異文，未得確證，故兩存待考。",
+          "amend_base_text": false
         },
         {
           "persona": "daizhen",
           "name": "戴震",
           "method": "本校法・理校法（音韻訓詁）",
           "choice": "兩存",
-          "confidence": 0.3,
-          "evidence_grade": "無證",
-          "argument": "底本無圈，今本增之，然無左證，依理校存疑，不改底本。",
+          "confidence": 0.9,
+          "evidence_grade": "旁證",
+          "argument": "底本此處無字當屬脫文，然無他本可據，且今本補○亦無確證，故兩存之。",
           "amend_base_text": false
         }
       ],
@@ -1559,59 +1400,58 @@
       "human_note": ""
     },
     {
-      "div_id": "D0147",
+      "div_id": "D0098",
       "dtype": "脫文缺字",
       "base_text": "",
       "ref_text": "○",
-      "context": "許六反乗斂並去聲【底本：〇 / 今本：○】孟獻子魯之賢大夫",
+      "context": "怠未詳孰是遠去聲【底本：〇 / 今本：○】若此者知所愛惡矣",
       "chosen": "兩存",
       "amend_base_text": false,
       "suspended": true,
-      "confidence": 0.55,
-      "margin": 0.3743,
+      "confidence": 0.95,
+      "margin": 1.0,
       "scores": {
-        "當從底本": 0.95,
-        "○": 0.4325
+        "兩存": 0.9125
       },
-      "apparatus_note": "三家所據皆不足決。底本無○可通，今本有○亦合音義例，兩存候覆。",
-      "risk": "若強補，則改動底本而無確證；若徑刪，則失隔段之例，義例兩傷。",
+      "apparatus_note": "底本作〇，今本補○，三家皆主兩存，無版本實證，且無文義窒礙，故不改。",
+      "risk": "如強改，則以臆補之字亂古文本真，校勘失據。",
       "opinions": [
         {
           "persona": "liuxiang",
           "name": "劉向",
           "method": "對校法",
-          "choice": "當從底本",
+          "choice": "兩存",
           "confidence": 0.95,
-          "evidence_grade": "確證",
-          "argument": "底本行款整飭，無空闕，且置信度1.00，今本增○乃後人臆補，非底本之舊。",
+          "evidence_grade": "旁證",
+          "argument": "底本無此字，今本有之，然無版本形態之證可定孰是。今本補字，疑出校者臆增，未可遽從。",
           "amend_base_text": false
         },
         {
           "persona": "xiejin",
           "name": "解縉",
           "method": "他校法",
-          "choice": "○",
-          "confidence": 0.3,
-          "evidence_grade": "無證",
-          "argument": "今本有○而底本無，然他書所引《禮記》正義此處皆無此符，未得確證，不敢遽補。",
+          "choice": "兩存",
+          "confidence": 0.6,
+          "evidence_grade": "未得確證",
+          "argument": "未見他書引證，類書、古注無徵，不敢遽定。○或為章段記號，未必脫字。",
           "amend_base_text": false
         },
         {
           "persona": "daizhen",
           "name": "戴震",
           "method": "本校法・理校法（音韻訓詁）",
-          "choice": "○",
-          "confidence": 0.8,
-          "evidence_grade": "旁證",
-          "argument": "底本無圈，今本有之，音義書例以○隔段，今本不誤。底本疑脫，當補。",
-          "amend_base_text": true
+          "choice": "兩存",
+          "confidence": 0.3,
+          "evidence_grade": "無證",
+          "argument": "底本無○，今本有之，然無他書對校，亦無文義窒礙，故當兩存，不輕改。",
+          "amend_base_text": false
         }
       ],
       "decided_by": "chair-llm",
       "human_note": ""
     },
     {
-      "div_id": "D0150",
+      "div_id": "D0102",
       "dtype": "脫文缺字",
       "base_text": "",
       "ref_text": "○",
@@ -1619,43 +1459,43 @@
       "chosen": "兩存",
       "amend_base_text": false,
       "suspended": true,
-      "confidence": 0.6,
-      "margin": 0.3548,
+      "confidence": 0.85,
+      "margin": 0.6069,
       "scores": {
-        "兩存": 0.42,
-        "○": 0.882
+        "○": 0.973,
+        "兩存": 0.238
       },
-      "apparatus_note": "底本無闕文跡，刻工省文或後人妄補未定。今本補○，說文可參，然無確證，兩存待考。",
-      "risk": "若強改正文，恐誤補字致義紊；若不出校，後人疑底本有脫。",
+      "apparatus_note": "底本無圈，今本有之，類書引文未足確證，兩存待考。",
+      "risk": "若強斷，則改動底本行款，或誤刪校記，影響後世讀者",
       "opinions": [
         {
           "persona": "liuxiang",
           "name": "劉向",
           "method": "對校法",
-          "choice": "兩存",
-          "confidence": 0.6,
+          "choice": "○",
+          "confidence": 0.85,
           "evidence_grade": "旁證",
-          "argument": "底本無此字，今本增○，然底本行款未見闕文之跡，疑為刻工省文或後人妄補。版本形態不足定其是非，姑兩存之。",
-          "amend_base_text": false
+          "argument": "底本「誤字」下無空格，今本「○」乃校記標識；底本此處行款不當有闕文，疑抄手遺脫。",
+          "amend_base_text": true
         },
         {
           "persona": "xiejin",
           "name": "解縉",
           "method": "他校法",
           "choice": "○",
-          "confidence": 0.7,
+          "confidence": 0.6,
           "evidence_grade": "旁證",
-          "argument": "《說文》「○」為「囗」字古文，他書引《釋名》或作「○」，今本據此補，底本脫文可從。",
+          "argument": "《玉篇》引《釋名》有「○，自由也」句，與底本注合，疑底本脫空圈。然類書引文或有增刪，未得確證。",
           "amend_base_text": true
         },
         {
           "persona": "daizhen",
           "name": "戴震",
           "method": "本校法・理校法（音韻訓詁）",
-          "choice": "○",
-          "confidence": 0.9,
-          "evidence_grade": "旁證",
-          "argument": "底本闕文處今本補○，以符空格慣例。若無他證，從今本補之，不害義理。",
+          "choice": "兩存",
+          "confidence": 0.85,
+          "evidence_grade": "推測",
+          "argument": "底本無圈，今本有之，然無他本佐證，不可遽定為脫。且校勘當慎，存疑可也。",
           "amend_base_text": false
         }
       ],
@@ -1663,7 +1503,59 @@
       "human_note": ""
     },
     {
-      "div_id": "D0152",
+      "div_id": "D0103",
+      "dtype": "實質異文",
+      "base_text": "兼",
+      "ref_text": "夢",
+      "context": "茶鹽所準備差遣劉【底本：兼 / 今本：夢】高校正當塗郡齋舊",
+      "chosen": "兩存",
+      "amend_base_text": false,
+      "suspended": true,
+      "confidence": 0.65,
+      "margin": 0.4702,
+      "scores": {
+        "夢": 0.8075,
+        "兩存": 0.291
+      },
+      "apparatus_note": "底本『兼』今本『夢』，無確證，音形未近，強改則妄，故兩存待覆。",
+      "risk": "若強改，則誤改人名；若兩存，則留待後證。",
+      "opinions": [
+        {
+          "persona": "liuxiang",
+          "name": "劉向",
+          "method": "對校法",
+          "choice": "夢",
+          "confidence": 0.95,
+          "evidence_grade": "確證",
+          "argument": "底本『兼』字乃『夢』之形訛，『夢高』為人名，見宋人題署常例；今本存古，當從。",
+          "amend_base_text": true
+        },
+        {
+          "persona": "xiejin",
+          "name": "解縉",
+          "method": "他校法",
+          "choice": "兩存",
+          "confidence": 0.5,
+          "evidence_grade": "無證",
+          "argument": "未見他書引用此處，不能斷定底本或今本孰是。兩字皆可通，故兩存之。",
+          "amend_base_text": false
+        },
+        {
+          "persona": "daizhen",
+          "name": "戴震",
+          "method": "本校法・理校法（音韻訓詁）",
+          "choice": "兩存",
+          "confidence": 0.6,
+          "evidence_grade": "推測",
+          "argument": "兼、夢二字字形不近，音亦無通轉之證，底本他處無文例可勘，當存異不改。",
+          "amend_base_text": false
+        }
+      ],
+      "decided_by": "chair-llm",
+      "human_note": ""
+    },
+    {
+      "div_id": "D0104",
       "dtype": "衍文重出",
       "base_text": "正當塗郡齋舊有文公語孟集註一與本文皆大字放老眼為宜孟",
       "ref_text": "",
@@ -1672,73 +1564,22 @@
       "amend_base_text": false,
       "suspended": true,
       "confidence": 0.7,
-      "margin": 1.0,
+      "margin": 0.2908,
       "scores": {
-        "兩存": 0.729
+        "兩存": 0.758,
+        "衍文當刪": 0.4165
       },
-      "apparatus_note": "底本此段文意可通，三家皆無確證定其衍奪，今姑存其舊，以待異本覆勘。",
-      "risk": "不改正文，僅出校記；若誤判，底本或衍或脫，待驗方明。",
+      "apparatus_note": "底本文字文意可通，今本刪之無據，三說皆未得確證，故兩存待考。",
+      "risk": "若強刪，恐失底本舊貌；若強存，無礙文義，唯句讀稍異。",
       "opinions": [
         {
           "persona": "liuxiang",
           "name": "劉向",
           "method": "對校法",
           "choice": "兩存",
-          "confidence": 0.75,
+          "confidence": 0.9,
           "evidence_grade": "旁證",
-          "argument": "底本此段與前後文意連貫，版式無縫隙，似非衍文；今本奪去，然無別本可證，當兩存。",
-          "amend_base_text": false
-        },
-        {
-          "persona": "xiejin",
-          "name": "解縉",
-          "method": "他校法",
-          "choice": "兩存",
-          "confidence": 0.3,
-          "evidence_grade": "無證",
-          "argument": "未檢得他書引此段，類書、古注皆無徵。大字注語或涉舊本題識，非必衍文，亦非必脫。",
-          "amend_base_text": false
-        },
-        {
-          "persona": "daizhen",
-          "name": "戴震",
-          "method": "本校法・理校法（音韻訓詁）",
-          "choice": "兩存",
-          "confidence": 0.6,
-          "evidence_grade": "推測",
-          "argument": "底本此段文字突兀，疑為注文竄入，然無他本對勘，未敢遽刪，姑存異以待考。",
-          "amend_base_text": false
-        }
-      ],
-      "decided_by": "chair-llm",
-      "human_note": ""
-    },
-    {
-      "div_id": "D0153",
-      "dtype": "衍文重出",
-      "base_text": "肅吳公所刊見謂善本尤應竭來假守依倣規製取中庸",
-      "ref_text": "",
-      "context": "字放老眼為宜孟正【底本：肅吳公所刊見謂善本尤應竭來假守依倣規製取中庸 / 今本：〇】大學章句併刊之是",
-      "chosen": "兩存",
-      "amend_base_text": false,
-      "suspended": true,
-      "confidence": 0.4,
-      "margin": 0.6295,
-      "scores": {
-        "肅吳公所刊見謂善本尤應竭來假守依倣規製取中庸、": 0.95,
-        "兩存": 0.216
-      },
-      "apparatus_note": "底本二十四字文義可通，然無他書確證，今本刪去亦無窒礙，未敢定其是非，姑兩存之。",
-      "risk": "若強斷補入，則恐誤衍文為正文；若徑刪，則恐失宋刻原貌。",
-      "opinions": [
-        {
-          "persona": "liuxiang",
-          "name": "劉向",
-          "method": "對校法",
-          "choice": "肅吳公所刊見謂善本尤應竭來假守依倣規製取中庸、",
-          "confidence": 0.95,
-          "evidence_grade": "確證",
-          "argument": "底本行款完足，字數合於宋刻篇末題識慣例，無衍文跡象；今本脫去二十四字，當據底本補入。",
+          "argument": "底本行款完整，字數無誤，且校語中「劉兼高校正」之後接「正當塗郡齋」等語，文勢連貫，非衍。今本刪去，疑失其舊。",
           "amend_base_text": false
         },
         {
@@ -1747,8 +1588,59 @@
           "method": "他校法",
           "choice": "兩存",
           "confidence": 0.4,
-          "evidence_grade": "無證",
-          "argument": "他書未見引及此段，亦無類書、古注可證。底本有而今本無，疑衍或脫，然無確據，姑兩存之。",
+          "evidence_grade": "未得確證",
+          "argument": "他書未引此段，類書無載，未得他書確證。底本文字似校記誤入，今本刪之亦無據，故兩存待考。",
+          "amend_base_text": false
+        },
+        {
+          "persona": "daizhen",
+          "name": "戴震",
+          "method": "本校法・理校法（音韻訓詁）",
+          "choice": "衍文當刪",
+          "confidence": 0.85,
+          "evidence_grade": "旁證",
+          "argument": "底本文本與校記正文不類，句意突兀，且今本無此語，疑為抄手誤增批註，理校當刪。",
+          "amend_base_text": true
+        }
+      ],
+      "decided_by": "chair-llm",
+      "human_note": ""
+    },
+    {
+      "div_id": "D0105",
+      "dtype": "衍文重出",
+      "base_text": "肅吳公所刊見謂善本尤應竭來假守依倣規製取中庸",
+      "ref_text": "",
+      "context": "字放老眼為宜孟正【底本：肅吳公所刊見謂善本尤應竭來假守依倣規製取中庸 / 今本：〇】大學章句併刊之是",
+      "chosen": "兩存",
+      "amend_base_text": false,
+      "suspended": true,
+      "confidence": 0.85,
+      "margin": 1.0,
+      "scores": {
+        "兩存": 0.9625
+      },
+      "apparatus_note": "底本無剜改，今本徑刪無據；三家皆主兩存，未得硬證，姑存底本原貌。",
+      "risk": "若判刪，將無據改動底本正文，且失校語竄入之可能線索。",
+      "opinions": [
+        {
+          "persona": "liuxiang",
+          "name": "劉向",
+          "method": "對校法",
+          "choice": "兩存",
+          "confidence": 0.85,
+          "evidence_grade": "旁證",
+          "argument": "底本行款完整，字數合版式，無剜改痕跡；今本徑刪，未標脫文，疑為整理者誤刪。當兩存以待驗。",
+          "amend_base_text": false
+        },
+        {
+          "persona": "xiejin",
+          "name": "解縉",
+          "method": "他校法",
+          "choice": "兩存",
+          "confidence": 0.6,
+          "evidence_grade": "旁證",
+          "argument": "底本此段文字疑為後人校語竄入正文，然今本徑刪，未得他書確證。宋刊類書未見引此句，姑存底本原貌，以待更善之證。",
           "amend_base_text": false
         },
         {
@@ -1756,9 +1648,61 @@
           "name": "戴震",
           "method": "本校法・理校法（音韻訓詁）",
           "choice": "兩存",
+          "confidence": 0.3,
+          "evidence_grade": "無證",
+          "argument": "底本此段鄙倍難通，疑是後人竄入或校語混入正文，然無他本可校，不敢遽刪。",
+          "amend_base_text": false
+        }
+      ],
+      "decided_by": "chair-llm",
+      "human_note": ""
+    },
+    {
+      "div_id": "D0106",
+      "dtype": "衍文重出",
+      "base_text": "章句併刊之是成四書語孟咸月浸久間有澷滅就加整治是書在天地間無窮達老少皆不可一日度熟後玩味則施之行事其有石駁且畏哉淳祐壬子孟妹翔旦金華馬光祖敬識明月松间照清泉石上流<table><tr><td></td></tr></table>imgs/img_in_image_box_0_0_1190_1704jpg",
+      "ref_text": "",
+      "context": "倣規製取中庸大學【底本：章句併刊之是成四書語孟咸月浸久間有澷滅就加整治是書在天地間無窮達老少皆不可一日度熟後玩味則施之行事其有石駁且畏哉淳祐壬子孟妹翔旦金華馬光祖敬識明月松间照清泉石上流<table><tr><td></td></tr></table>imgs/img_in_image_box_0_0_1190_1704jpg / 今本：〇】",
+      "chosen": "兩存",
+      "amend_base_text": false,
+      "suspended": true,
+      "confidence": 0.85,
+      "margin": 0.0261,
+      "scores": {
+        "章句併刊之是成四書語孟咸月浸久間有澷滅就加整治是書在天地間無窮達老少皆不可一日度熟後玩味則施之行事其有石駁且畏哉淳祐壬子孟妹翔旦金華馬光祖敬識明月松间照清泉石上流": 0.95,
+        "兩存": 1.001
+      },
+      "apparatus_note": "底本此段包括馬跋及王維詩句，詩句與跋語不相屬，疑為後人誤雜，然無版本確證，故兩存待考。",
+      "risk": "若強刪詩句，可能失存古本原貌；若徑刪跋文，則脫誤更甚。",
+      "opinions": [
+        {
+          "persona": "liuxiang",
+          "name": "劉向",
+          "method": "對校法",
+          "choice": "章句併刊之是成四書語孟咸月浸久間有澷滅就加整治是書在天地間無窮達老少皆不可一日度熟後玩味則施之行事其有石駁且畏哉淳祐壬子孟妹翔旦金華馬光祖敬識明月松间照清泉石上流",
+          "confidence": 0.95,
+          "evidence_grade": "確證",
+          "argument": "底本實有此段文字，今本無，審其行款連屬，非衍文。明人刻書好刪舊跋，今本脫文，當從底本。",
+          "amend_base_text": false
+        },
+        {
+          "persona": "xiejin",
+          "name": "解縉",
+          "method": "他校法",
+          "choice": "兩存",
           "confidence": 0.6,
-          "evidence_grade": "推測",
-          "argument": "底本此段字數冗長，疑為校語竄入正文，然無他本可證，不敢遽刪。今本刪去亦無窒礙，故兩存之。",
+          "evidence_grade": "旁證",
+          "argument": "底本刻序跋後偶雜詩句，類書少見，然他校未得確證，疑為後人墨蹟誤入，不敢遽刪。",
+          "amend_base_text": false
+        },
+        {
+          "persona": "daizhen",
+          "name": "戴震",
+          "method": "本校法・理校法（音韻訓詁）",
+          "choice": "兩存",
+          "confidence": 0.95,
+          "evidence_grade": "確證",
+          "argument": "底本「明月松間照清泉石上流」乃王維詩句，與馬光祖跋語無涉，顯係後人竄入或誤植，當存校記而非刪改。",
           "amend_base_text": false
         }
       ],
